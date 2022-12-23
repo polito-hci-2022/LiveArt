@@ -1714,64 +1714,64 @@ struct Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F
 		struct
 		{
 			// System.Int32 System.Decimal::flags
-			int32_t ___flags_5;
+			int32_t ___flags_8;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			int32_t ___flags_5_forAlignmentOnly;
+			int32_t ___flags_8_forAlignmentOnly;
 		};
 		#pragma pack(push, tp, 1)
 		struct
 		{
-			char ___hi_6_OffsetPadding[4];
+			char ___hi_9_OffsetPadding[4];
 			// System.Int32 System.Decimal::hi
-			int32_t ___hi_6;
+			int32_t ___hi_9;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			char ___hi_6_OffsetPadding_forAlignmentOnly[4];
-			int32_t ___hi_6_forAlignmentOnly;
+			char ___hi_9_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___hi_9_forAlignmentOnly;
 		};
 		#pragma pack(push, tp, 1)
 		struct
 		{
-			char ___lo_7_OffsetPadding[8];
+			char ___lo_10_OffsetPadding[8];
 			// System.Int32 System.Decimal::lo
-			int32_t ___lo_7;
+			int32_t ___lo_10;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			char ___lo_7_OffsetPadding_forAlignmentOnly[8];
-			int32_t ___lo_7_forAlignmentOnly;
+			char ___lo_10_OffsetPadding_forAlignmentOnly[8];
+			int32_t ___lo_10_forAlignmentOnly;
 		};
 		#pragma pack(push, tp, 1)
 		struct
 		{
-			char ___mid_8_OffsetPadding[12];
+			char ___mid_11_OffsetPadding[12];
 			// System.Int32 System.Decimal::mid
-			int32_t ___mid_8;
+			int32_t ___mid_11;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			char ___mid_8_OffsetPadding_forAlignmentOnly[12];
-			int32_t ___mid_8_forAlignmentOnly;
+			char ___mid_11_OffsetPadding_forAlignmentOnly[12];
+			int32_t ___mid_11_forAlignmentOnly;
 		};
 		#pragma pack(push, tp, 1)
 		struct
 		{
-			char ___ulomidLE_9_OffsetPadding[8];
+			char ___ulomidLE_12_OffsetPadding[8];
 			// System.UInt64 System.Decimal::ulomidLE
-			uint64_t ___ulomidLE_9;
+			uint64_t ___ulomidLE_12;
 		};
 		#pragma pack(pop, tp)
 		struct
 		{
-			char ___ulomidLE_9_OffsetPadding_forAlignmentOnly[8];
-			uint64_t ___ulomidLE_9_forAlignmentOnly;
+			char ___ulomidLE_12_OffsetPadding_forAlignmentOnly[8];
+			uint64_t ___ulomidLE_12_forAlignmentOnly;
 		};
 	};
 };
@@ -3048,15 +3048,15 @@ struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
 struct Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields
 {
 	// System.Decimal System.Decimal::Zero
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___Zero_0;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___Zero_3;
 	// System.Decimal System.Decimal::One
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___One_1;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___One_4;
 	// System.Decimal System.Decimal::MinusOne
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MinusOne_2;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MinusOne_5;
 	// System.Decimal System.Decimal::MaxValue
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MaxValue_3;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MaxValue_6;
 	// System.Decimal System.Decimal::MinValue
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MinValue_4;
+	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___MinValue_7;
 };
 
 // System.Decimal
@@ -4758,6 +4758,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowHelper_ThrowArgumentOutOfRangeExcep
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowHelper_ThrowArgumentException_m2143A5B72376233700B4842B05601BF9992D999E (int32_t ___0_resource, int32_t ___1_argument, const RuntimeMethod* method) ;
 // System.Int32 System.BitConverter::ToInt32(System.Byte[],System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BitConverter_ToInt32_m259B4E62995575B80C4086347C867EB3C8D7DAB3 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_value, int32_t ___1_startIndex, const RuntimeMethod* method) ;
+// System.Int64 System.BitConverter::ToInt64(System.Byte[],System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t BitConverter_ToInt64_mA375995608A3E81761CCA7776461290AC5B262F0 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_value, int32_t ___1_startIndex, const RuntimeMethod* method) ;
 // System.Void System.ValueTuple`3<System.Byte[],System.Int32,System.Int32>::.ctor(T1,T2,T3)
 inline void ValueTuple_3__ctor_m699C78D670A60A3798B76C427563C939E56A2805 (ValueTuple_3_t572F29F9771D9B8B871C0C91213509EE16360375* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_item1, int32_t ___1_item2, int32_t ___2_item3, const RuntimeMethod* method)
 {
@@ -4888,14 +4890,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Byte_Equals_m07028241299798697EB8ECAD879
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Byte_Equals_m25D9E26BA4A7457D39CC3E870C2B33070D731E85 (uint8_t* __this, uint8_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 System.Byte::GetHashCode()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678 (uint8_t* __this, const RuntimeMethod* method) ;
-// System.ReadOnlySpan`1<System.Char> System.String::op_Implicit(System.String)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 String_op_Implicit_m7D7FE0449303AF92D8B2A85A06ADC6933B2ECC3A_inline (String_t* ___0_value, const RuntimeMethod* method) ;
-// System.Globalization.NumberFormatInfo System.Globalization.NumberFormatInfo::GetInstance(System.IFormatProvider)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* NumberFormatInfo_GetInstance_m705987E5E7D3E5EC5C5DD2D088FBC9BCBA0FC31F (RuntimeObject* ___0_formatProvider, const RuntimeMethod* method) ;
-// System.Byte System.Byte::Parse(System.ReadOnlySpan`1<System.Char>,System.Globalization.NumberStyles,System.Globalization.NumberFormatInfo)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Byte_Parse_m490E3F3D9EB77A06643F089594F1539A244013C4 (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___0_s, int32_t ___1_style, NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* ___2_info, const RuntimeMethod* method) ;
 // System.Void System.Globalization.NumberFormatInfo::ValidateParseStyleInteger(System.Globalization.NumberStyles)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberFormatInfo_ValidateParseStyleInteger_mF397DAF8AA78FEEC47D154A66FFB8EBBC90E8E8F (int32_t ___0_style, const RuntimeMethod* method) ;
+// System.ReadOnlySpan`1<System.Char> System.String::op_Implicit(System.String)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 String_op_Implicit_m7D7FE0449303AF92D8B2A85A06ADC6933B2ECC3A_inline (String_t* ___0_value, const RuntimeMethod* method) ;
+// System.Globalization.NumberFormatInfo System.Globalization.NumberFormatInfo::get_CurrentInfo()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* NumberFormatInfo_get_CurrentInfo_m121C9878F777AD81289C7B2BF589293E509FD9B4 (const RuntimeMethod* method) ;
+// System.Byte System.Byte::Parse(System.ReadOnlySpan`1<System.Char>,System.Globalization.NumberStyles,System.Globalization.NumberFormatInfo)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Byte_Parse_m490E3F3D9EB77A06643F089594F1539A244013C4 (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___0_s, int32_t ___1_style, NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* ___2_info, const RuntimeMethod* method) ;
+// System.Globalization.NumberFormatInfo System.Globalization.NumberFormatInfo::GetInstance(System.IFormatProvider)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* NumberFormatInfo_GetInstance_m705987E5E7D3E5EC5C5DD2D088FBC9BCBA0FC31F (RuntimeObject* ___0_formatProvider, const RuntimeMethod* method) ;
 // System.Int32 System.Number::ParseInt32(System.ReadOnlySpan`1<System.Char>,System.Globalization.NumberStyles,System.Globalization.NumberFormatInfo)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Number_ParseInt32_m7F2AA04784ED36F84E59BF810E51438EF5548D3E (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___0_value, int32_t ___1_styles, NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* ___2_info, const RuntimeMethod* method) ;
 // System.Void System.OverflowException::.ctor(System.String,System.Exception)
@@ -5116,6 +5120,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Boolean_Parse_mC9B4406FE9DA904E2B7D75267
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Decimal_op_Inequality_mCFFC6B60AEDE8CFB2DEABD97FF0F2B79A31E2690 (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___0_d1, Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___1_d2, const RuntimeMethod* method) ;
 // System.Void System.Convert::ThrowCharOverflowException()
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void Convert_ThrowCharOverflowException_mDE895898BC084DCBAB1F38EF999D040FC3A90BDD (const RuntimeMethod* method) ;
+// System.Char System.Convert::ToChar(System.String,System.IFormatProvider)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar Convert_ToChar_m05E12620C91AC9BCF2610FB3E4E610C43E2D3833 (String_t* ___0_value, RuntimeObject* ___1_provider, const RuntimeMethod* method) ;
 // System.Void System.Convert::ThrowSByteOverflowException()
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void Convert_ThrowSByteOverflowException_m308AAF2D1375ACC9633C32225E3A28CC113F8D62 (const RuntimeMethod* method) ;
 // System.SByte System.Convert::ToSByte(System.Double)
@@ -20378,6 +20384,58 @@ IL_0029:
 		return L_7;
 	}
 }
+// System.Int64 System.BitConverter::ToInt64(System.Byte[],System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t BitConverter_ToInt64_mA375995608A3E81761CCA7776461290AC5B262F0 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_value, int32_t ___1_startIndex, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_value;
+		if (L_0)
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		ThrowHelper_ThrowArgumentNullException_m05B7DB75576C421D7CA84FA73F84D7E114974CEC(((int32_t)15), NULL);
+	}
+
+IL_000a:
+	{
+		int32_t L_1 = ___1_startIndex;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2 = ___0_value;
+		NullCheck(L_2);
+		if ((!(((uint32_t)L_1) >= ((uint32_t)((int32_t)(((RuntimeArray*)L_2)->max_length))))))
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		ThrowHelper_ThrowArgumentOutOfRangeException_m5430BC879B9D99E39DED788BB9451B8EF029756F(((int32_t)14), ((int32_t)22), NULL);
+	}
+
+IL_0019:
+	{
+		int32_t L_3 = ___1_startIndex;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___0_value;
+		NullCheck(L_4);
+		if ((((int32_t)L_3) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_4)->max_length)), 8)))))
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		ThrowHelper_ThrowArgumentException_m2143A5B72376233700B4842B05601BF9992D999E(5, ((int32_t)15), NULL);
+	}
+
+IL_0029:
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = ___0_value;
+		int32_t L_6 = ___1_startIndex;
+		NullCheck(L_5);
+		int64_t L_7;
+		L_7 = il2cpp_unsafe_read_unaligned<int64_t>(((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6))));
+		return L_7;
+	}
+}
 // System.UInt32 System.BitConverter::ToUInt32(System.Byte[],System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t BitConverter_ToUInt32_m177FADD1E9B033C11D74E8DD1F957F62EF0BA177 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_value, int32_t ___1_startIndex, const RuntimeMethod* method) 
 {
@@ -20393,6 +20451,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t BitConverter_ToUInt32_m177FADD1E9B03
 		il2cpp_codegen_runtime_class_init_inline(BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_il2cpp_TypeInfo_var);
 		int32_t L_2;
 		L_2 = BitConverter_ToInt32_m259B4E62995575B80C4086347C867EB3C8D7DAB3(L_0, L_1, NULL);
+		return L_2;
+	}
+}
+// System.UInt64 System.BitConverter::ToUInt64(System.Byte[],System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t BitConverter_ToUInt64_mE7ED21EC4F2485A3AD117BA6DC44E1B6ED16DF23 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_value, int32_t ___1_startIndex, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_value;
+		int32_t L_1 = ___1_startIndex;
+		il2cpp_codegen_runtime_class_init_inline(BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_il2cpp_TypeInfo_var);
+		int64_t L_2;
+		L_2 = BitConverter_ToInt64_mA375995608A3E81761CCA7776461290AC5B262F0(L_0, L_1, NULL);
 		return L_2;
 	}
 }
@@ -21909,6 +21985,35 @@ IL2CPP_EXTERN_C  int32_t Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10
 	int32_t _returnValue;
 	_returnValue = Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678(_thisAdjusted, method);
 	return _returnValue;
+}
+// System.Byte System.Byte::Parse(System.String,System.Globalization.NumberStyles)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Byte_Parse_mE87056B4D91E35B7A5D888132B6F861A1C94A108 (String_t* ___0_s, int32_t ___1_style, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___1_style;
+		NumberFormatInfo_ValidateParseStyleInteger_mF397DAF8AA78FEEC47D154A66FFB8EBBC90E8E8F(L_0, NULL);
+		String_t* L_1 = ___0_s;
+		if (L_1)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		ThrowHelper_ThrowArgumentNullException_m05B7DB75576C421D7CA84FA73F84D7E114974CEC(((int32_t)48), NULL);
+	}
+
+IL_0010:
+	{
+		String_t* L_2 = ___0_s;
+		ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 L_3;
+		L_3 = String_op_Implicit_m7D7FE0449303AF92D8B2A85A06ADC6933B2ECC3A_inline(L_2, NULL);
+		int32_t L_4 = ___1_style;
+		NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* L_5;
+		L_5 = NumberFormatInfo_get_CurrentInfo_m121C9878F777AD81289C7B2BF589293E509FD9B4(NULL);
+		uint8_t L_6;
+		L_6 = Byte_Parse_m490E3F3D9EB77A06643F089594F1539A244013C4(L_3, L_4, L_5, NULL);
+		return L_6;
+	}
 }
 // System.Byte System.Byte::Parse(System.String,System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Byte_Parse_mD8D1AE5779910F7B2BA39ABF641972078F48B3EE (String_t* ___0_s, RuntimeObject* ___1_provider, const RuntimeMethod* method) 
@@ -26960,7 +27065,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Convert_ToBoolean_mC539496407F533C9B54D0
 	{
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_0 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var);
-		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_1 = ((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___Zero_0;
+		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_1 = ((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___Zero_3;
 		bool L_2;
 		L_2 = Decimal_op_Inequality_mCFFC6B60AEDE8CFB2DEABD97FF0F2B79A31E2690(L_0, L_1, NULL);
 		return L_2;
@@ -27219,6 +27324,23 @@ IL_000e:
 	{
 		uint64_t L_1 = ___0_value;
 		return ((int32_t)(uint16_t)L_1);
+	}
+}
+// System.Char System.Convert::ToChar(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar Convert_ToChar_m1F2BBA9AD900A2570DE55F3E315BA7D9277E8230 (String_t* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___0_value;
+		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		Il2CppChar L_1;
+		L_1 = Convert_ToChar_m05E12620C91AC9BCF2610FB3E4E610C43E2D3833(L_0, (RuntimeObject*)NULL, NULL);
+		return L_1;
 	}
 }
 // System.Char System.Convert::ToChar(System.String,System.IFormatProvider)
@@ -30558,7 +30680,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Decimal_tDA6C877282B2D789CF97C0949661CC11D643
 IL_0010:
 	{
 		il2cpp_codegen_runtime_class_init_inline(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var);
-		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_4 = ((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___Zero_0;
+		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_4 = ((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___Zero_3;
 		return L_4;
 	}
 }
@@ -30750,7 +30872,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Decimal_tDA6C877282B2D789CF97C0949661CC11D643
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var);
-		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_1 = ((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___Zero_0;
+		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_1 = ((Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields*)il2cpp_codegen_static_fields_for(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var))->___Zero_3;
 		return L_1;
 	}
 
