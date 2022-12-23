@@ -13630,6 +13630,15 @@ struct OnDestroyNotifier_t684A73FBDC3FC85EC3DBAC684BD6E129812EDC74  : public Mon
 	Action_1_t2E5C610CB008F51974504C946476137714B28CC7* ___U3CDestroyedU3Ek__BackingField_4;
 };
 
+// OpenCanvas
+struct OpenCanvas_t34CDEF131FB0B8821B28F9DBEE4E67618DFC947E  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject OpenCanvas::GameObject
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___GameObject_4;
+	// System.Boolean OpenCanvas::value
+	bool ___value_5;
+};
+
 // UnityEngine.XR.OpenXR.OpenXRLoaderBase
 struct OpenXRLoaderBase_t58BF6FC81FD9A7698FB65D651A0BB57EA7F47637  : public XRLoaderHelper_tE96E7AE003148D5319D20BAD7E02654367E41DCC
 {
@@ -20271,6 +20280,10 @@ struct OculusLoader_tA386B9AA0786D042EA272EDF385F96C0AD1A56BB_StaticFields
 
 // Unity.XR.CoreUtils.OnDestroyNotifier
 
+// OpenCanvas
+
+// OpenCanvas
+
 // UnityEngine.XR.OpenXR.OpenXRLoaderBase
 struct OpenXRLoaderBase_t58BF6FC81FD9A7698FB65D651A0BB57EA7F47637_StaticFields
 {
@@ -23609,27 +23622,30 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4601[6] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4602[4] = 
 {
 	static_cast<int32_t>(offsetof(FadeScreen_tC8A4EBDDB57B0BD4D2AF72FCE4EB2A680D5A02D6, ___fadeOnStart_4)),static_cast<int32_t>(offsetof(FadeScreen_tC8A4EBDDB57B0BD4D2AF72FCE4EB2A680D5A02D6, ___fadeDuration_5)),static_cast<int32_t>(offsetof(FadeScreen_tC8A4EBDDB57B0BD4D2AF72FCE4EB2A680D5A02D6, ___fadeColor_6)),static_cast<int32_t>(offsetof(FadeScreen_tC8A4EBDDB57B0BD4D2AF72FCE4EB2A680D5A02D6, ___rend_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4603[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4603[2] = 
+{
+	static_cast<int32_t>(offsetof(OpenCanvas_t34CDEF131FB0B8821B28F9DBEE4E67618DFC947E, ___GameObject_4)),static_cast<int32_t>(offsetof(OpenCanvas_t34CDEF131FB0B8821B28F9DBEE4E67618DFC947E, ___value_5)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4604[4] = 
 {
 	static_cast<int32_t>(offsetof(U3CGoToSceneRoutineU3Ed__2_t2013BA6FD9B519BD543ABC53010B925FFEA797E2, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CGoToSceneRoutineU3Ed__2_t2013BA6FD9B519BD543ABC53010B925FFEA797E2, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CGoToSceneRoutineU3Ed__2_t2013BA6FD9B519BD543ABC53010B925FFEA797E2, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CGoToSceneRoutineU3Ed__2_t2013BA6FD9B519BD543ABC53010B925FFEA797E2, ___sceneIndex_3)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4604[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4605[1] = 
 {
 	static_cast<int32_t>(offsetof(SceneTransitionManager_tD01F6613CD559F2FDC031F89912659FB201F5011, ___fadeScreen_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4605[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4606[4] = 
 {
 	static_cast<int32_t>(offsetof(XRPlatformControllerSetup_tF3241056E2DD26648305E205151EB2ACF3333628, ___m_LeftController_4)),static_cast<int32_t>(offsetof(XRPlatformControllerSetup_tF3241056E2DD26648305E205151EB2ACF3333628, ___m_RightController_5)),static_cast<int32_t>(offsetof(XRPlatformControllerSetup_tF3241056E2DD26648305E205151EB2ACF3333628, ___m_LeftControllerOculusPackage_6)),static_cast<int32_t>(offsetof(XRPlatformControllerSetup_tF3241056E2DD26648305E205151EB2ACF3333628, ___m_RightControllerOculusPackage_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4607[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4608[3] = 
 {
 	static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___IsTextualNodeBitmap_0)),static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___CanReadContentAsBitmap_1)),static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___HasValueBitmap_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4610[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4611[4] = 
 {
 	0,static_cast<int32_t>(offsetof(ConformanceAutomationFeature_t0C2E5D391DBCC81F1B86F2D7E34719B7D292BFF7_StaticFields, ___xrInstance_17)),static_cast<int32_t>(offsetof(ConformanceAutomationFeature_t0C2E5D391DBCC81F1B86F2D7E34719B7D292BFF7_StaticFields, ___xrSession_18)),0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4612[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4613[6] = 
 {
 	static_cast<int32_t>(offsetof(RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA_StaticFields, ___kEditorToPlayerRequestDebuggerOutput_16)),static_cast<int32_t>(offsetof(RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA_StaticFields, ___kPlayerToEditorSendDebuggerOutput_17)),static_cast<int32_t>(offsetof(RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA, ___cacheSize_18)),static_cast<int32_t>(offsetof(RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA, ___perThreadCacheSize_19)),static_cast<int32_t>(offsetof(RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA, ___lutOffset_20)),0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4616[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4617[4] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4624[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4625[3] = 
 {
 	0,static_cast<int32_t>(offsetof(OculusQuestFeature_tF5FA7128BB36F546D5CF7094A93B812DAC667810, ___targetQuest_17)),static_cast<int32_t>(offsetof(OculusQuestFeature_tF5FA7128BB36F546D5CF7094A93B812DAC667810, ___targetQuest2_18)),};
