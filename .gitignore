@@ -1,0 +1,4 @@
+*.DS_Store
+LiveArt_Unity/Library
+LiveArt_Unity/UserSettings
+LiveArt_Unity/Logs
