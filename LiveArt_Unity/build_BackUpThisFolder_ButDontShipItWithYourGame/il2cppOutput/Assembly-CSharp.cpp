@@ -106,6 +106,8 @@ struct XRManagerSettings_t7923B66EB3FEE58C7B9F85FF61749B774D3B9E52;
 struct XRPlatformControllerSetup_tF3241056E2DD26648305E205151EB2ACF3333628;
 // audioButtonScript
 struct audioButtonScript_tFA5D7A5C08897D376BD0A54BC531D1474FE690C9;
+// musicButtonScript
+struct musicButtonScript_t5DFE3F09D2CD676CACD7E09F92A4DA83884C9247;
 // FadeScreen/<FadeRoutine>d__8
 struct U3CFadeRoutineU3Ed__8_tFCA3DBBF4F76A8D591389A04539641CED2BB6B39;
 // SceneTransitionManager/<GoToSceneRoutine>d__2
@@ -125,6 +127,7 @@ IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B35
 IL2CPP_EXTERN_C RuntimeClass* XRGeneralSettings_t8F8D096944606B5AD845D010706BF7094ADEC8CE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral47A3FAF17D89549FD0F0ECA7370B81F7C80DFCDE;
 IL2CPP_EXTERN_C String_t* _stringLiteral5FA69ACEBC137DDC23E7A89503D2DF6BEE5186D3;
+IL2CPP_EXTERN_C String_t* _stringLiteral9D6BA8D36FA648F5F7EC00E75E4E3CB92589DA2E;
 IL2CPP_EXTERN_C String_t* _stringLiteralB4FE860573CD6E03F0D1A4378C1F330A3820D8C9;
 IL2CPP_EXTERN_C String_t* _stringLiteralB85E78C75EF1A6F636689BD88A9D6C2A3B2B0A1B;
 IL2CPP_EXTERN_C String_t* _stringLiteralB87CC029578F0C6F88E01A8257EBF1ED95223CEC;
@@ -724,6 +727,11 @@ struct audioButtonScript_tFA5D7A5C08897D376BD0A54BC531D1474FE690C9  : public Mon
 	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___textmeshPro_5;
 };
 
+// musicButtonScript
+struct musicButtonScript_t5DFE3F09D2CD676CACD7E09F92A4DA83884C9247  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
 // <Module>
 
 // <Module>
@@ -930,6 +938,10 @@ struct XRGeneralSettings_t8F8D096944606B5AD845D010706BF7094ADEC8CE_StaticFields
 // audioButtonScript
 
 // audioButtonScript
+
+// musicButtonScript
+
+// musicButtonScript
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -1524,6 +1536,96 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFadeRoutineU3Ed__8_System_C
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
 		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void musicButtonScript::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void musicButtonScript_Start_m7751433C2B55177EDA024CF99C68A5991B5EE394 (musicButtonScript_t5DFE3F09D2CD676CACD7E09F92A4DA83884C9247* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9D6BA8D36FA648F5F7EC00E75E4E3CB92589DA2E);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// int audio = PlayerPrefs.GetInt("Music", 1);
+		int32_t L_0;
+		L_0 = PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D(_stringLiteral9D6BA8D36FA648F5F7EC00E75E4E3CB92589DA2E, 1, NULL);
+		V_0 = L_0;
+		// PlayerPrefs.SetInt("Music", audio);
+		int32_t L_1 = V_0;
+		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral9D6BA8D36FA648F5F7EC00E75E4E3CB92589DA2E, L_1, NULL);
+		// PlayerPrefs.Save();
+		PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE(NULL);
+		// }
+		return;
+	}
+}
+// System.Void musicButtonScript::toggleMusic()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void musicButtonScript_toggleMusic_m09CC1A292054AF0FC201D9E53950F0B1CB06C89E (musicButtonScript_t5DFE3F09D2CD676CACD7E09F92A4DA83884C9247* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9D6BA8D36FA648F5F7EC00E75E4E3CB92589DA2E);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// int music = PlayerPrefs.GetInt("Music", 0);
+		int32_t L_0;
+		L_0 = PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D(_stringLiteral9D6BA8D36FA648F5F7EC00E75E4E3CB92589DA2E, 0, NULL);
+		V_0 = L_0;
+		// if (music == 0)
+		int32_t L_1 = V_0;
+		if (L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		// PlayerPrefs.SetInt("Music", 1);
+		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral9D6BA8D36FA648F5F7EC00E75E4E3CB92589DA2E, 1, NULL);
+		goto IL_002b;
+	}
+
+IL_001c:
+	{
+		// else if (music == 1) PlayerPrefs.SetInt("Music", 0);
+		int32_t L_2 = V_0;
+		if ((!(((uint32_t)L_2) == ((uint32_t)1))))
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		// else if (music == 1) PlayerPrefs.SetInt("Music", 0);
+		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral9D6BA8D36FA648F5F7EC00E75E4E3CB92589DA2E, 0, NULL);
+	}
+
+IL_002b:
+	{
+		// PlayerPrefs.Save();
+		PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE(NULL);
+		// }
+		return;
+	}
+}
+// System.Void musicButtonScript::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void musicButtonScript__ctor_mA0A4B91A077E6F86A9B042D8C8CFB208B8E94DC2 (musicButtonScript_t5DFE3F09D2CD676CACD7E09F92A4DA83884C9247* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
 	}
 }
 #ifdef __clang__

@@ -50,33 +50,39 @@ extern void U3CFadeRoutineU3Ed__8_System_Collections_Generic_IEnumeratorU3CSyste
 extern void U3CFadeRoutineU3Ed__8_System_Collections_IEnumerator_Reset_m76FC45217A0DFA438D090EBFAEB2BD8F12A989AB (void);
 // 0x00000013 System.Object FadeScreen/<FadeRoutine>d__8::System.Collections.IEnumerator.get_Current()
 extern void U3CFadeRoutineU3Ed__8_System_Collections_IEnumerator_get_Current_m3EA901320E300AFAB49F25F6C9A406E92EB087EC (void);
-// 0x00000014 System.Void OpenCanvas::Enable()
+// 0x00000014 System.Void musicButtonScript::Start()
+extern void musicButtonScript_Start_m7751433C2B55177EDA024CF99C68A5991B5EE394 (void);
+// 0x00000015 System.Void musicButtonScript::toggleMusic()
+extern void musicButtonScript_toggleMusic_m09CC1A292054AF0FC201D9E53950F0B1CB06C89E (void);
+// 0x00000016 System.Void musicButtonScript::.ctor()
+extern void musicButtonScript__ctor_mA0A4B91A077E6F86A9B042D8C8CFB208B8E94DC2 (void);
+// 0x00000017 System.Void OpenCanvas::Enable()
 extern void OpenCanvas_Enable_m290E4C61F02BD9FD807848D93EE323604D8AA1FF (void);
-// 0x00000015 System.Void OpenCanvas::.ctor()
+// 0x00000018 System.Void OpenCanvas::.ctor()
 extern void OpenCanvas__ctor_m3B1622E8D55E8B0950F7E616A92CC3910FF50C59 (void);
-// 0x00000016 System.Void SceneTransitionManager::GoToScene(System.Int32)
+// 0x00000019 System.Void SceneTransitionManager::GoToScene(System.Int32)
 extern void SceneTransitionManager_GoToScene_mBA834D088A593F841694A381EE3ABDA75DD70367 (void);
-// 0x00000017 System.Collections.IEnumerator SceneTransitionManager::GoToSceneRoutine(System.Int32)
+// 0x0000001A System.Collections.IEnumerator SceneTransitionManager::GoToSceneRoutine(System.Int32)
 extern void SceneTransitionManager_GoToSceneRoutine_m3EFF6201B39C3498B404507370B0A6C7B299BA3E (void);
-// 0x00000018 System.Void SceneTransitionManager::.ctor()
+// 0x0000001B System.Void SceneTransitionManager::.ctor()
 extern void SceneTransitionManager__ctor_mC1CE6821C2F16276186084D740072667E81DDD46 (void);
-// 0x00000019 System.Void SceneTransitionManager/<GoToSceneRoutine>d__2::.ctor(System.Int32)
+// 0x0000001C System.Void SceneTransitionManager/<GoToSceneRoutine>d__2::.ctor(System.Int32)
 extern void U3CGoToSceneRoutineU3Ed__2__ctor_mD5A8B587906C0B17F61D7DA150C1773D23C1CEAA (void);
-// 0x0000001A System.Void SceneTransitionManager/<GoToSceneRoutine>d__2::System.IDisposable.Dispose()
+// 0x0000001D System.Void SceneTransitionManager/<GoToSceneRoutine>d__2::System.IDisposable.Dispose()
 extern void U3CGoToSceneRoutineU3Ed__2_System_IDisposable_Dispose_m22B87A079DF12B6DFA13D82ABF56224AE0BABF40 (void);
-// 0x0000001B System.Boolean SceneTransitionManager/<GoToSceneRoutine>d__2::MoveNext()
+// 0x0000001E System.Boolean SceneTransitionManager/<GoToSceneRoutine>d__2::MoveNext()
 extern void U3CGoToSceneRoutineU3Ed__2_MoveNext_mCE8A26ED3493D254E0458742ED96394AAC2ACA9B (void);
-// 0x0000001C System.Object SceneTransitionManager/<GoToSceneRoutine>d__2::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000001F System.Object SceneTransitionManager/<GoToSceneRoutine>d__2::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CGoToSceneRoutineU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m40B09FAD5B62B95F09ED159565DB3DCCCD01C27E (void);
-// 0x0000001D System.Void SceneTransitionManager/<GoToSceneRoutine>d__2::System.Collections.IEnumerator.Reset()
+// 0x00000020 System.Void SceneTransitionManager/<GoToSceneRoutine>d__2::System.Collections.IEnumerator.Reset()
 extern void U3CGoToSceneRoutineU3Ed__2_System_Collections_IEnumerator_Reset_mC72E614DF7F5C49A01663F772789DAD6AAECA1DE (void);
-// 0x0000001E System.Object SceneTransitionManager/<GoToSceneRoutine>d__2::System.Collections.IEnumerator.get_Current()
+// 0x00000021 System.Object SceneTransitionManager/<GoToSceneRoutine>d__2::System.Collections.IEnumerator.get_Current()
 extern void U3CGoToSceneRoutineU3Ed__2_System_Collections_IEnumerator_get_Current_m014B33C4FF8F084242D6497AAB6AA46902F52BDC (void);
-// 0x0000001F System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
+// 0x00000022 System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
 extern void XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF (void);
-// 0x00000020 System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
+// 0x00000023 System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
 extern void XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E (void);
-static Il2CppMethodPointer s_methodPointers[32] = 
+static Il2CppMethodPointer s_methodPointers[35] = 
 {
 	AnimateHandOnInput_Start_mDFB567101BCB7DCE653AE7E320015E93D3609592,
 	AnimateHandOnInput_Update_mC03CF4BE3804324BBC246D79B71F83B1A8848CDD,
@@ -97,6 +103,9 @@ static Il2CppMethodPointer s_methodPointers[32] =
 	U3CFadeRoutineU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m630BB1A0AFF35FEDF5237718D92BCFD6AD9A1FB9,
 	U3CFadeRoutineU3Ed__8_System_Collections_IEnumerator_Reset_m76FC45217A0DFA438D090EBFAEB2BD8F12A989AB,
 	U3CFadeRoutineU3Ed__8_System_Collections_IEnumerator_get_Current_m3EA901320E300AFAB49F25F6C9A406E92EB087EC,
+	musicButtonScript_Start_m7751433C2B55177EDA024CF99C68A5991B5EE394,
+	musicButtonScript_toggleMusic_m09CC1A292054AF0FC201D9E53950F0B1CB06C89E,
+	musicButtonScript__ctor_mA0A4B91A077E6F86A9B042D8C8CFB208B8E94DC2,
 	OpenCanvas_Enable_m290E4C61F02BD9FD807848D93EE323604D8AA1FF,
 	OpenCanvas__ctor_m3B1622E8D55E8B0950F7E616A92CC3910FF50C59,
 	SceneTransitionManager_GoToScene_mBA834D088A593F841694A381EE3ABDA75DD70367,
@@ -111,7 +120,7 @@ static Il2CppMethodPointer s_methodPointers[32] =
 	XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF,
 	XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E,
 };
-static const int32_t s_InvokerIndices[32] = 
+static const int32_t s_InvokerIndices[35] = 
 {
 	4741,
 	4741,
@@ -134,6 +143,9 @@ static const int32_t s_InvokerIndices[32] =
 	4636,
 	4741,
 	4741,
+	4741,
+	4741,
+	4741,
 	3732,
 	3302,
 	4741,
@@ -150,7 +162,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	32,
+	35,
 	s_methodPointers,
 	0,
 	NULL,

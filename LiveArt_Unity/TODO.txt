@@ -1,0 +1,12 @@
+Scena 1
+- schermata Credits
+- Far funzionare bene la tastiera (microfono incluso)
+- Impostazioni (audio-musica)
+- Search bar
+- Suggest canvas
+Scena 2
+- ottenere un buon numero di foto 360
+- menu mano sinistra
+- menu principale
+- teleport tra i punti
+- canvas delle interpretazioni
