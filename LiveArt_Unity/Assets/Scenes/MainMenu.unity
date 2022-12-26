@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7831825}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2101667847}
+        m_TargetAssemblyTypeName: musicButtonScript, Assembly-CSharp
+        m_MethodName: toggleMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7831825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4959,7 +4971,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1535614253}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2101667846}
+        m_TargetAssemblyTypeName: audioButtonScript, Assembly-CSharp
+        m_MethodName: toggleAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1535614253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5784,6 +5808,8 @@ GameObject:
   - component: {fileID: 2101667844}
   - component: {fileID: 2101667843}
   - component: {fileID: 2101667845}
+  - component: {fileID: 2101667846}
+  - component: {fileID: 2101667847}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -5849,6 +5875,31 @@ MonoBehaviour:
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
   m_CancelButton: Cancel
+--- !u!114 &2101667846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101667841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8310fca153ae941ddaf1c86cf6b6aa00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textObject: {fileID: 0}
+--- !u!114 &2101667847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101667841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0a04076d88a43b48854722359d53bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6626651615429528387
 PrefabInstance:
   m_ObjectHideFlags: 0
