@@ -1,12 +1,12 @@
 Scena 1
-- schermata Credits
-- Far funzionare bene la tastiera (microfono incluso)
-- Impostazioni (audio-musica)
-- Search bar
+- schermata Credits (lista dei nostri nomi)
+- schermata settings (toggle buttons e PlayerPrefs)
+- Impostare voice to text (Voice SDK https://www.youtube.com/watch?v=Dm6bCZL8BBI&ab_channel=NestedMango)
+- Search bar e scroll view (https://www.youtube.com/watch?v=Q-G-W93jhYc&ab_channel=Tarodev)
 - Suggest canvas
 Scena 2
 - ottenere un buon numero di foto 360
-- menu mano sinistra
-- menu principale
-- teleport tra i punti
+- menu mano sinistra (shortcut per le stanze con una scrollview?)
+- menu principale (back e impostazioni)
+- teleport tra i punti (https://www.youtube.com/watch?v=9pVdiBogmew&t=143s&ab_channel=ValemTutorials)
 - canvas delle interpretazioni
