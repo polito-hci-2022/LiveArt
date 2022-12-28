@@ -10,3 +10,5 @@ Scena 2
 - menu principale (back e impostazioni)
 - teleport tra i punti (https://www.youtube.com/watch?v=9pVdiBogmew&t=143s&ab_channel=ValemTutorials)
 - canvas delle interpretazioni
+
+

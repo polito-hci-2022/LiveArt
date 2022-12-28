@@ -9,7 +9,7 @@ public class musicButtonScript : MonoBehaviour
     void Start()
     {
       
-        int audio = PlayerPrefs.GetInt("Music", 1);
+        int audio = PlayerPrefs.GetInt("Music", 0);
 
         PlayerPrefs.SetInt("Music", audio);
         PlayerPrefs.Save();
