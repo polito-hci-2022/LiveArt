@@ -10,17 +10,15 @@ public class ModalitaMancini : MonoBehaviour
 
     public GameObject rightHandRay;
 
-    public void Start()
+    public void Awake()
     {
         mancini = PlayerPrefs.GetInt("Mancini", 0);
         if (mancini == 1)
         {
-            PlayerPrefs.SetInt("Mancini", 0);
             attivaMancini();
         }
         if (mancini == 0)
         {
-            PlayerPrefs.SetInt("Mancini", 1);
             disattivaMancini();
         }
     }

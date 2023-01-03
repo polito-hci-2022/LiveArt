@@ -14,7 +14,7 @@ public class GameMenuManager : MonoBehaviour
     {
         if (showButton.action.WasPressedThisFrame())
         {
-            gameMenuObject.SetActive(!gameMenuObject.active);
+            gameMenuObject.SetActive(!gameMenuObject.activeSelf);
         }
     }
 }

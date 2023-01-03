@@ -14,6 +14,12 @@ public class audioMusicManager : MonoBehaviour
     void Start()
     {
         music = PlayerPrefs.GetInt("Music", 1);
+        if (music == 0)
+            SetStatus(false);
+        else if (music == 1)
+        {
+            SetStatus(true);
+        }
     }
 
     public void toggleMusic()
@@ -31,7 +37,7 @@ public class audioMusicManager : MonoBehaviour
         }
     }
 
-    void SetStatus(bool status)
+    public void SetStatus(bool status)
     {
         if (status)
             mySource.Play();
