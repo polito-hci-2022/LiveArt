@@ -8,7 +8,7 @@ public class ToggleMusicStart : MonoBehaviour
     Toggle myToggle;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         myToggle = GetComponent<Toggle>();
         int music = PlayerPrefs.GetInt("Music");

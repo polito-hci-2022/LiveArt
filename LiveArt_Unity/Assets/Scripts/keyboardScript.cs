@@ -32,27 +32,6 @@ public class keyboardScript : MonoBehaviour
     {
     }
 
-    public void IncPos()
-    {
-        if (pos < length)
-        {
-            actualText = actualText.Remove(pos);
-            pos++;
-            actualText = actualText.Insert(pos, "|");
-            textmeshPro.SetText (actualText);
-        }
-    }
-
-    public void DecPos()
-    {
-        if (pos > 0)
-        {
-            actualText = actualText.Remove(pos);
-            actualText = actualText.Insert(pos, "|");
-            pos--;
-            textmeshPro.SetText (actualText);
-        }
-    }
 
     public void Back()
     {

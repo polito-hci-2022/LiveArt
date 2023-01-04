@@ -6,20 +6,12 @@ public class audioMusicManager : MonoBehaviour
 {
     public AudioSource mySource;
 
-    private int audio;
-
     private int music;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         music = PlayerPrefs.GetInt("Music", 1);
-        if (music == 0)
-            SetStatus(false);
-        else if (music == 1)
-        {
-            SetStatus(true);
-        }
+        SetStatus (music);
     }
 
     public void toggleMusic()
@@ -28,18 +20,18 @@ public class audioMusicManager : MonoBehaviour
         if (music == 1)
         {
             PlayerPrefs.SetInt("Music", 0);
-            SetStatus(false);
+            SetStatus(0);
         }
         else if (music == 0)
         {
             PlayerPrefs.SetInt("Music", 1);
-            SetStatus(true);
+            SetStatus(1);
         }
     }
 
-    public void SetStatus(bool status)
+    void SetStatus(int status)
     {
-        if (status)
+        if (status == 1)
             mySource.Play();
         else
             mySource.Stop();
