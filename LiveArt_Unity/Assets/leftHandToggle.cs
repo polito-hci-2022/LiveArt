@@ -15,6 +15,9 @@ public class leftHandToggle : MonoBehaviour
         myToggle = GetComponent<Toggle>();
 
         mancini = PlayerPrefs.GetInt("Mancini", 0);
+
+        Debug.Log("LeftHandMode = " + (mancini == 1));
+
         if (mancini == 1)
             myToggle.SetIsOnWithoutNotify(true);
         else if (mancini == 0) myToggle.SetIsOnWithoutNotify(false);

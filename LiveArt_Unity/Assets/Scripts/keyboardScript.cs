@@ -17,32 +17,33 @@ public class keyboardScript : MonoBehaviour
 
     void Awake()
     {
-        //textmeshPro.SetText (actualText);
+        textmeshPro.SetText (actualText);
         coroutine = WaitAndPrint();
         StartCoroutine (coroutine);
     }
 
     public void AppendChar(string value)
     {
+        StopCoroutine (coroutine);
         value = value.ToUpper();
-        Debug.Log("value= " + value + " pos= " + pos);
+
+        //Debug.Log("value= " + value + " pos= " + pos);
         actualText = actualText.Insert(pos, value);
         length++;
         pos++;
-        //textmeshPro.SetText (actualText);
-    }
-
-    public void Enter()
-    {
+        textmeshPro.SetText (actualText);
+        StartCoroutine (coroutine);
     }
 
     public void Back()
     {
         if (length > 0)
         {
+            StopCoroutine (coroutine);
             pos--;
             actualText = actualText.Remove(pos);
-            //textmeshPro.SetText (actualText);
+            textmeshPro.SetText (actualText);
+            StartCoroutine (coroutine);
         }
     }
 
@@ -53,7 +54,15 @@ public class keyboardScript : MonoBehaviour
             yield return new WaitForSeconds(1.0f);
             textmeshPro.SetText (actualText);
             yield return new WaitForSeconds(1.0f);
-            textmeshPro.SetText (actualText+"|");
+            textmeshPro.SetText(actualText + "|");
         }
+    }
+
+    public void Enter()
+    {
+        StopCoroutine (coroutine);
+        actualText = "";
+        pos = 0;
+        length = 0;
     }
 }
