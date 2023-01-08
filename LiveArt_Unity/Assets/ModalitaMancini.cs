@@ -13,6 +13,7 @@ public class ModalitaMancini : MonoBehaviour
     public void Awake()
     {
         mancini = PlayerPrefs.GetInt("Mancini", 0);
+        Debug.Log("Lefthandmode (Event system)= " + (mancini == 1));
         if (mancini == 1)
         {
             attivaMancini();
@@ -25,17 +26,20 @@ public class ModalitaMancini : MonoBehaviour
 
     public void toggleMancini()
     {
-        mancini = PlayerPrefs.GetInt("Mancini", 0);
-
+        //mancini = PlayerPrefs.GetInt("Mancini", 0);
         if (mancini == 1)
         {
-            PlayerPrefs.SetInt("Mancini", 0);
-            attivaMancini();
+            Debug.Log("LeftHand: 1 -> 0");
+            mancini = 0;
+            PlayerPrefs.SetInt("Mancini", mancini);
+            disattivaMancini();
         }
         if (mancini == 0)
         {
-            PlayerPrefs.SetInt("Mancini", 1);
-            disattivaMancini();
+            Debug.Log("LeftHand: 0 -> 1");
+            mancini = 1;
+            PlayerPrefs.SetInt("Mancini", mancini);
+            attivaMancini();
         }
     }
 
