@@ -10,13 +10,16 @@ public class leftHandToggle : MonoBehaviour
     Toggle myToggle;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         myToggle = GetComponent<Toggle>();
 
         mancini = PlayerPrefs.GetInt("Mancini", 0);
+
+        Debug.Log("LeftHandMode = " + (mancini == 1));
+
         if (mancini == 1)
-            myToggle.isOn = true;
-        else if (mancini == 0) myToggle.isOn = false;
+            myToggle.SetIsOnWithoutNotify(true);
+        else if (mancini == 0) myToggle.SetIsOnWithoutNotify(false);
     }
 }

@@ -12,6 +12,14 @@ public class TransportScript : MonoBehaviour
     }
 
     public void TeleportRoom2(){
-        player.transform.position = new Vector3(-250, 0, 0);
+        player.transform.position = new Vector3(250, 0, 0);
+    }
+
+    public void TeleportRoom3(){
+        player.transform.position = new Vector3(500, 0, 0);
+    }
+
+    public void TeleportRoom4(){
+        player.transform.position = new Vector3(750, 0, 0);
     }
 }

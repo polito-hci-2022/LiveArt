@@ -6,13 +6,16 @@ using UnityEngine;
 public class debugMusic : MonoBehaviour
 {
     int music;
-    TextMeshPro textmeshPro;
+    TMP_Text textmeshPro;
     // Start is called before the first frame update
     void Start()
     {
         
-     textmeshPro = GetComponent<TextMeshPro>();
+     textmeshPro = GetComponent<TMP_Text>();
          music = PlayerPrefs.GetInt("Music");
+
+         Debug.Log(music);
+         Debug.Log(textmeshPro);
     }
 
     // Update is called once per frame
