@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ModalitaMancini : MonoBehaviour
 {
-    int mancini;
+    /* int mancini;
 
     public GameObject leftHandRay;
 
@@ -53,5 +53,5 @@ public class ModalitaMancini : MonoBehaviour
     {
         leftHandRay.SetActive(false);
         rightHandRay.SetActive(true);
-    }
+    } */
 }
