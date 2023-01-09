@@ -11,29 +11,20 @@ public class audioMusicManager : MonoBehaviour
     void Awake()
     {
         music = PlayerPrefs.GetInt("Music", 1);
-        SetStatus (music);
-    }
-
-    public void toggleMusic()
-    {
-        music = PlayerPrefs.GetInt("Music");
         if (music == 1)
-        {
-            PlayerPrefs.SetInt("Music", 0);
-            SetStatus(0);
-        }
-        else if (music == 0)
-        {
-            PlayerPrefs.SetInt("Music", 1);
-            SetStatus(1);
-        }
+            Play();
+        else if (music == 0) Stop();
     }
 
-    void SetStatus(int status)
+    public void Play()
     {
-        if (status == 1)
-            mySource.Play();
-        else
-            mySource.Stop();
+        PlayerPrefs.SetInt("Music", 1);
+        mySource.Play();
+    }
+
+    public void Stop()
+    {
+        PlayerPrefs.SetInt("Music", 0);
+        mySource.Stop();
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ModalitaMancini : MonoBehaviour
 {
-    /* int mancini;
+    int mancini;
 
     public GameObject leftHandRay;
 
@@ -13,45 +13,28 @@ public class ModalitaMancini : MonoBehaviour
     public void Awake()
     {
         mancini = PlayerPrefs.GetInt("Mancini", 0);
-        Debug.Log("Lefthandmode (Event system)= " + (mancini == 1));
+        Debug.Log("Lefthandmode (Event system)= " + mancini);
         if (mancini == 1)
         {
             attivaMancini();
         }
-        if (mancini == 0)
+        else if (mancini == 0)
         {
             disattivaMancini();
         }
     }
 
-    public void toggleMancini()
+    public void attivaMancini()
     {
-        //mancini = PlayerPrefs.GetInt("Mancini", 0);
-        if (mancini == 1)
-        {
-            Debug.Log("LeftHand: 1 -> 0");
-            mancini = 0;
-            PlayerPrefs.SetInt("Mancini", mancini);
-            disattivaMancini();
-        }
-        if (mancini == 0)
-        {
-            Debug.Log("LeftHand: 0 -> 1");
-            mancini = 1;
-            PlayerPrefs.SetInt("Mancini", mancini);
-            attivaMancini();
-        }
-    }
-
-    void attivaMancini()
-    {
+        PlayerPrefs.SetInt("Mancini", 1);
         leftHandRay.SetActive(true);
         rightHandRay.SetActive(false);
     }
 
-    void disattivaMancini()
+    public void disattivaMancini()
     {
+        PlayerPrefs.SetInt("Mancini", 0);
         leftHandRay.SetActive(false);
         rightHandRay.SetActive(true);
-    } */
+    }
 }
