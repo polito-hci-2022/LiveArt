@@ -10,26 +10,33 @@ public class CanvasScript : MonoBehaviour
 
     public GameObject SuggestCanvas;
 
-    /* private bool creditsValue = false;
-
-    private bool settingsValue = false;
-
-    private bool suggestValue = false; */
-    public void toggleCredits()
+    public void openCredits()
     {
-        CreditsCanvas.SetActive(!CreditsCanvas.activeSelf);
-        //creditsValue = !creditsValue;
+        CreditsCanvas.SetActive(true);
     }
 
-    public void toggleSettings()
+    public void closeCredits()
     {
-        SettingsCanvas.SetActive(!SettingsCanvas.activeSelf);
-        //settingsValue = !settingsValue;
+        CreditsCanvas.SetActive(false);
     }
 
-    public void toggleSuggest()
+    public void openSettings()
     {
-        SuggestCanvas.SetActive(!SuggestCanvas.activeSelf);
-        //suggestValue = !suggestValue;
+        SettingsCanvas.SetActive(true);
+    }
+
+    public void closeSettings()
+    {
+        SettingsCanvas.SetActive(false);
+    }
+
+    public void openSuggest()
+    {
+        SuggestCanvas.SetActive(true);
+    }
+
+    public void closeSuggest()
+    {
+        SuggestCanvas.SetActive(false);
     }
 }
