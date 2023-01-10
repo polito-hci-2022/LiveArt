@@ -12,6 +12,9 @@ public class CanvasScript : MonoBehaviour
 
     public GameObject SuggestCanvas;
 
+    public GameObject ErrorCanvas;
+
+
     public void openCredits()
     {
         MainCanvas.SetActive(false);
@@ -34,11 +37,13 @@ public class CanvasScript : MonoBehaviour
     {
         SettingsCanvas.SetActive(false);
         MainCanvas.SetActive(true);
+        
     }
 
     public void openSuggest()
     {
         MainCanvas.SetActive(false);
+        ErrorCanvas.SetActive(false);
         SuggestCanvas.SetActive(true);
     }
 
@@ -46,5 +51,14 @@ public class CanvasScript : MonoBehaviour
     {
         SuggestCanvas.SetActive(false);
         MainCanvas.SetActive(true);
+        //attiva reattività della main canvas
+
     }
+
+    public void CloseError(){
+        ErrorCanvas.SetActive(false);
+        //attiva reattività della main canvas
+    }
+
+
 }
