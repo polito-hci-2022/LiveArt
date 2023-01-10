@@ -35,11 +35,12 @@ public class SearchScript : MonoBehaviour
         int searchLength = SearchText.Length;
 
         int activElements = 0;
-
-        foreach (GameObject ele in Element)
+    
+        if (searchLength > 0)
         {
-            if (searchLength > 0)
+            foreach (GameObject ele in Element)
             {
+            
                 if (
                     ele
                         .transform
@@ -67,12 +68,23 @@ public class SearchScript : MonoBehaviour
                     ele.SetActive(false);
                 }
 
-                if (activElements == 0)
+               
+            }
+            
+      
+             if (activElements == 0)
                 {
                     ErrorSearchMessage.SetActive(true);
                     //disabilità interagibilità della main canvas
-                }
-            }
+
+                    //la ricerca non è andata a buon fine quindi risetto tutto ad active
+                      foreach (GameObject ele in Element){
+                        ele.SetActive(true);
+                      }
+        
+
+                } 
+                
         }
     }
 }
