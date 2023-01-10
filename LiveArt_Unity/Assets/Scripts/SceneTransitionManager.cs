@@ -18,4 +18,9 @@ public class SceneTransitionManager : MonoBehaviour
 
         SceneManager.LoadScene(sceneIndex);
     }
+
+    public void SetWoAIndex(int woaIndex){
+        PlayerPrefs.SetInt("WOA", woaIndex);
+    }
+
 }

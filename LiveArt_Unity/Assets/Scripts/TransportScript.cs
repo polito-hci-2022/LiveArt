@@ -10,7 +10,12 @@ public class TransportScript : MonoBehaviour
 
     public void TeleportRoom1()
     {
-        StartCoroutine(TeleportTo(750, 0, 0));
+        StartCoroutine(TeleportTo(0, 0, 0));
+    }
+
+     public void TeleportRoom1_1()
+    {
+        StartCoroutine(TeleportTo(0, 250, 0));
     }
 
     public void TeleportRoom2()

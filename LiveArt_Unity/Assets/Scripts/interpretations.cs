@@ -10,6 +10,7 @@ public class interpretations : MonoBehaviour
     public GameObject MacronInt;
     public GameObject SgarbiInt;
     public GameObject OlivaInt;
+
     // Start is called before the first frame update
     public void LoadModernInterpretation()
     {
