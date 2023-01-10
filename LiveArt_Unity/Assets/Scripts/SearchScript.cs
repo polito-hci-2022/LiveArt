@@ -4,6 +4,7 @@ public class SearchScript : MonoBehaviour
 {
 
 public GameObject ContentHolder;
+public GameObject ErrorSearchMessage;
 public GameObject[] Element;
 public GameObject SearchBar;
 public int totalElements;
@@ -28,21 +29,37 @@ public int totalElements;
         string SearchText= SearchBar.GetComponent<TMP_InputField>().text;
         int searchLength= SearchText.Length;
 
-        int searchedEl=0;
-        foreach(GameObject ele in Element){
-            searchedEl+=1;
-
+        int activElements=0;
+      
+        foreach(GameObject ele in Element){        
+        if(searchLength>0){
             if(ele.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text.Length >=searchLength)
             {
                 if (SearchText.ToLower()==ele.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text.Substring(0,searchLength))
             {
                 ele.SetActive(true);
+                activElements+=1;
             }
             
                 ele.SetActive(false);
             }
 
+            if( activElements==0){
+                ErrorSearchMessage.SetActive(true);
+            }
         }
+
+
+
+
+
+
+
+        }
+
+
+
+
 
 
     }
