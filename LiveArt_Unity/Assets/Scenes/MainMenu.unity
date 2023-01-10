@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.12107852, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1598,7 +1598,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2101667852}
         m_TargetAssemblyTypeName: readWriteJSONSuggest, Assembly-CSharp
-        m_MethodName: test
+        m_MethodName: AggiungiWoA
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3716,7 +3716,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
@@ -7353,7 +7353,6 @@ MonoBehaviour:
   titleField: {fileID: 58010753}
   authorField: {fileID: 1456146866}
   descriptionField: {fileID: 161602381}
-  keyboardField: {fileID: 2115459342}
   keyboard: {fileID: 2072113907}
 --- !u!4 &1129042166
 Transform:
@@ -7813,7 +7812,7 @@ PrefabInstance:
         type: 3}
       propertyPath: textmeshPro
       value: 
-      objectReference: {fileID: 2115459342}
+      objectReference: {fileID: 0}
     - target: {fileID: 8816507504624233190, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_Pivot.x
@@ -7932,7 +7931,7 @@ PrefabInstance:
     - target: {fileID: 8816507504738476731, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504759520411, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
@@ -12162,6 +12161,7 @@ GameObject:
   - component: {fileID: 1947353507}
   - component: {fileID: 1947353506}
   - component: {fileID: 1947353509}
+  - component: {fileID: 1947353510}
   m_Layer: 5
   m_Name: MainMenuCanvas
   m_TagString: Untagged
@@ -12261,6 +12261,23 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
+--- !u!114 &1947353510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947353504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &1950575911
 GameObject:
   m_ObjectHideFlags: 0
@@ -13141,21 +13158,9 @@ MonoBehaviour:
   prefabContent: {fileID: 5853587595924378358, guid: 2a32cc1b9b829c64c8a959427ef9f852,
     type: 3}
   parent: {fileID: 447694121}
-  TitleInput: {fileID: 0}
-  AuthorInput: {fileID: 0}
-  DescripitonInput: {fileID: 0}
---- !u!114 &2115459342 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8816507505430336222, guid: 2eb832d3bdc9a3744bb53d4545c24985,
-    type: 3}
-  m_PrefabInstance: {fileID: 1142982503}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  TitleInput: {fileID: 58010753}
+  AuthorInput: {fileID: 1456146866}
+  DescripitonInput: {fileID: 161602381}
 --- !u!1 &2120559951
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,13 +14,9 @@ public class keyboardManagerScript : MonoBehaviour
 
     public InputField descriptionField;
 
-    public TMP_Text keyboardField;
-
     public GameObject keyboard;
 
     string mode;
-
-    private IEnumerator coroutine;
 
     private string actualText;
 
@@ -51,7 +47,6 @@ public class keyboardManagerScript : MonoBehaviour
     void show(string givenMode)
     {
         mode = givenMode;
-        Debug.Log("open " + mode);
         if (keyboard.activeSelf == false) keyboard.SetActive(true);
         switch (mode)
         {
@@ -68,95 +63,66 @@ public class keyboardManagerScript : MonoBehaviour
                 actualText = descriptionField.text;
                 break;
         }
-
-        keyboardField.SetText (actualText);
-
         pos = actualText.Length;
         length = pos;
-
-        //coroutine = WaitAndPrint();
-       // StartCoroutine (coroutine);
-    }
-
-    private IEnumerator WaitAndPrint()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(1.0f);
-            keyboardField.SetText (actualText);
-            yield return new WaitForSeconds(1.0f);
-            keyboardField.SetText(actualText + "|");
-        }
     }
 
     public void hide()
     {
-       // StopCoroutine (coroutine);
-
-        Debug.Log("close " + mode);
-        Debug.Log("written text: " + keyboardField.text);
         if (keyboard.activeSelf == true)
         {
-            switch (mode)
-            {
-                case "search":
-                    searchField.SetTextWithoutNotify(actualText);
-                    Debug
-                        .Log("Test setted in searchfield: " + searchField.text);
-                    break;
-                case "title":
-                    titleField.SetTextWithoutNotify(actualText);
-                    Debug.Log("Test setted in titleField: " + titleField.text);
-
-                    break;
-                case "author":
-                    authorField.SetTextWithoutNotify(actualText);
-                    Debug
-                        .Log("Test setted in authorField: " + authorField.text);
-
-                    break;
-                case "description":
-                    descriptionField.SetTextWithoutNotify(actualText);
-                    Debug
-                        .Log("Test setted in descriptionField: " +
-                        descriptionField.text);
-
-                    break;
-            }
             actualText = "";
             pos = 0;
             length = 0;
-            keyboardField.SetText("");
             keyboard.SetActive(false);
         }
     }
 
     public void AppendChar(string value)
     {
-        //StopCoroutine (coroutine);
-        
         value = value.ToUpper();
-
-        //Debug.Log("value= " + value + " pos= " + pos);
         actualText = actualText.Insert(pos, value);
         length++;
         pos++;
-        keyboardField.SetText (actualText);
-        
-        //StartCoroutine (coroutine);
+        switch (mode)
+        {
+            case "search":
+                searchField.text = actualText;
+                break;
+            case "title":
+                titleField.SetTextWithoutNotify (actualText);
+                break;
+            case "author":
+                authorField.SetTextWithoutNotify (actualText);
+                break;
+            case "description":
+                descriptionField.SetTextWithoutNotify (actualText);
+                break;
+        }
+
     }
 
     public void Back()
     {
         if (length > 0)
         {
-            //StopCoroutine (coroutine);
             pos--;
             actualText = actualText.Remove(pos);
-            keyboardField.SetText (actualText);
-            //StartCoroutine (coroutine);
+            switch (mode)
+            {
+                case "search":
+                    searchField.text = actualText;
+                    break;
+                case "title":
+                    titleField.SetTextWithoutNotify (actualText);
+                    break;
+                case "author":
+                    authorField.SetTextWithoutNotify (actualText);
+                    break;
+                case "description":
+                    descriptionField.SetTextWithoutNotify (actualText);
+                    break;
+            }
         }
     }
-
-   
 }

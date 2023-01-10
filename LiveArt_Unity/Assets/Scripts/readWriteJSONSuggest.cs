@@ -40,8 +40,8 @@ public class readWriteJSONSuggest : MonoBehaviour
     }
 
     void Start(){
-        InstaziaNuovoRecord("provaTitolo1", "provaAutore1", "provaDescrizione1");
-        InstaziaNuovoRecord("provaTitolo2", "provaAutore2", "provaDescrizione2");
+       // InstaziaNuovoRecord("provaTitolo1", "provaAutore1", "provaDescrizione1");
+        // InstaziaNuovoRecord("provaTitolo2", "provaAutore2", "provaDescrizione2");
     }
 
     public void AggiungiWoA(){
@@ -56,15 +56,13 @@ public class readWriteJSONSuggest : MonoBehaviour
        element.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().SetText(title);
         element.transform.GetChild(1).gameObject.GetComponent<TMP_Text>().SetText(author);
         element.transform.GetChild(2).gameObject.GetComponent<TMP_Text>().SetText(description);  
-        element.transform.parent = parent.transform;
-        element.GetComponent<RectTransform>().localPosition = new Vector3(0,posY,0);
-        posY = posY -45;
+        element.transform.SetParent(parent.transform);
         element.GetComponent<RectTransform>().localScale = new Vector3(1,1,1);
         element.GetComponent<RectTransform>().localRotation  = Quaternion.Euler(0,0,0);
+        element.GetComponent<RectTransform>().localPosition  = new Vector3(0,posY,0);
+        posY = posY -45;
 
-
-
-
+        Debug.Log(element.GetComponent<RectTransform>().localPosition);
     }
 
     void saveData(string title, string author, string description)
