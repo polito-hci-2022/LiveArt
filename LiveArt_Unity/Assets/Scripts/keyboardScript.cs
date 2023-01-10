@@ -9,15 +9,17 @@ public class keyboardScript : MonoBehaviour
 
     private IEnumerator coroutine;
 
-    private string actualText = "";
+    string actualText = "";
 
     private int pos = 0;
 
     private int length = 0;
 
-    void Awake()
+    void Start()
     {
-        textmeshPro.SetText (actualText);
+        //textmeshPro.SetText (actualText, true);
+        actualText = textmeshPro.text;
+        pos = actualText.Length;
         coroutine = WaitAndPrint();
         StartCoroutine (coroutine);
     }
@@ -27,7 +29,7 @@ public class keyboardScript : MonoBehaviour
         StopCoroutine (coroutine);
         value = value.ToUpper();
 
-        //Debug.Log("value= " + value + " pos= " + pos);
+        Debug.Log("value= " + value + " pos= " + pos);
         actualText = actualText.Insert(pos, value);
         length++;
         pos++;

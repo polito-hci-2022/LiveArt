@@ -1,30 +1,68 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class audioMusicManager : MonoBehaviour
 {
     public AudioSource mySource;
+
+    public Button buttonON;
+
+    public Button buttonOFF;
+
+    public Color pressedColor;
+
+    public Color notPressedColor;
 
     private int music;
 
     void Awake()
     {
         music = PlayerPrefs.GetInt("Music", 1);
+        Debug.Log("Music value: " + music);
+
         if (music == 1)
             Play();
         else if (music == 0) Stop();
+        PlayerPrefs.Save();
     }
 
     public void Play()
     {
         PlayerPrefs.SetInt("Music", 1);
+
+        ColorBlock cbPressed = buttonON.colors;
+
+        cbPressed.normalColor = pressedColor;
+        cbPressed.selectedColor = pressedColor;
+
+        buttonON.colors = cbPressed;
+
+        Debug.Log("ON pressed: " + buttonON.colors.normalColor);
+
+        ColorBlock cbNotPressed = buttonOFF.colors;
+        cbNotPressed.normalColor = notPressedColor;
+        buttonOFF.colors = cbNotPressed;
+
         mySource.Play();
     }
 
     public void Stop()
     {
         PlayerPrefs.SetInt("Music", 0);
+
+        ColorBlock cbPressed = buttonOFF.colors;
+
+        cbPressed.normalColor = pressedColor;
+        cbPressed.selectedColor = pressedColor;
+
+        buttonOFF.colors = cbPressed;
+
+        ColorBlock cbNotPressed = buttonON.colors;
+        cbNotPressed.normalColor = notPressedColor;
+        buttonON.colors = cbNotPressed;
+
         mySource.Stop();
     }
 }

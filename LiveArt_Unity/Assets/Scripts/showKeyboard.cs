@@ -50,7 +50,10 @@ public class showKeyboard : MonoBehaviour
         switch (mode)
         {
             case "search":
+                Debug.Log("Already inserted text: " + searchField.text);
                 keyboardField.SetText(searchField.text);
+                Debug.Log("Inserted text in keyField: " + keyboardField.text);
+
                 break;
             case "title":
                 keyboardField.SetText(titleField.text);
@@ -67,32 +70,36 @@ public class showKeyboard : MonoBehaviour
     public void hide()
     {
         Debug.Log("close " + mode);
-        Debug.Log("written text: " + keyboardField.text);
+        Debug.Log("mode: " + mode);
         if (keyboard.activeSelf == true)
         {
             switch (mode)
             {
                 case "search":
+                    Debug.Log("written text: " + keyboardField.text);
                     searchField.SetText(keyboardField.text);
                     Debug
-                        .Log("Test setted in searchfield: " + searchField.text);
+                        .Log("Text setted in searchfield: " + searchField.text);
                     break;
                 case "title":
+                    Debug.Log("written text: " + keyboardField.text);
                     titleField.SetText(keyboardField.text);
-                    Debug
-                        .Log("Test setted in titleField: " + titleField.text);
+                    Debug.Log("text setted in titleField: " + titleField.text);
 
                     break;
                 case "author":
+                    Debug.Log("written text: " + keyboardField.text);
                     authorField.SetText(keyboardField.text);
                     Debug
-                        .Log("Test setted in authorField: " + authorField.text);
+                        .Log("text setted in authorField: " + authorField.text);
 
                     break;
                 case "description":
+                    Debug.Log("written text: " + keyboardField.text);
                     descriptionField.SetText(keyboardField.text);
                     Debug
-                        .Log("Test setted in descriptionField: " + descriptionField.text);
+                        .Log("text setted in descriptionField: " +
+                        descriptionField.text);
 
                     break;
             }
