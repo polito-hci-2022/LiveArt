@@ -518,14 +518,14 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1129042165}
           m_TargetAssemblyTypeName: keyboardManagerScript, Assembly-CSharp
-          m_MethodName: showForTitle
-          m_Mode: 1
+          m_MethodName: show
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: title
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &71024823
@@ -2217,14 +2217,14 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1129042165}
           m_TargetAssemblyTypeName: keyboardManagerScript, Assembly-CSharp
-          m_MethodName: showForDescription
-          m_Mode: 1
+          m_MethodName: show
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: description
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &170047408
@@ -3744,14 +3744,14 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1129042165}
           m_TargetAssemblyTypeName: keyboardManagerScript, Assembly-CSharp
-          m_MethodName: showForSearch
-          m_Mode: 1
+          m_MethodName: show
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: search
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &570290086
@@ -5813,7 +5813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &834769276
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6741,9 +6741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ContentHolder: {fileID: 1299263849}
   ErrorSearchMessage: {fileID: 1109663229}
-  Element: []
   SearchBar: {fileID: 551245417}
-  totalElements: 0
 --- !u!1 &1086326213
 GameObject:
   m_ObjectHideFlags: 0
@@ -7350,10 +7348,55 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2085033975577770810, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
+      propertyPath: m_Name
+      value: Mic
+      objectReference: {fileID: 0}
     - target: {fileID: 2431145945882999321, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2514303095588471145, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2514303095588471145, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1129042165}
+    - target: {fileID: 2514303095588471145, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Dettatura
+      objectReference: {fileID: 0}
+    - target: {fileID: 2514303095588471145, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: keyboardManagerScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223830541558423822, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
+      propertyPath: m_text
+      value: 'Mic '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223830541558423822, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223830541558423822, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223830541558423822, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504287194533, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
@@ -7607,8 +7650,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504582636768, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 54.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816507504582636768, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15
+      value: -13.50023
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504582636769, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
@@ -7650,6 +7698,11 @@ PrefabInstance:
       propertyPath: textmeshPro
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8816507504624233188, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8816507504624233190, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_Pivot.x
@@ -7688,12 +7741,12 @@ PrefabInstance:
     - target: {fileID: 8816507504624233190, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 250
+      value: 167.1218
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504624233190, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 71.6093
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504624233190, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
@@ -7708,7 +7761,7 @@ PrefabInstance:
     - target: {fileID: 8816507504624233190, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.978
+      value: 0.8612
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504624233190, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
@@ -7738,7 +7791,7 @@ PrefabInstance:
     - target: {fileID: 8816507504624233190, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.498
+      value: 1.4173
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504624233190, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
@@ -7828,42 +7881,42 @@ PrefabInstance:
     - target: {fileID: 8816507504881198321, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504881198321, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504881198321, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504881198321, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504881198321, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1541.81
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504881198321, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 647.51
+      value: -0.000015258789
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504881198321, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504881198321, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504881198321, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
@@ -7873,12 +7926,12 @@ PrefabInstance:
     - target: {fileID: 8816507504881198321, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.67
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504881198321, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -5.5
+      value: -0.0000076293945
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504999067516, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
@@ -8307,8 +8360,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8816507505627126942, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816507505627126942, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 45.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816507505627126942, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -30
+      value: -28.50023
       objectReference: {fileID: 0}
     - target: {fileID: 8816507505627126943, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
@@ -10725,14 +10788,14 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1129042165}
           m_TargetAssemblyTypeName: keyboardManagerScript, Assembly-CSharp
-          m_MethodName: showForAuthor
-          m_Mode: 1
+          m_MethodName: show
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: author
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &1470464266 stripped

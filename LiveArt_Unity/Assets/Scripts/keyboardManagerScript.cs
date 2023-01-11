@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Windows.Speech;
 
 public class keyboardManagerScript : MonoBehaviour
 {
+    private DictationRecognizer myRecognizer;
+
     public InputField searchField;
 
     public InputField titleField;
@@ -24,27 +27,61 @@ public class keyboardManagerScript : MonoBehaviour
 
     private int length;
 
-    public void showForSearch()
+    bool dettatura = false;
+
+    void Start()
     {
-        show("search");
+        myRecognizer = new DictationRecognizer();
+        myRecognizer.DictationResult += (text, confidence) =>
+        {
+            //Debug.LogFormat("Dictation result: {0}", text);
+        };
+        myRecognizer.DictationHypothesis += (text) =>
+        {
+            /* actualText +=  text.ToUpper();
+            length += text.Length;
+            pos += text.Length; */
+            actualText = text.ToUpper();
+            length = text.Length;
+            pos = text.Length;
+            setText();
+        };
+        myRecognizer.DictationComplete += (completionCause) =>
+        {
+            if (completionCause != DictationCompletionCause.Complete)
+                Debug
+                    .LogErrorFormat("Dictation completed unsuccessfully: {0}.",
+                    completionCause);
+        };
+        myRecognizer.DictationError += (error, hresult) =>
+        {
+            Debug
+                .LogErrorFormat("Dictation error: {0}; HResult = {1}.",
+                error,
+                hresult);
+        };
     }
 
-    public void showForTitle()
+    void setText()
     {
-        show("title");
+        switch (mode)
+        {
+            case "search":
+                searchField.text = actualText;
+                break;
+            case "title":
+                titleField.SetTextWithoutNotify (actualText);
+                break;
+            case "author":
+                authorField.SetTextWithoutNotify (actualText);
+                break;
+            case "description":
+                descriptionField.SetTextWithoutNotify (actualText);
+                break;
+        }
     }
 
-    public void showForAuthor()
-    {
-        show("author");
-    }
-
-    public void showForDescription()
-    {
-        show("description");
-    }
-
-    void show(string givenMode)
+    public void show(string givenMode)
     {
         mode = givenMode;
         if (keyboard.activeSelf == false) keyboard.SetActive(true);
@@ -84,22 +121,7 @@ public class keyboardManagerScript : MonoBehaviour
         actualText = actualText.Insert(pos, value);
         length++;
         pos++;
-        switch (mode)
-        {
-            case "search":
-                searchField.text = actualText;
-                break;
-            case "title":
-                titleField.SetTextWithoutNotify (actualText);
-                break;
-            case "author":
-                authorField.SetTextWithoutNotify (actualText);
-                break;
-            case "description":
-                descriptionField.SetTextWithoutNotify (actualText);
-                break;
-        }
-
+        setText();
     }
 
     public void Back()
@@ -108,21 +130,18 @@ public class keyboardManagerScript : MonoBehaviour
         {
             pos--;
             actualText = actualText.Remove(pos);
-            switch (mode)
-            {
-                case "search":
-                    searchField.text = actualText;
-                    break;
-                case "title":
-                    titleField.SetTextWithoutNotify (actualText);
-                    break;
-                case "author":
-                    authorField.SetTextWithoutNotify (actualText);
-                    break;
-                case "description":
-                    descriptionField.SetTextWithoutNotify (actualText);
-                    break;
-            }
+            setText();
         }
     }
+
+    public void Dettatura()
+    {
+        if (dettatura == false)
+            myRecognizer.Start();
+        else
+            myRecognizer.Stop();
+        dettatura = !dettatura;
+    }
+
+   
 }
