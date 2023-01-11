@@ -7189,6 +7189,9 @@ MonoBehaviour:
   authorField: {fileID: 1456146866}
   descriptionField: {fileID: 161602381}
   keyboard: {fileID: 2072113907}
+  buttonMic: {fileID: 1219103832}
+  pressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+  notPressedColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1129042166
 Transform:
   m_ObjectHideFlags: 0
@@ -7357,6 +7360,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2514303095588471145, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 2514303095588471145, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 2514303095588471145, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+        type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0.78431374
       objectReference: {fileID: 0}
     - target: {fileID: 2514303095588471145, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
@@ -7816,7 +7834,7 @@ PrefabInstance:
     - target: {fileID: 8816507504624233194, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8816507504738476731, guid: 2eb832d3bdc9a3744bb53d4545c24985,
         type: 3}
@@ -9297,6 +9315,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204574895}
   m_CullTransparentMesh: 1
+--- !u!114 &1219103832 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2514303095588471145, guid: 2eb832d3bdc9a3744bb53d4545c24985,
+    type: 3}
+  m_PrefabInstance: {fileID: 1142982503}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1233295152
 GameObject:
   m_ObjectHideFlags: 0
