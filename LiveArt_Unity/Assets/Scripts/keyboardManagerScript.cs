@@ -19,6 +19,12 @@ public class keyboardManagerScript : MonoBehaviour
 
     public GameObject keyboard;
 
+    public Button buttonMic;
+
+    public Color pressedColor;
+
+    public Color notPressedColor;
+
     string mode;
 
     private string actualText;
@@ -52,6 +58,10 @@ public class keyboardManagerScript : MonoBehaviour
                 Debug
                     .LogErrorFormat("Dictation completed unsuccessfully: {0}.",
                     completionCause);
+
+            ColorBlock cbNotPressed = buttonMic.colors;
+            cbNotPressed.normalColor = notPressedColor;
+            buttonMic.colors = cbNotPressed;
         };
         myRecognizer.DictationError += (error, hresult) =>
         {
@@ -137,11 +147,22 @@ public class keyboardManagerScript : MonoBehaviour
     public void Dettatura()
     {
         if (dettatura == false)
+        {
+            ColorBlock cbPressed = buttonMic.colors;
+            cbPressed.normalColor = pressedColor;
+            cbPressed.selectedColor = pressedColor;
+            buttonMic.colors = cbPressed;
+
             myRecognizer.Start();
+        }
         else
+        {
+            /* ColorBlock cbNotPressed = buttonMic.colors;
+            cbNotPressed.normalColor = notPressedColor;
+            buttonMic.colors = cbNotPressed; */
+
             myRecognizer.Stop();
+        }
         dettatura = !dettatura;
     }
-
-   
 }
