@@ -46,6 +46,9 @@ public class readWriteJSONSuggest : MonoBehaviour
 
     public void AggiungiWoA(){
         InstaziaNuovoRecord(TitleInput.text, AuthorInput.text, DescripitonInput.text);
+        TitleInput.text = "";
+        AuthorInput.text = "";
+        DescripitonInput.text = "";
     }
 
     void InstaziaNuovoRecord(string title, string author, string description)
@@ -59,7 +62,7 @@ public class readWriteJSONSuggest : MonoBehaviour
         element.transform.SetParent(parent.transform);
         element.GetComponent<RectTransform>().localScale = new Vector3(1,1,1);
         element.GetComponent<RectTransform>().localRotation  = Quaternion.Euler(0,0,0);
-        element.GetComponent<RectTransform>().localPosition  = new Vector3(0,posY,0);
+        element.GetComponent<RectTransform>().localPosition  = new Vector3(170,posY,0);
         posY = posY -45;
 
         Debug.Log(element.GetComponent<RectTransform>().localPosition);
