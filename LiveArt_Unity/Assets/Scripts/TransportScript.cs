@@ -1,12 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TransportScript : MonoBehaviour
 {
     public FadeScreen fadeScreen;
 
     public GameObject player;
+
+    public Button button1R;
+    public Button button2R;
+    public Button button3R;
+    public Button button4R;
+
+    public Button button1L;
+    public Button button2L;
+    public Button button3L;
+    public Button button4L;
+
+    public Color pressedColor;
+    public Color notPressedColor;
 
     bool transition = false;
 
@@ -16,6 +30,7 @@ public class TransportScript : MonoBehaviour
     {
         mode = PlayerPrefs.GetString("modeRoom", "room1");
         Debug.Log("mode: " + mode);
+        updateButtons();
     }
 
     public void TeleportRoom1()
@@ -94,6 +109,39 @@ public class TransportScript : MonoBehaviour
         mode = newMode;
         PlayerPrefs.SetString("modeRoom", mode);
         PlayerPrefs.Save();
+        updateButtons();
         transition = false;
+    }
+
+    void updateButtons()
+    {
+        updateOneButton(button1R, "room1");
+        updateOneButton(button1L, "room1");
+
+        updateOneButton(button2R, "room2");
+        updateOneButton(button2L, "room2");
+
+        updateOneButton(button3R, "room3");
+        updateOneButton(button3L, "room3");
+
+        updateOneButton(button4R, "room4");
+        updateOneButton(button4L, "room4");
+    }
+
+    void updateOneButton(Button button, string selectedMode)
+    {
+        if (mode == selectedMode)
+        {
+            ColorBlock cbPressed = button.colors;
+            cbPressed.normalColor = pressedColor;
+            cbPressed.selectedColor = pressedColor;
+            button.colors = cbPressed;
+        }
+        else
+        {
+            ColorBlock cbNotPressed = button.colors;
+            cbNotPressed.normalColor = notPressedColor;
+            button.colors = cbNotPressed;
+        }
     }
 }
