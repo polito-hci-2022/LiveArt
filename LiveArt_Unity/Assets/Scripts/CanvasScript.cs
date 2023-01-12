@@ -12,6 +12,7 @@ public class CanvasScript : MonoBehaviour
 
     public GameObject SuggestCanvas;
 
+    public GameObject thankText;
 
 
     public void openCredits()
@@ -48,8 +49,8 @@ public class CanvasScript : MonoBehaviour
     public void closeSuggest()
     {
         SuggestCanvas.SetActive(false);
+        thankText.SetActive(false);
         MainCanvas.SetActive(true);
-        //attiva reattività della main canvas
 
     }
 

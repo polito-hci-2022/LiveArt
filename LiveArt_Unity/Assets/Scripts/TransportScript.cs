@@ -23,14 +23,42 @@ public class TransportScript : MonoBehaviour
     public Color notPressedColor;
 
     bool transition = false;
-
+    int woaIndex = 0;
     string mode;
 
     void Start()
     {
         mode = PlayerPrefs.GetString("modeRoom", "room1");
-        Debug.Log("mode: " + mode);
         updateButtons();
+        switch (mode)
+        {
+            case "room1":
+                setPos(0, 0, 0);
+                if (woaIndex == 1)
+                    setRot(0, 0, 0);
+                if (woaIndex == 2)
+                    setRot(0, 0, 0);
+                break;
+            case "room2":
+                setPos(250, 0, 0);
+                if (woaIndex == 1)
+                    setRot(0, 0, 0);
+                if (woaIndex == 2)
+                    setRot(0, 0, 0);
+                break;
+            case "room3":
+                setPos(500, 0, 0);
+                if (woaIndex == 1)
+                    setRot(0, 0, 0);
+                if (woaIndex == 2)
+                    setRot(0, 0, 0);
+                break;
+            case "room4":
+                setPos(750, 0, 0);
+                if (woaIndex == 1)
+                    setRot(0, 0, 0);
+                break;
+        }
     }
 
     public void TeleportRoom1()
@@ -78,13 +106,13 @@ public class TransportScript : MonoBehaviour
     public void TeleportRoom3_1()
     {
         if (!transition && mode != "room3_1")
-            StartCoroutine(TeleportTo(750, 250, 0, "room3_1"));
+            StartCoroutine(TeleportTo(500, 250, 0, "room3_1"));
     }
 
     public void TeleportRoom3_2()
     {
         if (!transition && mode != "room3_2")
-            StartCoroutine(TeleportTo(750, 500, 0, "room3_2"));
+            StartCoroutine(TeleportTo(500, 500, 0, "room3_2"));
     }
 
     public void TeleportRoom4()
@@ -102,15 +130,25 @@ public class TransportScript : MonoBehaviour
     IEnumerator TeleportTo(int x, int y, int z, string newMode)
     {
         transition = true;
-        fadeScreen.FadeOut();
-        yield return new WaitForSeconds(fadeScreen.fadeDuration);
-        player.transform.position = new Vector3(x, y, z);
-        fadeScreen.FadeIn();
         mode = newMode;
         PlayerPrefs.SetString("modeRoom", mode);
         PlayerPrefs.Save();
         updateButtons();
+        fadeScreen.FadeOut();
+        yield return new WaitForSeconds(fadeScreen.fadeDuration);
+        setPos(x, y, z);
+        fadeScreen.FadeIn();
         transition = false;
+    }
+
+    void setPos(int x, int y, int z)
+    {
+        player.transform.position = new Vector3(x, y, z);
+    }
+
+    void setRot(int x, int y, int z)
+    {
+        player.transform.rotation = Quaternion.Euler(x, y, z);
     }
 
     void updateButtons()
@@ -141,6 +179,9 @@ public class TransportScript : MonoBehaviour
         {
             ColorBlock cbNotPressed = button.colors;
             cbNotPressed.normalColor = notPressedColor;
+            cbNotPressed.pressedColor = notPressedColor;
+            cbNotPressed.selectedColor = notPressedColor;
+
             button.colors = cbNotPressed;
         }
     }

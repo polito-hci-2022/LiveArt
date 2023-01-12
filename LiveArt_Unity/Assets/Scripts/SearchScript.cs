@@ -23,9 +23,10 @@ public class SearchScript : MonoBehaviour
 
         Element = new GameObject[totalElements];
 
-        for (int i = 0; i < totalElements; i++){
+        for (int i = 0; i < totalElements; i++)
+        {
             Element[i] = ContentHolder.transform.GetChild(i).gameObject;
-            if(Element[i].name == ErrorSearchMessage.name)
+            if (Element[i].name == ErrorSearchMessage.name)
                 Element[i].SetActive(false);
         }
     }
@@ -34,7 +35,6 @@ public class SearchScript : MonoBehaviour
     public void Search()
     {
         string SearchText = SearchBar.text;
-        Debug.Log("Searching " + SearchText);
         int searchLength = SearchText.Length;
 
         int activElements = 0;
@@ -43,20 +43,23 @@ public class SearchScript : MonoBehaviour
         {
             foreach (GameObject ele in Element)
             {
-                //Debug.Log(ele.name);
-                if (ele.transform.GetChild(0).GetComponent<TMP_Text>().text.Length >=searchLength && SearchText.ToLower() == ele.transform.GetChild(0).GetComponent<TMP_Text>().text.Substring(0, searchLength).ToLower())
+                if (
+                    ele.transform.GetChild(0).GetComponent<TMP_Text>().text.Length >= searchLength
+                    && SearchText.ToLower()
+                        == ele.transform
+                            .GetChild(0)
+                            .GetComponent<TMP_Text>()
+                            .text.Substring(0, searchLength)
+                            .ToLower()
+                )
                 {
-                    Debug.Log("compatibile: " + ele.name);
                     activElements += 1;
                 }
-                 else
+                else
                     ele.SetActive(false);
             }
-
-            if (activElements == 0) ErrorSearchMessage.SetActive(true);
         }
-        else 
-            if(searchLength == 0)
+        else
         {
             activElements = 1;
             temp = 0;
@@ -67,8 +70,12 @@ public class SearchScript : MonoBehaviour
                     ele.SetActive(true);
                     temp++;
                 }
+                else
+                    ele.SetActive(false);
             }
             activElements = temp;
         }
+        if (activElements == 0)
+            ErrorSearchMessage.SetActive(true);
     }
 }

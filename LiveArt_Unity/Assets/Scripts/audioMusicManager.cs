@@ -20,7 +20,6 @@ public class audioMusicManager : MonoBehaviour
     void Awake()
     {
         music = PlayerPrefs.GetInt("Music", 1);
-        Debug.Log("Music value: " + music);
 
         if (music == 1)
             Play();
@@ -39,7 +38,6 @@ public class audioMusicManager : MonoBehaviour
 
         buttonON.colors = cbPressed;
 
-        Debug.Log("ON pressed: " + buttonON.colors.normalColor);
 
         ColorBlock cbNotPressed = buttonOFF.colors;
         cbNotPressed.normalColor = notPressedColor;

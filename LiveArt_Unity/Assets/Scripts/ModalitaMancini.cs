@@ -22,7 +22,6 @@ public class ModalitaMancini : MonoBehaviour
     public void Awake()
     {
         mancini = PlayerPrefs.GetInt("Mancini", 0);
-        Debug.Log("Lefthandmode (Event system)= " + mancini);
         if (mancini == 1)
         {
             attivaMancini();
