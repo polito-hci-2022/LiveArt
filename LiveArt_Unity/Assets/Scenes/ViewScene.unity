@@ -3010,7 +3010,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839276224}
   m_LocalRotation: {x: -0, y: -0.9153396, z: -0, w: 0.40268287}
-  m_LocalPosition: {x: 0, y: 0, z: -16.81}
+  m_LocalPosition: {x: 0, y: 0, z: -53.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3020,7 +3020,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -132.508, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -19.33, y: -7.3}
+  m_AnchoredPosition: {x: -58.9, y: -18.9}
   m_SizeDelta: {x: 76.6254, y: 18.6059}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &839276226
@@ -4395,7 +4395,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 20}
+  m_SizeDelta: {x: 200, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1369947977
 MonoBehaviour:
@@ -4576,7 +4576,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 35.8
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5295,12 +5295,12 @@ RectTransform:
   m_Children:
   - {fileID: 33516905}
   - {fileID: 388871861}
-  m_Father: {fileID: 223974230}
-  m_RootOrder: 3
+  m_Father: {fileID: 1636832560}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.2953, y: 5.6101}
+  m_AnchoredPosition: {x: 0.2953, y: 3.1310596}
   m_SizeDelta: {x: 200, y: 62.5428}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1526275553
@@ -5785,6 +5785,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &1636832560 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5493716495706629460, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 223974226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1646178516 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4104609787988315049, guid: 7690e3bdd705a41e697489fa0a6d59a8,

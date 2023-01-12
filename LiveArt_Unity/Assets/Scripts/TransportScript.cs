@@ -20,7 +20,7 @@ public class TransportScript : MonoBehaviour
 
     public void TeleportRoom2()
     {
-        StartCoroutine(TeleportTo(250, 0, 0));
+        StartCoroutine(TeleportTo(250, -22, 0));
     }
 
     public void TeleportRoom3()

@@ -23,8 +23,11 @@ public class SearchScript : MonoBehaviour
 
         Element = new GameObject[totalElements];
 
-        for (int i = 0; i < totalElements; i++)
-        Element[i] = ContentHolder.transform.GetChild(i).gameObject;
+        for (int i = 0; i < totalElements; i++){
+            Element[i] = ContentHolder.transform.GetChild(i).gameObject;
+            if(Element[i].name == ErrorSearchMessage.name)
+                Element[i].SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -52,7 +55,8 @@ public class SearchScript : MonoBehaviour
 
             if (activElements == 0) ErrorSearchMessage.SetActive(true);
         }
-        else if(searchLength == 0)
+        else 
+            if(searchLength == 0)
         {
             activElements = 1;
             temp = 0;

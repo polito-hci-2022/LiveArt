@@ -157,9 +157,9 @@ public class keyboardManagerScript : MonoBehaviour
         }
         else
         {
-            ColorBlock cbNotPressed = buttonMic.colors;
+            /* ColorBlock cbNotPressed = buttonMic.colors;
             cbNotPressed.normalColor = notPressedColor;
-            buttonMic.colors = cbNotPressed;
+            buttonMic.colors = cbNotPressed; */
 
             myRecognizer.Stop();
         }
