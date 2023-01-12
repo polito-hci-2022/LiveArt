@@ -139,9 +139,17 @@ public class keyboardManagerScript : MonoBehaviour
         if (length > 0)
         {
             pos--;
+            length--;
             actualText = actualText.Remove(pos);
             setText();
         }
+    }
+
+    public void Clear(){
+        actualText = "";
+        setText();
+        pos = 0;
+        length = 0;
     }
 
     public void Dettatura()

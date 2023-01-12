@@ -21,6 +21,12 @@ public class SceneTransitionManager : MonoBehaviour
 
     public void SetWoAIndex(int woaIndex){
         PlayerPrefs.SetInt("WOA", woaIndex);
+        PlayerPrefs.Save();
+    }
+
+     public void SetRoom(string room){
+        PlayerPrefs.SetString("modeRoom", room);
+        PlayerPrefs.Save();
     }
 
 }
