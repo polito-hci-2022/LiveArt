@@ -12,6 +12,9 @@ public class saveRecord : MonoBehaviour
     public GameObject parent;
     int posY = -30;
 
+    bool test = true;
+    string path;
+
     public InputField TitleInput;
     public InputField AuthorInput;
     public InputField DescripitonInput;
@@ -41,6 +44,10 @@ public class saveRecord : MonoBehaviour
 
     void Start()
     {
+        if (test)
+            path = @"C:\Users\edoar\code\LiveArt\LiveArt_Unity\Assets\DATA.txt";
+        else
+            path = "";
         readData();
     }
 
@@ -72,9 +79,7 @@ public class saveRecord : MonoBehaviour
 
     void readData()
     {
-        lines = System.IO.File.ReadAllLines(
-            @"C:\Users\edoar\code\LiveArt\LiveArt_Unity\Assets\DATA.txt"
-        );
+        lines = System.IO.File.ReadAllLines(path);
         WOA woa;
         foreach (string str in lines)
         {
@@ -85,8 +90,7 @@ public class saveRecord : MonoBehaviour
 
     async void writeData(string title, string author, string description)
     {
-        using StreamWriter file =
-            new(@"C:\Users\edoar\code\LiveArt\LiveArt_Unity\Assets\DATA.txt", append: true);
+        using StreamWriter file = new(path, append: true);
         await file.WriteLineAsync(JsonUtility.ToJson(new WOA(title, author, description)));
     }
 }

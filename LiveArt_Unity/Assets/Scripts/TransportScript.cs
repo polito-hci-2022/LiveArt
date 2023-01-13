@@ -91,11 +91,7 @@ public class TransportScript : MonoBehaviour
             StartCoroutine(TeleportTo(250, 250, 0, "room2_1"));
     }
 
-    public void TeleportRoom2_2()
-    {
-        if (!transition && mode != "room2_2")
-            StartCoroutine(TeleportTo(250, 500, 0, "room2_2"));
-    }
+    
 
     public void TeleportRoom3()
     {
@@ -113,6 +109,12 @@ public class TransportScript : MonoBehaviour
     {
         if (!transition && mode != "room3_2")
             StartCoroutine(TeleportTo(500, 500, 0, "room3_2"));
+    }
+
+    public void TeleportRoom3_3()
+    {
+        if (!transition && mode != "room3_3")
+            StartCoroutine(TeleportTo(250, 500, 0, "room3_3"));
     }
 
     public void TeleportRoom4()
