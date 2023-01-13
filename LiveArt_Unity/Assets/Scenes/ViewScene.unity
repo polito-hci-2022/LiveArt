@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.13630274, g: 0.13304743, b: 0.13535865, a: 1}
+  m_IndirectSpecularColor: {r: 0.13630304, g: 0.13304764, b: 0.13535888, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -865,7 +865,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TODO
+  m_text: "<b>Title</b>\r\nPost Mortem Portrait of Vincenzo Gioberti\r\n<b>\rAuthor</b>\r\nAntonio
+    Puccinelli (1822-1897)\r\n<b>Date</b>\r\n1861\r\n\r<b>Description\r</b>\nIn September
+    1859, Bettino Ricasoli, then Minister of the Interior of the provisional government
+    of Tuscany, announced a competition for the creation of works of art on the theme
+    of the Risorgimento.\r\nAmong those created is this painting by Antonio Puccinelli,
+    who at the time was a professor at the Academy of Fine Arts in Florence.\r\n\r\nThe
+    subject portrayed is Vincenzo Gioberti, an Italian chaplain and politician, who
+    became known for his proximity to the Risorgimento movements.\r\nInitially in
+    favor of a united Italy led by the church, later he will change his mind and
+    support the Savoyard cause, and also become President of the Council of Ministers
+    of the Kingdom of Sardinia."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -892,14 +902,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 18
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -4812,8 +4822,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1812664267}
   m_HandleRect: {fileID: 1812664266}
   m_Direction: 3
-  m_Value: 0.49969935
-  m_Size: 0.79182386
+  m_Value: 0.4996995
+  m_Size: 0.7918237
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6093,8 +6103,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1656733095}
   m_HandleRect: {fileID: 1656733094}
   m_Direction: 3
-  m_Value: 0.49969935
-  m_Size: 0.79182386
+  m_Value: 0.4996995
+  m_Size: 0.7918237
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6738,7 +6748,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TODO
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6765,7 +6775,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 20
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11642,8 +11652,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 268261371}
   m_HandleRect: {fileID: 268261370}
   m_Direction: 3
-  m_Value: 0.49970052
-  m_Size: 0.79182273
+  m_Value: 0.49970096
+  m_Size: 0.7918233
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17287,7 +17297,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TODO
+  m_text: "<b>Title\r</b>\nBettino Ricasoli Presenta il Plebiscito di Annessione
+    della Toscana all'Italia di Vittorio Emanuele II (Bettino Ricasoli Presents the
+    Plebiscite of Annexation of Tuscany to Italy to Vittorio Emanuele II)\r\n\r<b>Author</b>\r\nSilvio
+    Capisanti (1801-1852)\r\n\r<b>Date\r</b>\nXIX Century\r\n\r<b>Description</b>\r\n\r\nFollowing
+    the Armistice of Villafranca, which will bring an end to the Second War of Independence,
+    the provisional government of Tuscany called for a plebiscite to ratify its annexation
+    to the Kingdom of Sardinia.\r\n\r\nThe vast majority of Tuscans voted in favor
+    of annexation, with little surprise given that over the years the people had
+    repeatedly expressed support for the cause of the House of Savoy.\r\n\r\nIn the
+    painting we see depicted Bettino Ricasoli, at the time the Prime Minister of
+    the Grand Duchy of Tuscany, reporting the results of the plebiscite to Vittorio
+    Emanuele II. Following the great success and the personal recognition of his
+    merits, he was first appointed provisional governor of Tuscany and then Minister
+    of the Interior in what will be the Kingdom of Italy."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17314,14 +17337,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 18
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -17626,8 +17649,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2000265156}
   m_HandleRect: {fileID: 2000265155}
   m_Direction: 3
-  m_Value: 0.49969935
-  m_Size: 0.79182386
+  m_Value: 0.4996995
+  m_Size: 0.7918237
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -20562,16 +20585,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Title\r \nBattaglia di Goito (Battle of Goito)\r\nAuthor\r\nFelice Cerruti
-    Bauduc (1818-1896)\r\n\rDate\r\n1848\r\n\rDescription\nUpon returning from the
-    First Italian War of Independence, Cerruti decided to pursue an artistic career
-    where he would reenact scenes of battle.\r\n\r\nThe painting depicts the attack
-    by the Austrian army on the Piedmontese army stationed in defense of the bridge
-    over the Mincio, near Goito.\r\nThe battle ended in favor of the Piedmontese
-    army.\r\n\r\nBefore enlisting, Cerruti completed studies in veterinary medicine,
-    which is why in his paintings we can notice great detail in depicting animals,
-    particularly horses, as in this example.\r\nThis greatly contributed to his success
-    even well before the War of Independence began.\r"
+  m_text: "<b>Title</b>\r\nBattaglia di Goito (Battle of Goito)\r\n<b>\rAuthor</b>\r
+    \r\nFelice Cerruti Bauduc (1818-1896)\r\n<b>Date</b>\r \r\n1848\r\n<b>\rDescription</b>\nUpon
+    returning from the First Italian War of Independence, Cerruti decided to pursue
+    an artistic career where he would reenact scenes of battle.\r\n\r\nThe painting
+    depicts the attack by the Austrian army on the Piedmontese army stationed in
+    defense of the bridge over the Mincio, near Goito.\r\nThe battle ended in favor
+    of the Piedmontese army.\r\n\r\nBefore enlisting, Cerruti completed studies in
+    veterinary medicine, which is why in his paintings we can notice great detail
+    in depicting animals, particularly horses, as in this example.\r\nThis greatly
+    contributed to his success even well before the War of Independence began.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -21255,8 +21278,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 226061381}
   m_HandleRect: {fileID: 226061380}
   m_Direction: 3
-  m_Value: 0.49969935
-  m_Size: 0.79182386
+  m_Value: 0.4996995
+  m_Size: 0.7918237
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -22558,8 +22581,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1118830413}
   m_HandleRect: {fileID: 1118830412}
   m_Direction: 3
-  m_Value: 0.4996982
-  m_Size: 0.7918235
+  m_Value: 0.49969834
+  m_Size: 0.79182476
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -24112,7 +24135,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TODO
+  m_text: "\r<b>Title\r</b>\n\rSommacampagna\r\n\r<b>Author\r</b>\nFelice Cerruti
+    Bauduc (1818-1896)\r\n\r<b>Date\r</b>\n1855\r\n\r<b>Description</b>\r\nThe work,
+    like others by Cerruti, is clearly a representation of the Piedmontese army during
+    the First Italian War of Independence, intent on facing the Austrian troops led
+    by General Josef Radetzky.\r\n\r\nAlthough the place and historical period are
+    well known, the reported event remains a subject of debate.\r\nA commonly accepted
+    version, and the one reported where the painting is displayed, that is the Museum
+    of the Risorgimento in Turin, would be that the painting represents the Battle
+    of Pastrengo of April 1848, but many scholars think it could also be the Battle
+    of Custoza that occurred a few months later, in July 1848."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -24139,14 +24171,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 18
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -24705,8 +24737,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 224913029}
   m_HandleRect: {fileID: 224913028}
   m_Direction: 3
-  m_Value: 0.49970052
-  m_Size: 0.79182273
+  m_Value: 0.49970096
+  m_Size: 0.7918233
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
