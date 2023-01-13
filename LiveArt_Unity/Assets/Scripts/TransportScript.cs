@@ -114,7 +114,7 @@ public class TransportScript : MonoBehaviour
     public void TeleportRoom3_3()
     {
         if (!transition && mode != "room3_3")
-            StartCoroutine(TeleportTo(250, 500, 0, "room3_3"));
+            StartCoroutine(TeleportTo(500, 750, 0, "room3_3"));
     }
 
     public void TeleportRoom4()

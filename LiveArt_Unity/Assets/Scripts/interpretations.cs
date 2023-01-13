@@ -45,7 +45,7 @@ public class interpretations : MonoBehaviour
         ColorBlock cbPressed = button2.colors;
         cbPressed.normalColor = pressedColor;
         cbPressed.selectedColor = pressedColor;
-        button1.colors = cbPressed;
+        button2.colors = cbPressed;
 
         ColorBlock cbNotPressed = button2.colors;
         cbNotPressed.normalColor = notPressedColor;

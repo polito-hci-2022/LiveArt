@@ -533,7 +533,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 1261985344}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationTwo
         m_Mode: 1
@@ -1172,7 +1172,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 1179227769}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationOne
         m_Mode: 1
@@ -2541,7 +2541,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137034}
+      - m_Target: {fileID: 498684000}
         m_TargetAssemblyTypeName: informationCanvasManager, Assembly-CSharp
         m_MethodName: GoToInformations
         m_Mode: 1
@@ -4267,7 +4267,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 1114212879}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationOne
         m_Mode: 1
@@ -4915,6 +4915,7 @@ GameObject:
   m_Component:
   - component: {fileID: 300944513}
   - component: {fileID: 300944512}
+  - component: {fileID: 300944514}
   m_Layer: 0
   m_Name: 'InfoManager '
   m_TagString: Untagged
@@ -4935,7 +4936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   informationCanvas: {fileID: 407168659}
-  interpretationCanvas: {fileID: 0}
+  interpretationCanvas: {fileID: 1274707420}
 --- !u!4 &300944513
 Transform:
   m_ObjectHideFlags: 0
@@ -4951,6 +4952,26 @@ Transform:
   m_Father: {fileID: 1503244848}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &300944514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300944511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1992e145eb82c4586a38bf0b0c5a60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intOne: {fileID: 1640543772}
+  intTwo: {fileID: 223959135}
+  intThree: {fileID: 1758379729}
+  button1: {fileID: 943383890}
+  button2: {fileID: 1562789937}
+  button3: {fileID: 2071263796}
+  pressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
+  notPressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
 --- !u!1 &302206854
 GameObject:
   m_ObjectHideFlags: 0
@@ -6428,7 +6449,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 1114212879}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationThree
         m_Mode: 1
@@ -6750,6 +6771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 498684001}
   - component: {fileID: 498684000}
+  - component: {fileID: 498684002}
   m_Layer: 0
   m_Name: InfoManager
   m_TagString: Untagged
@@ -6770,7 +6792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   informationCanvas: {fileID: 131307052}
-  interpretationCanvas: {fileID: 0}
+  interpretationCanvas: {fileID: 1852649052}
 --- !u!4 &498684001
 Transform:
   m_ObjectHideFlags: 0
@@ -6786,6 +6808,26 @@ Transform:
   m_Father: {fileID: 857892052}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &498684002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498683999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1992e145eb82c4586a38bf0b0c5a60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intOne: {fileID: 1045392923}
+  intTwo: {fileID: 88215914}
+  intThree: {fileID: 412471889}
+  button1: {fileID: 1037838858}
+  button2: {fileID: 1085945757}
+  button3: {fileID: 1362389384}
+  pressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
+  notPressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
 --- !u!1 &499647959
 GameObject:
   m_ObjectHideFlags: 0
@@ -9237,7 +9279,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 1179227769}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationThree
         m_Mode: 1
@@ -9869,7 +9911,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 1261985344}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationThree
         m_Mode: 1
@@ -12838,7 +12880,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137034}
+      - m_Target: {fileID: 1261985342}
         m_TargetAssemblyTypeName: informationCanvasManager, Assembly-CSharp
         m_MethodName: GoToInformations
         m_Mode: 1
@@ -13508,7 +13550,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 300944514}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationOne
         m_Mode: 1
@@ -13745,7 +13787,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 1261985344}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationOne
         m_Mode: 1
@@ -14104,7 +14146,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137034}
+      - m_Target: {fileID: 1218167301}
         m_TargetAssemblyTypeName: informationCanvasManager, Assembly-CSharp
         m_MethodName: GoToInformations
         m_Mode: 1
@@ -14703,7 +14745,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 498684002}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationOne
         m_Mode: 1
@@ -15747,7 +15789,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 498684002}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationTwo
         m_Mode: 1
@@ -16495,6 +16537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1114212878}
   - component: {fileID: 1114212877}
+  - component: {fileID: 1114212879}
   m_Layer: 0
   m_Name: InfoManager
   m_TagString: Untagged
@@ -16515,7 +16558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   informationCanvas: {fileID: 1618990642}
-  interpretationCanvas: {fileID: 0}
+  interpretationCanvas: {fileID: 846451058}
 --- !u!4 &1114212878
 Transform:
   m_ObjectHideFlags: 0
@@ -16531,6 +16574,26 @@ Transform:
   m_Father: {fileID: 1303311351}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1114212879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114212876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1992e145eb82c4586a38bf0b0c5a60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intOne: {fileID: 1796988628}
+  intTwo: {fileID: 1942469581}
+  intThree: {fileID: 879835894}
+  button1: {fileID: 229515567}
+  button2: {fileID: 1800062835}
+  button3: {fileID: 453611155}
+  pressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
+  notPressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
 --- !u!1 &1118830411
 GameObject:
   m_ObjectHideFlags: 0
@@ -17183,7 +17246,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1170736940}
   - component: {fileID: 1170736939}
-  - component: {fileID: 1170736938}
   - component: {fileID: 1170736937}
   - component: {fileID: 1170736942}
   m_Layer: 0
@@ -17210,18 +17272,6 @@ MonoBehaviour:
   buttonOFF: {fileID: 1501209824}
   pressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
   notPressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
---- !u!114 &1170736938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1170736936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf155779378e96145ba543aa536ff3d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1170736939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17436,6 +17486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1179227768}
   - component: {fileID: 1179227767}
+  - component: {fileID: 1179227769}
   m_Layer: 0
   m_Name: InfoManager
   m_TagString: Untagged
@@ -17456,7 +17507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   informationCanvas: {fileID: 227612439}
-  interpretationCanvas: {fileID: 0}
+  interpretationCanvas: {fileID: 817205758}
 --- !u!4 &1179227768
 Transform:
   m_ObjectHideFlags: 0
@@ -17472,6 +17523,26 @@ Transform:
   m_Father: {fileID: 1389376422}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1179227769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179227766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1992e145eb82c4586a38bf0b0c5a60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intOne: {fileID: 843896473}
+  intTwo: {fileID: 70469328}
+  intThree: {fileID: 576408951}
+  button1: {fileID: 130307159}
+  button2: {fileID: 1708965782}
+  button3: {fileID: 631904304}
+  pressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
+  notPressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
 --- !u!1 &1204086060
 GameObject:
   m_ObjectHideFlags: 0
@@ -17758,6 +17829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1218167302}
   - component: {fileID: 1218167301}
+  - component: {fileID: 1218167303}
   m_Layer: 0
   m_Name: 'InfoManager '
   m_TagString: Untagged
@@ -17778,7 +17850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   informationCanvas: {fileID: 1634142503}
-  interpretationCanvas: {fileID: 0}
+  interpretationCanvas: {fileID: 1500807777}
 --- !u!4 &1218167302
 Transform:
   m_ObjectHideFlags: 0
@@ -17794,6 +17866,26 @@ Transform:
   m_Father: {fileID: 1424688020}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1218167303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218167300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1992e145eb82c4586a38bf0b0c5a60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intOne: {fileID: 1204862887}
+  intTwo: {fileID: 1058761850}
+  intThree: {fileID: 1004744705}
+  button1: {fileID: 1712024218}
+  button2: {fileID: 1503027116}
+  button3: {fileID: 1528204192}
+  pressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
+  notPressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
 --- !u!1 &1240669558
 GameObject:
   m_ObjectHideFlags: 0
@@ -18107,6 +18199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1261985343}
   - component: {fileID: 1261985342}
+  - component: {fileID: 1261985344}
   m_Layer: 0
   m_Name: 'InfoManager '
   m_TagString: Untagged
@@ -18127,7 +18220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   informationCanvas: {fileID: 1764404655}
-  interpretationCanvas: {fileID: 0}
+  interpretationCanvas: {fileID: 1740384012}
 --- !u!4 &1261985343
 Transform:
   m_ObjectHideFlags: 0
@@ -18143,6 +18236,26 @@ Transform:
   m_Father: {fileID: 593341730}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1261985344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261985341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1992e145eb82c4586a38bf0b0c5a60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intOne: {fileID: 1204086060}
+  intTwo: {fileID: 1885577464}
+  intThree: {fileID: 1838623567}
+  button1: {fileID: 976228498}
+  button2: {fileID: 34637767}
+  button3: {fileID: 670887092}
+  pressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
+  notPressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
 --- !u!1 &1274349482
 GameObject:
   m_ObjectHideFlags: 0
@@ -18227,7 +18340,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137034}
+      - m_Target: {fileID: 1114212877}
         m_TargetAssemblyTypeName: informationCanvasManager, Assembly-CSharp
         m_MethodName: GoToInformations
         m_Mode: 1
@@ -18887,7 +19000,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137034}
+      - m_Target: {fileID: 1179227767}
         m_TargetAssemblyTypeName: informationCanvasManager, Assembly-CSharp
         m_MethodName: GoToInformations
         m_Mode: 1
@@ -19671,7 +19784,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 498684002}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationThree
         m_Mode: 1
@@ -21350,7 +21463,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2000265156}
   m_HandleRect: {fileID: 2000265155}
   m_Direction: 3
-  m_Value: 0.49969748
+  m_Value: 0.49969718
   m_Size: 0.7918233
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -22485,7 +22598,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 1218167303}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationTwo
         m_Mode: 1
@@ -22714,7 +22827,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137034}
+      - m_Target: {fileID: 300944512}
         m_TargetAssemblyTypeName: informationCanvasManager, Assembly-CSharp
         m_MethodName: GoToInformations
         m_Mode: 1
@@ -23131,7 +23244,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 1218167303}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationThree
         m_Mode: 1
@@ -23374,7 +23487,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 300944514}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationTwo
         m_Mode: 1
@@ -25287,7 +25400,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 1179227769}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationTwo
         m_Mode: 1
@@ -25421,7 +25534,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 1218167303}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationOne
         m_Mode: 1
@@ -26603,7 +26716,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 1114212879}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationTwo
         m_Mode: 1
@@ -26684,7 +26797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   informationCanvas: {fileID: 436773316}
-  interpretationCanvas: {fileID: 1852649052}
+  interpretationCanvas: {fileID: 1036854033}
 --- !u!4 &1801137035
 Transform:
   m_ObjectHideFlags: 0
@@ -26712,12 +26825,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e1992e145eb82c4586a38bf0b0c5a60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intOne: {fileID: 1045392923}
-  intTwo: {fileID: 88215914}
-  intThree: {fileID: 412471889}
-  button1: {fileID: 1037838858}
-  button2: {fileID: 1085945757}
-  button3: {fileID: 1362389384}
+  intOne: {fileID: 503535363}
+  intTwo: {fileID: 885638851}
+  intThree: {fileID: 558445411}
+  button1: {fileID: 2023993612}
+  button2: {fileID: 112294230}
+  button3: {fileID: 1440064955}
   pressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
   notPressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
 --- !u!1 &1812664265
@@ -31417,7 +31530,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801137036}
+      - m_Target: {fileID: 300944514}
         m_TargetAssemblyTypeName: interpretations, Assembly-CSharp
         m_MethodName: LoadInterpretationThree
         m_Mode: 1
