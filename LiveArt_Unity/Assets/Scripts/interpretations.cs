@@ -14,6 +14,10 @@ public class interpretations : MonoBehaviour
     public Color pressedColor;
     public Color notPressedColor;
 
+    void Start(){
+        LoadInterpretationOne();
+    }
+
     // Start is called before the first frame update
     public void LoadInterpretationOne()
     {
