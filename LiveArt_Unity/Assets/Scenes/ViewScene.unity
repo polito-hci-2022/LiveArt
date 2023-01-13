@@ -1213,7 +1213,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TODO
+  m_text: "<b>Title</b>\r\nPortrait of Vittorio Emanuele II\r\n\r<b>Author</b>\r\nRodolfo
+    Morgari ( 1827 - 1909 )\r\n\r<b>Date</b>\r\n1860 ca.\r\n<b>\rDescription</b>\r\n\rRodolfo
+    Morgari was a versatile painter, able to work in multiple styles and on multiple
+    occasions he portrayed Vittorio Emanuele II. \r\nHe also took part in the First
+    War of Independence.\r\n\r\nHaving been noticed not only for his artistic talents
+    but also for his skills as a restorer, he was appointed as the painter and restorer
+    of the Royal Palaces, both public and private."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1240,14 +1246,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 20.7
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -6748,7 +6754,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "\r<b>Title</b>\r\nPortrait of Carlo Alberto\r\n<b>Author</b>\r\nAngelo
+    Capisani ( 1808 - 1870 )\r\n<b>Date</b>\r\n1848\r\n<b>Description\r</b>\r\nNumerosi
+    sono i lavori di Capisani che lo vedono ritrarre Carlo Alberto.\r\nL'opera in
+    questione \xE8 datata al 1848, pochi mesi prima che Carlo Alberto abdicasse in
+    favore del figlio Vittorio Emanuele II.\r\n\r\nNonostante l'educazione liberale
+    e il non essere destinato al trono, in un primo periodo Carlo Alberto, successo
+    a Carlo Felice in quanto non aveva ered\xEC, avr\xE0 uno stile molto conservatore.\r\nNel
+    1949 abdicher\xE0, dopo una sconfitta contro l'impero austriaco, in favore del
+    figlio Vittorio Emanuele II."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6775,14 +6789,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
+  m_fontSize: 18.4
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -14477,7 +14491,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TODO
+  m_text: "<b>Title</b>\r\nPortrait of Massimo d'Azeglio\r\n\r<b>Author</b>\r\nFrancesco
+    Gonin ( 1808 - 1889 )\r\n\r<b>Date</b>\r\n1860\r\n<b>Description</b>\r\nMassimo
+    d'Azeglio is known in history for both his artistic qualities as a painter and
+    writer, as well as his political ones, first as a member of parliament and then
+    as a senator of the Kingdom of Sardinia. At the time of the painting, he held
+    the position of Governor of the Province of Milan.\r\n\r\nThe painting is by
+    Francesco Gonin, a painter known for his portraits of illustrious figures, including
+    King Vittorio Emanuele II and King Umberto I, but not only: in fact, the frescoes
+    in the ballroom of the Royal Palace of Turin are also his work."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14504,14 +14526,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 18.4
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
