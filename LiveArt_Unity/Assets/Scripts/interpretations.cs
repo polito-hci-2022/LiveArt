@@ -1,51 +1,68 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class interpretations : MonoBehaviour
 {
-    public GameObject ModernInt;
-    public GameObject MacronInt;
-    public GameObject SgarbiInt;
-    public GameObject OlivaInt;
+    public GameObject intOne;
+    public GameObject intTwo;
+    public GameObject intThree;
+    public Button button1;
+    public Button button2;
+    public Button button3;
+    public Color pressedColor;
+    public Color notPressedColor;
 
     // Start is called before the first frame update
-    public void LoadModernInterpretation()
+    public void LoadInterpretationOne()
     {
-        //SceneManager.HideScene("MacronInt");
-        //hide other interpretations if active
-        MacronInt.SetActive(false);
-        SgarbiInt.SetActive(false);
-        OlivaInt.SetActive(false);
-        ModernInt.SetActive(true);
+        intTwo.SetActive(false);
+        intThree.SetActive(false);
+        intOne.SetActive(true);
+
+        ColorBlock cbPressed = button1.colors;
+        cbPressed.normalColor = pressedColor;
+        cbPressed.selectedColor = pressedColor;
+        button1.colors = cbPressed;
+
+        ColorBlock cbNotPressed = button2.colors;
+        cbNotPressed.normalColor = notPressedColor;
+        button2.colors = cbNotPressed;
+        button3.colors = cbNotPressed;
     }
 
-    public void LoadMacronInterpretation()
+    public void LoadInterpretationTwo()
     {
-        //SceneManager.HideScene("ModernInt");
-        ModernInt.SetActive(false);
-        SgarbiInt.SetActive(false);
-        OlivaInt.SetActive(false);
-        MacronInt.SetActive(true);
+        intOne.SetActive(false);
+        intThree.SetActive(false);
+        intTwo.SetActive(true);
+
+        ColorBlock cbPressed = button2.colors;
+        cbPressed.normalColor = pressedColor;
+        cbPressed.selectedColor = pressedColor;
+        button1.colors = cbPressed;
+
+        ColorBlock cbNotPressed = button2.colors;
+        cbNotPressed.normalColor = notPressedColor;
+        button1.colors = cbNotPressed;
+        button3.colors = cbNotPressed;
     }
 
-    public void LoadSgarbiInterpretation()
+    public void LoadInterpretationThree()
     {
-        //SceneManager.HideScene("ModernInt");
-        ModernInt.SetActive(false);
-        MacronInt.SetActive(false);
-        OlivaInt.SetActive(false);
-        SgarbiInt.SetActive(true);
-    }
+        intOne.SetActive(false);
+        intTwo.SetActive(false);
+        intThree.SetActive(true);
 
-    public void LoadOlivaInterpretation()
-    {
-        //SceneManager.HideScene("ModernInt");
-        ModernInt.SetActive(false);
-        MacronInt.SetActive(false);
-        SgarbiInt.SetActive(false);
-        OlivaInt.SetActive(true);
+        ColorBlock cbPressed = button3.colors;
+        cbPressed.normalColor = pressedColor;
+        cbPressed.selectedColor = pressedColor;
+        button3.colors = cbPressed;
+
+        ColorBlock cbNotPressed = button2.colors;
+        cbNotPressed.normalColor = notPressedColor;
+        button2.colors = cbNotPressed;
+        button1.colors = cbNotPressed;
     }
 }
