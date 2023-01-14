@@ -1,4 +1,4 @@
-![Vincenzo Gioberti](opere/risorigmento-2-vincenzo-gioberti-upscaled.jpg)
+![Vincenzo Gioberti](../opere/risorigmento-2-vincenzo-gioberti.jpeg)
 
 ## Title
 ### Post Mortem Portrait of Vincenzo Gioberti
@@ -16,3 +16,9 @@ Among those created is this painting by Antonio Puccinelli, who at the time was 
 
 The subject portrayed is Vincenzo Gioberti, an Italian chaplain and politician, who became known for his proximity to the Risorgimento movements.
 Initially in favor of a united Italy led by the church, later he will change his mind and support the Savoyard cause, and also become President of the Council of Ministers of the Kingdom of Sardinia.
+
+## Interpretation I
+
+## Interpretation II
+
+## Interpretation III

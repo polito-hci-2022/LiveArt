@@ -1,4 +1,4 @@
-![Ritratto di Vittorio Emanuele II](./rodolfo-morgari-ritratto-vittorio-emanuele-ii.jpg)
+![Ritratto di Vittorio Emanuele II](../opere/rodolfo-morgari-ritratto-vittorio-emanuele-ii.jpg)
 
 ## Title
 ## Portrait of Vittorio Emanuele II
@@ -15,3 +15,9 @@ Rodolfo Morgari was a versatile painter, able to work in multiple styles and on 
 He also took part in the First War of Independence.
 
 Having been noticed not only for his artistic talents but also for his skills as a restorer, he was appointed as the painter and restorer of the Royal Palaces, both public and private.
+
+## Interpretation I
+
+## Interpretation II
+
+## Interpretation III

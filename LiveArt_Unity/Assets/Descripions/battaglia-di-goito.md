@@ -1,4 +1,4 @@
-![Battaglia di Goito](opere/risorgimento-1-battaglia-di-goito-upscaled.jpg)
+![Battaglia di Goito](../opere/risorgimento-1-battaglia-di-goito.jpg)
 
 ## Title
 ### Battaglia di Goito (Battle of Goito)
@@ -18,3 +18,9 @@ The battle ended in favor of the Piedmontese army.
 
 Before enlisting, Cerruti completed studies in veterinary medicine, which is why in his paintings we can notice great detail in depicting animals, particularly horses, as in this example.
 This greatly contributed to his success even well before the War of Independence began.
+
+## Interpretation I
+
+## Interpretation II
+
+## Interpretation III

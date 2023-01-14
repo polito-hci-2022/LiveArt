@@ -1,4 +1,4 @@
-![Ritratto di Carlo Alberto](./angelo-capisani-ritratto-carlo-alberto-di-savoia.jpg)
+![Ritratto di Carlo Alberto](../opere/angelo-capisani-ritratto-carlo-alberto-di-savoia.jpg)
 
 ## Title
 ### Portrait of Carlo Alberto
@@ -16,3 +16,9 @@ L'opera in questione è datata al 1848, pochi mesi prima che Carlo Alberto abdic
 
 Nonostante l'educazione liberale e il non essere destinato al trono, in un primo periodo Carlo Alberto, successo a Carlo Felice in quanto non aveva eredì, avrà uno stile molto conservatore.
 Nel 1949 abdicherà, dopo una sconfitta contro l'impero austriaco, in favore del figlio Vittorio Emanuele II.
+
+## Interpretation I
+
+## Interpretation II
+
+## Interpretation III
