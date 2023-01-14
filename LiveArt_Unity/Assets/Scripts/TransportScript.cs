@@ -23,40 +23,45 @@ public class TransportScript : MonoBehaviour
     public Color notPressedColor;
 
     bool transition = false;
-    int woaIndex = 0;
+    int woaIndex;
     string mode;
 
     void Start()
     {
         mode = PlayerPrefs.GetString("modeRoom", "room1");
+        woaIndex = PlayerPrefs.GetInt("WOA", 0);
         updateButtons();
         switch (mode)
         {
             case "room1":
-                setPos(0, 0, 0);
+                //setPos(0, 0, 0);
                 if (woaIndex == 1)
-                    setRot(0, 0, 0);
-                if (woaIndex == 2)
-                    setRot(0, 0, 0);
+                    setRot(0, 232, 0);
+                else if (woaIndex == 2)
+                    setRot(0, 160, 0);
+                TeleportRoom1();
                 break;
             case "room2":
-                setPos(250, 0, 0);
+                //setPos(250, 0, 0);
                 if (woaIndex == 1)
-                    setRot(0, 0, 0);
-                if (woaIndex == 2)
-                    setRot(0, 0, 0);
+                    setRot(0, 270, 0);
+                TeleportRoom2();
                 break;
             case "room3":
-                setPos(500, 0, 0);
+                //setPos(500, 0, 0);
                 if (woaIndex == 1)
-                    setRot(0, 0, 0);
-                if (woaIndex == 2)
-                    setRot(0, 0, 0);
+                    setRot(0, 275, 0);
+                else if (woaIndex == 2)
+                    setRot(0, 90, 0);
+                else if (woaIndex == 2)
+                    setRot(0, 125, 0);
+                TeleportRoom3();
                 break;
             case "room4":
-                setPos(750, 0, 0);
+                //setPos(750, 0, 0);
                 if (woaIndex == 1)
-                    setRot(0, 0, 0);
+                    setRot(0, 93, 0);
+                TeleportRoom4();
                 break;
         }
     }
@@ -90,8 +95,6 @@ public class TransportScript : MonoBehaviour
         if (!transition && mode != "room2_1")
             StartCoroutine(TeleportTo(250, 250, 0, "room2_1"));
     }
-
-    
 
     public void TeleportRoom3()
     {
