@@ -13,11 +13,19 @@
 
 The work, like others by Cerruti, is clearly a representation of the Piedmontese army during the First Italian War of Independence, intent on facing the Austrian troops led by General Josef Radetzky.
 
-Although the place and historical period are well known, the reported event remains a subject of debate.
-A commonly accepted version, and the one reported where the painting is displayed, that is the Museum of the Risorgimento in Turin, would be that the painting represents the Battle of Pastrengo of April 1848, but many scholars think it could also be the Battle of Custoza that occurred a few months later, in July 1848.
+The actual event represented is still up for debate, as many battles took place around Sommacampagna in 1848.
 
-## Interpretation I
+## Interpretation I -- Ferruccio Martinotti, Direcotr of Museo del Risorgimento of Turin
 
-## Interpretation II
+Some historians believe that this painting actually depicts the Battle of Pastrengo, which took place in August 1848.
+Given the currently available source, in the Museum we reported the most probable option, that is that the battle represented is the Battle of Custoza of April 1848.
 
-## Interpretation III
+## Interpretation II -- Pietro Giovanni Delprato, Veterinarian ( 1815 - 1880 )
+
+I would like you to take a moment to notice the care that Cerruti took in painting the bodies of the horses.
+In a painting represented in his style, he did not miss the opportunity to accurately depict the details of their muscles based on their position.
+
+## Interpretation III - User Suggestion
+
+Custoza was not a favorable field for the Sabaudian forces, as can be seen from the wounded soldiers depicted to the right.
+After this defeat suffered by Carlo Alberto, a second one will follow, almost 20 years later, against Vittorio Emanuele II.

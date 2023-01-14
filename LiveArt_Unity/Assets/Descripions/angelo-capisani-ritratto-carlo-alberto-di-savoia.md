@@ -17,8 +17,13 @@ L'opera in questione è datata al 1848, pochi mesi prima che Carlo Alberto abdic
 Nonostante l'educazione liberale e il non essere destinato al trono, in un primo periodo Carlo Alberto, successo a Carlo Felice in quanto non aveva eredì, avrà uno stile molto conservatore.
 Nel 1949 abdicherà, dopo una sconfitta contro l'impero austriaco, in favore del figlio Vittorio Emanuele II.
 
-## Interpretation I
+## Interpretation I - Carmine Pinto, Institue of History of Risorgimento
 
-## Interpretation II
+It may often give the impression that Carlo Alberto was a monarch unpopular with the people. But the quantity and quality of works like this that were produced demonstrate otherwise.
 
-## Interpretation III
+## Interpretation II - Félix Fénéon, French Art Critic ( 1861 - 1944 )
+
+The history of Piedmont is deeply connected to that of France.
+This is evident in portraits like this, which draw heavily from the French style of the time.
+
+

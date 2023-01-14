@@ -7,7 +7,7 @@
 ### Felice Cerruti Bauduc (1818-1896)
 
 ## Date
-### 1848
+### 1856
 
 ## Description
 
@@ -16,11 +16,15 @@ Upon returning from the First Italian War of Independence, Cerruti decided to pu
 The painting depicts the attack by the Austrian army on the Piedmontese army stationed in defense of the bridge over the Mincio, near Goito.
 The battle ended in favor of the Piedmontese army.
 
-Before enlisting, Cerruti completed studies in veterinary medicine, which is why in his paintings we can notice great detail in depicting animals, particularly horses, as in this example.
-This greatly contributed to his success even well before the War of Independence began.
+## Interpretation I -- Mattia Palazzi, Mayor of Mantova
 
-## Interpretation I
+What might seem like just another battle painting to some, in my eyes and I believe in the eyes of Mantovan citizens, represents an important piece of its history.
 
-## Interpretation II
+## Interpretation II -- Pietro Giovanni Delprato, Veterinarian ( 1815 - 1880 )
 
-## Interpretation III
+What has always struck me about Cerruti is the level of detail he was able to capture in depicting horses.
+As a veterinarian colleague, the knowledge he acquired through years of studying animals is masterfully incorporated into his works.
+
+## Interpretation III -- User Suggestion
+
+This painting hides a small detail that if you focus on the more obvious ones, risks going unnoticed: a little to the left, wearing a top hat, we can see Vittorio Emanuele II.
