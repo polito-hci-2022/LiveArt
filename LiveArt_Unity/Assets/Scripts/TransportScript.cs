@@ -34,34 +34,30 @@ public class TransportScript : MonoBehaviour
         switch (mode)
         {
             case "room1":
-                //setPos(0, 0, 0);
                 if (woaIndex == 1)
                     setRot(0, 232, 0);
                 else if (woaIndex == 2)
                     setRot(0, 160, 0);
-                TeleportRoom1();
+                setPos(0, 0, 0);
                 break;
             case "room2":
-                //setPos(250, 0, 0);
                 if (woaIndex == 1)
                     setRot(0, 270, 0);
-                TeleportRoom2();
+                setPos(250, -26, 0);
                 break;
             case "room3":
-                //setPos(500, 0, 0);
                 if (woaIndex == 1)
                     setRot(0, 275, 0);
                 else if (woaIndex == 2)
                     setRot(0, 90, 0);
-                else if (woaIndex == 2)
+                else if (woaIndex == 3)
                     setRot(0, 125, 0);
-                TeleportRoom3();
+                setPos(500, 0, 0);
                 break;
             case "room4":
-                //setPos(750, 0, 0);
                 if (woaIndex == 1)
                     setRot(0, 93, 0);
-                TeleportRoom4();
+                setPos(750, 0, 0);
                 break;
         }
     }
@@ -87,7 +83,7 @@ public class TransportScript : MonoBehaviour
     public void TeleportRoom2()
     {
         if (!transition && mode != "room2")
-            StartCoroutine(TeleportTo(250, -22, 0, "room2"));
+            StartCoroutine(TeleportTo(250, -26, 0, "room2"));
     }
 
     public void TeleportRoom2_1()
