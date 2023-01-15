@@ -73,7 +73,7 @@ public class saveRecord : MonoBehaviour
         if (flag)
             element.GetComponent<RectTransform>().localPosition = new Vector3(170, posY, 0);
         else
-            element.GetComponent<RectTransform>().localPosition = new Vector3(0, posY, 0);
+            element.GetComponent<RectTransform>().localPosition = new Vector3(170, posY, 0);
         posY = posY - 45;
     }
 

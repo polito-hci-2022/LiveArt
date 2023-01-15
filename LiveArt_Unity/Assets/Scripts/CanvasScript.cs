@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CanvasScript : MonoBehaviour
 {
@@ -14,6 +15,13 @@ public class CanvasScript : MonoBehaviour
 
     public GameObject thankText;
 
+    public InputField searchField;
+
+    public InputField titleField;
+
+    public InputField authorField;
+
+    public InputField descriptionField;
 
     public void openCredits()
     {
@@ -37,21 +45,22 @@ public class CanvasScript : MonoBehaviour
     {
         SettingsCanvas.SetActive(false);
         MainCanvas.SetActive(true);
-        
     }
 
     public void openSuggest()
     {
         MainCanvas.SetActive(false);
+        searchField.text = "";
         SuggestCanvas.SetActive(true);
     }
 
     public void closeSuggest()
     {
         SuggestCanvas.SetActive(false);
+        titleField.text = "";
+        authorField.text = "";
+        descriptionField.text = "";
         thankText.SetActive(false);
         MainCanvas.SetActive(true);
-
     }
-
 }

@@ -12,6 +12,7 @@ public class FadeScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rend = GetComponent<Renderer>();
         if (fadeOnStart) FadeIn();
     }

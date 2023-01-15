@@ -12,12 +12,11 @@ public class SearchScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int totalElements = ContentHolder.transform.childCount - 1;
+        int totalElements = ContentHolder.transform.childCount;
         Element = new GameObject[totalElements];
 
         for (int i = 0; i < totalElements; i++)
-            if (ContentHolder.transform.GetChild(i + 1).gameObject.name != ErrorSearchMessage.name)
-                Element[i] = ContentHolder.transform.GetChild(i + 1).gameObject;
+            Element[i] = ContentHolder.transform.GetChild(i).gameObject;
     }
 
     // Update is called once per frame
