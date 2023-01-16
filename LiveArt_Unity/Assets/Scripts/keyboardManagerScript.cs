@@ -38,37 +38,22 @@ public class keyboardManagerScript : MonoBehaviour
     void Start()
     {
         myRecognizer = new DictationRecognizer();
-        myRecognizer.DictationResult += (text, confidence) =>
-        {
-            //Debug.LogFormat("Dictation result: {0}", text);
-        };
+
         myRecognizer.DictationHypothesis += (text) =>
         {
-            /* actualText +=  text.ToUpper();
-            length += text.Length;
-            pos += text.Length; */
             actualText = text.ToUpper();
             length = text.Length;
             pos = text.Length;
             setText();
         };
+
         myRecognizer.DictationComplete += (completionCause) =>
         {
-            if (completionCause != DictationCompletionCause.Complete)
-                Debug
-                    .LogErrorFormat("Dictation completed unsuccessfully: {0}.",
-                    completionCause);
-
+            Debug.Log("Dettatura completata: " + completionCause);
+            dettatura = false;
             ColorBlock cbNotPressed = buttonMic.colors;
             cbNotPressed.normalColor = notPressedColor;
             buttonMic.colors = cbNotPressed;
-        };
-        myRecognizer.DictationError += (error, hresult) =>
-        {
-            Debug
-                .LogErrorFormat("Dictation error: {0}; HResult = {1}.",
-                error,
-                hresult);
         };
     }
 
@@ -80,21 +65,28 @@ public class keyboardManagerScript : MonoBehaviour
                 searchField.text = actualText;
                 break;
             case "title":
-                titleField.SetTextWithoutNotify (actualText);
+                titleField.text = actualText;
                 break;
             case "author":
-                authorField.SetTextWithoutNotify (actualText);
+                authorField.text = actualText;
                 break;
             case "description":
-                descriptionField.SetTextWithoutNotify (actualText);
+                descriptionField.text = actualText;
                 break;
         }
     }
 
     public void show(string givenMode)
     {
+
+        if(dettatura){
+            dettatura = false;
+            myRecognizer.Stop();
+        }
+
         mode = givenMode;
-        if (keyboard.activeSelf == false) keyboard.SetActive(true);
+        if (keyboard.activeSelf == false)
+            keyboard.SetActive(true);
         switch (mode)
         {
             case "search":
@@ -145,7 +137,8 @@ public class keyboardManagerScript : MonoBehaviour
         }
     }
 
-    public void Clear(){
+    public void Clear()
+    {
         actualText = "";
         setText();
         pos = 0;
@@ -160,17 +153,13 @@ public class keyboardManagerScript : MonoBehaviour
             cbPressed.normalColor = pressedColor;
             cbPressed.selectedColor = pressedColor;
             buttonMic.colors = cbPressed;
-
+            dettatura = true;
             myRecognizer.Start();
         }
         else
         {
-            /* ColorBlock cbNotPressed = buttonMic.colors;
-            cbNotPressed.normalColor = notPressedColor;
-            buttonMic.colors = cbNotPressed; */
-
+            dettatura = false;
             myRecognizer.Stop();
         }
-        dettatura = !dettatura;
     }
 }
