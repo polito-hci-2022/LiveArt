@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-//using UnityEngine.Windows.Speech;
-
+#if UNITY_EDITOR || UNITY_STANDALONE_WIN
+using UnityEngine.Windows.Speech;
+#endif
 public class keyboardManagerScript : MonoBehaviour
 {
-    //private DictationRecognizer myRecognizer;
-
+#if UNITY_EDITOR || UNITY_STANDALONE_WIN
+    private DictationRecognizer myRecognizer;
+#endif
     public InputField searchField;
 
     public InputField titleField;
@@ -18,6 +20,8 @@ public class keyboardManagerScript : MonoBehaviour
     public InputField descriptionField;
 
     public GameObject keyboard;
+
+    public GameObject errorMic;
 
     public Button buttonMic;
 
@@ -37,7 +41,9 @@ public class keyboardManagerScript : MonoBehaviour
 
     void Start()
     {
-        /* myRecognizer = new DictationRecognizer();
+#if UNITY_EDITOR || UNITY_STANDALONE_WIN
+
+        myRecognizer = new DictationRecognizer();
 
         myRecognizer.DictationHypothesis += (text) =>
         {
@@ -54,7 +60,8 @@ public class keyboardManagerScript : MonoBehaviour
             ColorBlock cbNotPressed = buttonMic.colors;
             cbNotPressed.normalColor = notPressedColor;
             buttonMic.colors = cbNotPressed;
-        }; */
+        };
+#endif
     }
 
     void setText()
@@ -78,11 +85,14 @@ public class keyboardManagerScript : MonoBehaviour
 
     public void show(string givenMode)
     {
+#if UNITY_EDITOR || UNITY_STANDALONE_WIN
 
-        if(dettatura){
+        if (dettatura)
+        {
             dettatura = false;
-            //myRecognizer.Stop();
+            myRecognizer.Stop();
         }
+#endif
 
         mode = givenMode;
         if (keyboard.activeSelf == false)
@@ -147,7 +157,8 @@ public class keyboardManagerScript : MonoBehaviour
 
     public void Dettatura()
     {
-       /*  if (dettatura == false)
+#if UNITY_EDITOR || UNITY_STANDALONE_WIN
+        if (dettatura == false)
         {
             ColorBlock cbPressed = buttonMic.colors;
             cbPressed.normalColor = pressedColor;
@@ -160,6 +171,16 @@ public class keyboardManagerScript : MonoBehaviour
         {
             dettatura = false;
             myRecognizer.Stop();
-        } */
+        }
+#endif
+#if UNITY_ANDROID
+    StartCoroutine(waitError());
+#endif
+    }
+
+    IEnumerator waitError(){
+        errorMic.SetActive(true);
+        yield return new WaitForSeconds(3.0f);
+        errorMic.SetActive(false);
     }
 }
