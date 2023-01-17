@@ -56,10 +56,10 @@ public class CanvasScript : MonoBehaviour
 
     public void closeSuggest()
     {
-        SuggestCanvas.SetActive(false);
         titleField.text = "";
         authorField.text = "";
         descriptionField.text = "";
+        SuggestCanvas.SetActive(false);
         thankText.SetActive(false);
         MainCanvas.SetActive(true);
     }
