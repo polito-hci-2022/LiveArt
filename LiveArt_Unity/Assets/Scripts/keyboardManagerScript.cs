@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Windows.Speech;
+//using UnityEngine.Windows.Speech;
 
 public class keyboardManagerScript : MonoBehaviour
 {
-    private DictationRecognizer myRecognizer;
+    //private DictationRecognizer myRecognizer;
 
     public InputField searchField;
 
@@ -37,7 +37,7 @@ public class keyboardManagerScript : MonoBehaviour
 
     void Start()
     {
-        myRecognizer = new DictationRecognizer();
+        /* myRecognizer = new DictationRecognizer();
 
         myRecognizer.DictationHypothesis += (text) =>
         {
@@ -54,7 +54,7 @@ public class keyboardManagerScript : MonoBehaviour
             ColorBlock cbNotPressed = buttonMic.colors;
             cbNotPressed.normalColor = notPressedColor;
             buttonMic.colors = cbNotPressed;
-        };
+        }; */
     }
 
     void setText()
@@ -81,7 +81,7 @@ public class keyboardManagerScript : MonoBehaviour
 
         if(dettatura){
             dettatura = false;
-            myRecognizer.Stop();
+            //myRecognizer.Stop();
         }
 
         mode = givenMode;
@@ -147,7 +147,7 @@ public class keyboardManagerScript : MonoBehaviour
 
     public void Dettatura()
     {
-        if (dettatura == false)
+       /*  if (dettatura == false)
         {
             ColorBlock cbPressed = buttonMic.colors;
             cbPressed.normalColor = pressedColor;
@@ -160,6 +160,6 @@ public class keyboardManagerScript : MonoBehaviour
         {
             dettatura = false;
             myRecognizer.Stop();
-        }
+        } */
     }
 }
