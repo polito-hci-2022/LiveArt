@@ -6322,11 +6322,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click the blue-lit button on the left controller to open the menu
+  m_text: 'Click the blue-lit button on the left controller to open or close the
+    menu
 
 
-    Move
-    between rooms from the menu on your secondary hand'
+    Move between rooms from the menu on your secondary hand'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
   m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
@@ -21240,7 +21240,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526275551}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10.05}
+  m_LocalPosition: {x: 0, y: 0, z: 11.59}
   m_LocalScale: {x: 0.04, y: 0.04, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21266,7 +21266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa895abeb3d4f96478abda594c10f638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 5
+  waitTime: 7
 --- !u!114 &1526275554
 MonoBehaviour:
   m_ObjectHideFlags: 0

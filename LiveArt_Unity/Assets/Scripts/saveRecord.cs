@@ -12,7 +12,6 @@ public class saveRecord : MonoBehaviour
     public GameObject parent;
     int posY = -30;
 
-    bool test = true;
     string path;
 
     public InputField TitleInput;
@@ -47,10 +46,11 @@ public class saveRecord : MonoBehaviour
 
     void Start()
     {
-        if (test)
-            path = @"C:\Users\edoar\code\LiveArt\LiveArt_Unity\Assets\DATA.txt";
-        else
-            path = "";
+        path = Application.persistentDataPath + "/DATA.txt";
+
+        if (!File.Exists(path))
+            File.WriteAllText(path, "");
+        Debug.Log(Application.persistentDataPath);
         readData();
     }
 
