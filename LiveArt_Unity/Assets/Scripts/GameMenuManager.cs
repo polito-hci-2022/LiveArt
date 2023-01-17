@@ -17,4 +17,9 @@ public class GameMenuManager : MonoBehaviour
             gameMenuObject.SetActive(!gameMenuObject.activeSelf);
         }
     }
+
+    public void CloseMenu(){
+         gameMenuObject.SetActive(false);
+    }
+
 }

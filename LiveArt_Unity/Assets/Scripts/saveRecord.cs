@@ -19,6 +19,9 @@ public class saveRecord : MonoBehaviour
     public InputField AuthorInput;
     public InputField DescripitonInput;
 
+    public Text ErrorText;
+
+    public GameObject popup;
     public GameObject thankText;
     string[] lines;
 
@@ -53,12 +56,43 @@ public class saveRecord : MonoBehaviour
 
     public void AggiungiWoA()
     {
+        if (TitleInput.text == "")
+        {
+            ErrorText.text = "Input invalid: Title empty";
+            ErrorText.gameObject.SetActive(true);
+            thankText.SetActive(false);
+        }
+        else if (AuthorInput.text == "")
+        {
+            ErrorText.text = "Input invalid: Author empty";
+            ErrorText.gameObject.SetActive(true);
+            thankText.SetActive(false);
+        }
+        else if (DescripitonInput.text == "")
+        {
+            ErrorText.text = "Input invalid: Description empty";
+            ErrorText.gameObject.SetActive(true);
+            thankText.SetActive(false);
+        }
+        else
+            popup.SetActive(true);
+    }
+
+    public void Confirm()
+    {
+        Close();
+        ErrorText.gameObject.SetActive(false);
         InstaziaNuovoRecord(TitleInput.text, AuthorInput.text, DescripitonInput.text, true);
         writeData(TitleInput.text, AuthorInput.text, DescripitonInput.text);
         TitleInput.text = "";
         AuthorInput.text = "";
         DescripitonInput.text = "";
         thankText.SetActive(true);
+    }
+
+    public void Close()
+    {
+        popup.SetActive(false);
     }
 
     void InstaziaNuovoRecord(string title, string author, string description, bool flag)

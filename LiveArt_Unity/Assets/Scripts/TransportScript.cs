@@ -9,6 +9,9 @@ public class TransportScript : MonoBehaviour
 
     public GameObject player;
 
+    public GameObject leftMenu;
+    public GameObject rightMenu;
+
     public Button button1R;
     public Button button2R;
     public Button button3R;
@@ -62,73 +65,91 @@ public class TransportScript : MonoBehaviour
         }
     }
 
+    void ActiveMenu(bool val)
+    {
+        if (val == false)
+        {
+            rightMenu.SetActive(false);
+            leftMenu.SetActive(false);
+        }
+        else
+        {
+            int mancini = PlayerPrefs.GetInt("Mancini");
+            Debug.Log("Debug mancini: " + mancini);
+            if (mancini == 0)
+                leftMenu.SetActive(val);
+            else if (mancini == 1)
+                rightMenu.SetActive(val);
+        }
+    }
+
     public void TeleportRoom1()
     {
         if (!transition && mode != "room1")
-            StartCoroutine(TeleportTo(0, 0, 0, "room1"));
+            StartCoroutine(TeleportTo(0, 0, 0, "room1", true));
     }
 
     public void TeleportRoom1_1()
     {
         if (!transition && mode != "room1_1")
-            StartCoroutine(TeleportTo(0, 250, 0, "room1_1"));
+            StartCoroutine(TeleportTo(0, 250, 0, "room1_1", false));
     }
 
     public void TeleportRoom1_2()
     {
         if (!transition && mode != "room1_2")
-            StartCoroutine(TeleportTo(0, 500, 0, "room1_2"));
+            StartCoroutine(TeleportTo(0, 500, 0, "room1_2", false));
     }
 
     public void TeleportRoom2()
     {
         if (!transition && mode != "room2")
-            StartCoroutine(TeleportTo(250, -26, 0, "room2"));
+            StartCoroutine(TeleportTo(250, -26, 0, "room2", true));
     }
 
     public void TeleportRoom2_1()
     {
         if (!transition && mode != "room2_1")
-            StartCoroutine(TeleportTo(250, 250, 0, "room2_1"));
+            StartCoroutine(TeleportTo(250, 250, 0, "room2_1", false));
     }
 
     public void TeleportRoom3()
     {
         if (!transition && mode != "room3")
-            StartCoroutine(TeleportTo(500, 0, 0, "room3"));
+            StartCoroutine(TeleportTo(500, 0, 0, "room3", true));
     }
 
     public void TeleportRoom3_1()
     {
         if (!transition && mode != "room3_1")
-            StartCoroutine(TeleportTo(500, 250, 0, "room3_1"));
+            StartCoroutine(TeleportTo(500, 250, 0, "room3_1", false));
     }
 
     public void TeleportRoom3_2()
     {
         if (!transition && mode != "room3_2")
-            StartCoroutine(TeleportTo(500, 500, 0, "room3_2"));
+            StartCoroutine(TeleportTo(500, 500, 0, "room3_2", false));
     }
 
     public void TeleportRoom3_3()
     {
         if (!transition && mode != "room3_3")
-            StartCoroutine(TeleportTo(500, 750, 0, "room3_3"));
+            StartCoroutine(TeleportTo(500, 750, 0, "room3_3", false));
     }
 
     public void TeleportRoom4()
     {
         if (!transition && mode != "room4")
-            StartCoroutine(TeleportTo(750, 0, 0, "room4"));
+            StartCoroutine(TeleportTo(750, 0, 0, "room4", true));
     }
 
     public void TeleportRoom4_1()
     {
         if (!transition && mode != "room4_1")
-            StartCoroutine(TeleportTo(750, 250, 0, "room4_1"));
+            StartCoroutine(TeleportTo(750, 250, 0, "room4_1", false));
     }
 
-    IEnumerator TeleportTo(int x, int y, int z, string newMode)
+    IEnumerator TeleportTo(int x, int y, int z, string newMode, bool val)
     {
         transition = true;
         mode = newMode;
@@ -140,6 +161,7 @@ public class TransportScript : MonoBehaviour
         setPos(x, y, z);
         fadeScreen.FadeIn();
         transition = false;
+        //ActiveMenu(val);
     }
 
     void setPos(int x, int y, int z)
