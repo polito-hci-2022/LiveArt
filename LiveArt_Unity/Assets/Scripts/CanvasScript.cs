@@ -23,6 +23,37 @@ public class CanvasScript : MonoBehaviour
 
     public InputField descriptionField;
 
+    public GameObject expanded;
+
+    public Text titleText;
+    public Text authorText;
+    public Text descriptionText;
+
+    void Awake()
+    {
+        CloseExpanded();
+    }
+
+    void Update()
+    {
+        int val = PlayerPrefs.GetInt("showCanvas");
+        if (val == 1)
+        {
+            expanded.SetActive(true);
+            titleText.text = "Title: " + PlayerPrefs.GetString("showTitle");
+            authorText.text = "Author: " + PlayerPrefs.GetString("showAuthor");
+            descriptionText.text = "Description " + PlayerPrefs.GetString("showDescription");
+        }
+        else
+            expanded.SetActive(false);
+    }
+
+    public void CloseExpanded()
+    {
+        PlayerPrefs.SetInt("showCanvas", 0);
+        PlayerPrefs.Save();
+    }
+
     public void openCredits()
     {
         MainCanvas.SetActive(false);

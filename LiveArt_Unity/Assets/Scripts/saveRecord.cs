@@ -107,14 +107,14 @@ public class saveRecord : MonoBehaviour
         GameObject element = (GameObject)Instantiate(prefabContent);
         element.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().SetText(title);
         element.transform.GetChild(1).gameObject.GetComponent<TMP_Text>().SetText(author);
-        element.transform.GetChild(2).gameObject.GetComponent<TMP_Text>().SetText(description);
+        //element.transform.GetChild(2).gameObject.GetComponent<TMP_Text>().SetText(description);
         element.transform.SetParent(parent.transform);
         element.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
         element.GetComponent<RectTransform>().localRotation = Quaternion.Euler(0, 0, 0);
-        if (flag)
-            element.GetComponent<RectTransform>().localPosition = new Vector3(170, posY, 0);
-        else
-            element.GetComponent<RectTransform>().localPosition = new Vector3(170, posY, 0);
+
+        element.GetComponent<RectTransform>().localPosition = new Vector3(170, posY, 0);
+        element.GetComponent<infoSaving>().Set(author, title, description);
+
         posY = posY - 45;
     }
 

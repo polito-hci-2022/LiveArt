@@ -29,6 +29,9 @@ public class keyboardManagerScript : MonoBehaviour
 
     public Color notPressedColor;
 
+    public AudioSource startingSound;
+    public AudioSource endingSound;
+
     string mode;
 
     private string actualText;
@@ -158,8 +161,10 @@ public class keyboardManagerScript : MonoBehaviour
     public void Dettatura()
     {
 #if UNITY_EDITOR || UNITY_STANDALONE_WIN
+        Debug.Log("Dettatura attiva");
         if (dettatura == false)
         {
+            startingSound.Play();
             ColorBlock cbPressed = buttonMic.colors;
             cbPressed.normalColor = pressedColor;
             cbPressed.selectedColor = pressedColor;
@@ -169,16 +174,23 @@ public class keyboardManagerScript : MonoBehaviour
         }
         else
         {
+            endingSound.Play();
             dettatura = false;
+            dettatura = false;
+            ColorBlock cbNotPressed = buttonMic.colors;
+            cbNotPressed.normalColor = notPressedColor;
+            buttonMic.colors = cbNotPressed;
             myRecognizer.Stop();
         }
 #endif
 #if UNITY_ANDROID
-    StartCoroutine(waitError());
+        Debug.Log("Dettatura non attiva");
+        StartCoroutine(waitError());
 #endif
     }
 
-    IEnumerator waitError(){
+    IEnumerator waitError()
+    {
         errorMic.SetActive(true);
         yield return new WaitForSeconds(3.0f);
         errorMic.SetActive(false);
