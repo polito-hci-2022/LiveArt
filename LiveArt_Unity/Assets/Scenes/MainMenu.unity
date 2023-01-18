@@ -3776,7 +3776,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &554833839
@@ -12855,7 +12855,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1682278356
@@ -14118,7 +14118,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1993433966
@@ -15010,6 +15010,7 @@ MonoBehaviour:
   prefabContent: {fileID: 5853587595924378358, guid: 2a32cc1b9b829c64c8a959427ef9f852,
     type: 3}
   parent: {fileID: 447694121}
+  canvasInteraction: {fileID: 1025816166}
   TitleInput: {fileID: 58010753}
   AuthorInput: {fileID: 1456146866}
   DescripitonInput: {fileID: 161602381}
@@ -15343,6 +15344,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XRRig
       objectReference: {fileID: 0}
+    - target: {fileID: 6137804950217431173, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_MaxRaycastDistance
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6626651614942379579, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: fadeDuration
@@ -15442,6 +15448,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990927505672114310, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_MaxRaycastDistance
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7991728234692321907, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}

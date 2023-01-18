@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit.UI;
 
 public class saveRecord : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class saveRecord : MonoBehaviour
     int posY = -30;
 
     string path;
+
+    public TrackedDeviceGraphicRaycaster canvasInteraction;
 
     public InputField TitleInput;
     public InputField AuthorInput;
@@ -56,26 +59,29 @@ public class saveRecord : MonoBehaviour
 
     public void AggiungiWoA()
     {
-        if (TitleInput.text == "")
+        if (TitleInput.text.Trim() == "")
         {
             ErrorText.text = "Input invalid: Title empty";
             ErrorText.gameObject.SetActive(true);
             thankText.SetActive(false);
         }
-        else if (AuthorInput.text == "")
+        else if (AuthorInput.text.Trim() == "")
         {
             ErrorText.text = "Input invalid: Author empty";
             ErrorText.gameObject.SetActive(true);
             thankText.SetActive(false);
         }
-        else if (DescripitonInput.text == "")
+        else if (DescripitonInput.text.Trim() == "")
         {
             ErrorText.text = "Input invalid: Description empty";
             ErrorText.gameObject.SetActive(true);
             thankText.SetActive(false);
         }
         else
+        {
+            canvasInteraction.enabled = false;
             popup.SetActive(true);
+        }
     }
 
     public void Confirm()
@@ -92,6 +98,7 @@ public class saveRecord : MonoBehaviour
 
     public void Close()
     {
+        canvasInteraction.enabled = true;
         popup.SetActive(false);
     }
 
