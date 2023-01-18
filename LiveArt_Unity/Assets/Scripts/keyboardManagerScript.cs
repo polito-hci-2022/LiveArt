@@ -48,8 +48,18 @@ public class keyboardManagerScript : MonoBehaviour
 
         myRecognizer = new DictationRecognizer();
 
+        /* myRecognizer.DictationResult += (text, confidence) =>
+        {
+            Debug.LogFormat("Dictation result: {0}", text);
+        }; */
+
+        myRecognizer.DictationError += (error, hresult) =>
+        {
+            Debug.LogErrorFormat("Dictation error: {0}; HResult = {1}.", error, hresult);
+        };
         myRecognizer.DictationHypothesis += (text) =>
         {
+            Debug.Log("Risultato: " + text);
             actualText = text.ToUpper();
             length = text.Length;
             pos = text.Length;
@@ -58,10 +68,12 @@ public class keyboardManagerScript : MonoBehaviour
 
         myRecognizer.DictationComplete += (completionCause) =>
         {
+            endingSound.Play();
             Debug.Log("Dettatura completata: " + completionCause);
             dettatura = false;
             ColorBlock cbNotPressed = buttonMic.colors;
             cbNotPressed.normalColor = notPressedColor;
+            cbNotPressed.selectedColor = notPressedColor;
             buttonMic.colors = cbNotPressed;
         };
 #endif
@@ -164,22 +176,17 @@ public class keyboardManagerScript : MonoBehaviour
         Debug.Log("Dettatura attiva");
         if (dettatura == false)
         {
+            Debug.Log("Dettatura iniziata");
             startingSound.Play();
             ColorBlock cbPressed = buttonMic.colors;
             cbPressed.normalColor = pressedColor;
             cbPressed.selectedColor = pressedColor;
             buttonMic.colors = cbPressed;
-            dettatura = true;
             myRecognizer.Start();
+            dettatura = true;
         }
         else
         {
-            endingSound.Play();
-            dettatura = false;
-            dettatura = false;
-            ColorBlock cbNotPressed = buttonMic.colors;
-            cbNotPressed.normalColor = notPressedColor;
-            buttonMic.colors = cbNotPressed;
             myRecognizer.Stop();
         }
 #endif
