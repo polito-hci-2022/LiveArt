@@ -7,11 +7,6 @@ public class SceneTransitionManager : MonoBehaviour
 {
 
     public FadeScreen fadeScreen;
-    public GameObject XRRIG;
-
-    void Start(){
-        XRRIG.transform.rotation = Quaternion.Euler(0, 0, 0);
-    }
 
     public void GoToScene(int sceneIndex){
         StartCoroutine(GoToSceneRoutine(sceneIndex));
