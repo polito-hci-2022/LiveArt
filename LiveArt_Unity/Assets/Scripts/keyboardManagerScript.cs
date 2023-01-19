@@ -23,6 +23,8 @@ public class keyboardManagerScript : MonoBehaviour
 
     public GameObject errorMic;
 
+    public SearchScript searchScript;
+
     public Button buttonMic;
 
     public Color pressedColor;
@@ -64,6 +66,7 @@ public class keyboardManagerScript : MonoBehaviour
             length = text.Length;
             pos = text.Length;
             setText();
+            //searchScript.Search();
         };
 
         myRecognizer.DictationComplete += (completionCause) =>

@@ -4,18 +4,11 @@ using UnityEngine;
 
 public class starting : MonoBehaviour
 {
-    public GameObject XRRIG;
+    public GameObject mainCamera;
 
     // Start is called before the first frame update
-    void Start()
+    /* void Start()
     {
-        XRRIG.transform.rotation = Quaternion.Euler(0, 0, 0);
-        Debug.Log(
-            XRRIG.transform.rotation.x
-                + " "
-                + XRRIG.transform.rotation.y
-                + " "
-                + XRRIG.transform.rotation.z
-        );
-    }
+        mainCamera.transform.localEulerAngles = new Vector3(0,0,0);   
+    } */
 }

@@ -92,12 +92,15 @@ public class GameMenuManager : MonoBehaviour
             gameMenuObject.SetActive(!gameMenuObject.activeSelf);
             if (gameMenuObject.activeSelf == true)
             {
+                PlayerPrefs.SetInt("menuOpen", 1);
                 setCanvasEnable(false);
             }
             else if (gameMenuObject.activeSelf == false)
             {
+                PlayerPrefs.SetInt("menuOpen", 0);
                 setCanvasEnable(true);
             }
+            PlayerPrefs.Save();
         }
     }
 

@@ -22,6 +22,7 @@ public class SearchScript : MonoBehaviour
     // Update is called once per frame
     public void Search()
     {
+        //Debug.Log("Search: " + SearchBar.text);
         int activElements = 0;
 
         if (SearchBar.text.Length > 0)
@@ -35,12 +36,17 @@ public class SearchScript : MonoBehaviour
                         .text.ToLower()
                         .Contains(SearchBar.text.ToLower())
                 )
+                {
                     activElements += 1;
+                    ele.SetActive(true);
+                }
                 else
                     ele.SetActive(false);
             }
             if (activElements == 0)
                 ErrorSearchMessage.SetActive(true);
+            else
+                ErrorSearchMessage.SetActive(false);
         }
         else
         {

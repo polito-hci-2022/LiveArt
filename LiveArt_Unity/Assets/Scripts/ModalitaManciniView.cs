@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class ModalitaManciniView : MonoBehaviour
 {
-   
     private int mancini;
 
     public GameObject leftHandRay;
@@ -44,9 +42,11 @@ public class ModalitaManciniView : MonoBehaviour
         PlayerPrefs.SetInt("Mancini", 1);
         leftHandRay.SetActive(true);
         rightHandRay.SetActive(false);
-        leftMenu.SetActive(false);
-        rightMenu.SetActive(true);
-
+        if (PlayerPrefs.GetInt("menuOpen", 0) == 0)
+        {
+            leftMenu.SetActive(false);
+            rightMenu.SetActive(true);
+        }
 
         ColorBlock cbPressed = buttonON.colors;
         cbPressed.normalColor = pressedColor;
@@ -66,9 +66,11 @@ public class ModalitaManciniView : MonoBehaviour
         PlayerPrefs.SetInt("Mancini", 0);
         leftHandRay.SetActive(false);
         rightHandRay.SetActive(true);
-        leftMenu.SetActive(true);
-        rightMenu.SetActive(false);
-
+        if (PlayerPrefs.GetInt("menuOpen", 0) == 0)
+        {
+            leftMenu.SetActive(true);
+            rightMenu.SetActive(false);
+        }
         ColorBlock cbPressed = buttonOFF.colors;
         cbPressed.normalColor = pressedColor;
         cbPressed.selectedColor = pressedColor;
@@ -82,5 +84,3 @@ public class ModalitaManciniView : MonoBehaviour
         PlayerPrefs.Save();
     }
 }
-
-

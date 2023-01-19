@@ -7093,7 +7093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e90384cebd60a04282c242f0aab5cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  XRRIG: {fileID: 985082111}
+  mainCamera: {fileID: 6626651615429528388}
 --- !u!1 &1025816161
 GameObject:
   m_ObjectHideFlags: 0
@@ -8052,6 +8052,7 @@ MonoBehaviour:
   descriptionField: {fileID: 161602381}
   keyboard: {fileID: 2072113907}
   errorMic: {fileID: 1835071247}
+  searchScript: {fileID: 1085319438}
   buttonMic: {fileID: 1219103832}
   pressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
   notPressedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -16376,6 +16377,16 @@ PrefabInstance:
       propertyPath: m_MaxRaycastDistance
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 6626651614942379579, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: XRRIG
+      value: 
+      objectReference: {fileID: 985082111}
+    - target: {fileID: 6626651614942379579, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 6626651615429528388}
     - target: {fileID: 6626651614942379579, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: fadeDuration

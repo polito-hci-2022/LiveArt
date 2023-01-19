@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FadeScreen : MonoBehaviour
 {
@@ -8,13 +9,24 @@ public class FadeScreen : MonoBehaviour
     public float fadeDuration = 2;
     public Color fadeColor;
     private Renderer rend;
+    public GameObject XRRIG;
+    public GameObject camera;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
         rend = GetComponent<Renderer>();
-        if (fadeOnStart) FadeIn();
+        if (fadeOnStart)
+            FadeIn();
+    }
+
+    void Update(){
+        if(PlayerPrefs.GetInt("transitionToMenu", 0) == 1){
+             XRRIG.transform.rotation = Quaternion.Euler(0, -camera.transform.localEulerAngles.y, 0);
+             PlayerPrefs.SetInt("transitionToMenu", 0);
+            PlayerPrefs.Save();
+        }
     }
 
     public void Fade(float alphaIn, float alphaOut)
@@ -24,6 +36,10 @@ public class FadeScreen : MonoBehaviour
 
     public void FadeIn()
     {
+        if (SceneManager.GetActiveScene().name == "MainMenu"){
+            PlayerPrefs.SetInt("transitionToMenu", 1);
+            PlayerPrefs.Save();
+        }
         Fade(1, 0);
     }
 
