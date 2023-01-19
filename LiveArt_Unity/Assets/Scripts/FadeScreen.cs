@@ -10,8 +10,7 @@ public class FadeScreen : MonoBehaviour
     public Color fadeColor;
     private Renderer rend;
     public GameObject XRRIG;
-    public GameObject camera;
-
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -21,10 +20,12 @@ public class FadeScreen : MonoBehaviour
             FadeIn();
     }
 
-    void Update(){
-        if(PlayerPrefs.GetInt("transitionToMenu", 0) == 1){
-             XRRIG.transform.rotation = Quaternion.Euler(0, -camera.transform.localEulerAngles.y, 0);
-             PlayerPrefs.SetInt("transitionToMenu", 0);
+    void Update()
+    {
+        if (PlayerPrefs.GetInt("transitionToMenu", 0) == 1)
+        {
+            XRRIG.transform.rotation = Quaternion.Euler(0, -player.transform.localEulerAngles.y, 0);
+            PlayerPrefs.SetInt("transitionToMenu", 0);
             PlayerPrefs.Save();
         }
     }
@@ -36,7 +37,8 @@ public class FadeScreen : MonoBehaviour
 
     public void FadeIn()
     {
-        if (SceneManager.GetActiveScene().name == "MainMenu"){
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
             PlayerPrefs.SetInt("transitionToMenu", 1);
             PlayerPrefs.Save();
         }

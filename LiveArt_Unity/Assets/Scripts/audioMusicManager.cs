@@ -13,6 +13,8 @@ public class audioMusicManager : MonoBehaviour
 
     public Color pressedColor;
 
+    public Color highlightedColor;
+
     public Color notPressedColor;
 
     private int music;
@@ -35,12 +37,16 @@ public class audioMusicManager : MonoBehaviour
 
         cbPressed.normalColor = pressedColor;
         cbPressed.selectedColor = pressedColor;
+        cbPressed.highlightedColor  = pressedColor;
 
         buttonON.colors = cbPressed;
 
 
         ColorBlock cbNotPressed = buttonOFF.colors;
         cbNotPressed.normalColor = notPressedColor;
+        cbNotPressed.highlightedColor = highlightedColor;
+        cbNotPressed.selectedColor = notPressedColor;
+
         buttonOFF.colors = cbNotPressed;
 
         mySource.Play();
@@ -54,11 +60,15 @@ public class audioMusicManager : MonoBehaviour
 
         cbPressed.normalColor = pressedColor;
         cbPressed.selectedColor = pressedColor;
+        cbPressed.highlightedColor = pressedColor;
 
         buttonOFF.colors = cbPressed;
 
         ColorBlock cbNotPressed = buttonON.colors;
         cbNotPressed.normalColor = notPressedColor;
+        cbNotPressed.highlightedColor = highlightedColor;
+        cbNotPressed.selectedColor = notPressedColor;
+
         buttonON.colors = cbNotPressed;
 
         mySource.Stop();

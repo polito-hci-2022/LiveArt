@@ -90,7 +90,9 @@ public class GameMenuManager : MonoBehaviour
         if (showButton.action.WasPressedThisFrame())
         {
             gameMenuObject.SetActive(!gameMenuObject.activeSelf);
-            if (gameMenuObject.activeSelf == true)
+            
+        }
+        if (gameMenuObject.activeSelf == true)
             {
                 PlayerPrefs.SetInt("menuOpen", 1);
                 setCanvasEnable(false);
@@ -101,11 +103,11 @@ public class GameMenuManager : MonoBehaviour
                 setCanvasEnable(true);
             }
             PlayerPrefs.Save();
-        }
     }
 
     public void CloseMenu()
     {
+        setCanvasEnable(true);
         gameMenuObject.SetActive(false);
     }
 
@@ -115,7 +117,7 @@ public class GameMenuManager : MonoBehaviour
         {
             el.enabled = val;
         }
-        int mancini = PlayerPrefs.GetInt("Mancini", 0);
+        int mancini = PlayerPrefs.GetInt("Mancini");
         if (mancini == 1)
             rightMenu.SetActive(val);
         else

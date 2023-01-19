@@ -22,8 +22,11 @@ public class TransportScript : MonoBehaviour
     public Button button3L;
     public Button button4L;
 
+
     public Color pressedColor;
+    public Color highlightedColor;
     public Color notPressedColor;
+    public GameObject message;
 
     bool transition = false;
     int woaIndex;
@@ -65,91 +68,77 @@ public class TransportScript : MonoBehaviour
         }
     }
 
-    void ActiveMenu(bool val)
-    {
-        if (val == false)
-        {
-            rightMenu.SetActive(false);
-            leftMenu.SetActive(false);
-        }
-        else
-        {
-            int mancini = PlayerPrefs.GetInt("Mancini");
-            Debug.Log("Debug mancini: " + mancini);
-            if (mancini == 0)
-                leftMenu.SetActive(val);
-            else if (mancini == 1)
-                rightMenu.SetActive(val);
-        }
-    }
-
     public void TeleportRoom1()
     {
+        message.SetActive(false);
         if (!transition && mode != "room1")
-            StartCoroutine(TeleportTo(0, 0, 0, "room1", true));
+            StartCoroutine(TeleportTo(0, 0, 0, "room1"));
     }
 
     public void TeleportRoom1_1()
     {
         if (!transition && mode != "room1_1")
-            StartCoroutine(TeleportTo(0, 250, 0, "room1_1", false));
+            StartCoroutine(TeleportTo(0, 250, 0, "room1_1"));
     }
 
     public void TeleportRoom1_2()
     {
         if (!transition && mode != "room1_2")
-            StartCoroutine(TeleportTo(0, 500, 0, "room1_2", false));
+            StartCoroutine(TeleportTo(0, 500, 0, "room1_2"));
     }
 
     public void TeleportRoom2()
     {
+        message.SetActive(false);
         if (!transition && mode != "room2")
-            StartCoroutine(TeleportTo(250, -26, 0, "room2", true));
+            StartCoroutine(TeleportTo(250, -26, 0, "room2"));
     }
 
     public void TeleportRoom2_1()
     {
         if (!transition && mode != "room2_1")
-            StartCoroutine(TeleportTo(250, 250, 0, "room2_1", false));
+            StartCoroutine(TeleportTo(250, 250, 0, "room2_1"));
     }
 
     public void TeleportRoom3()
     {
+        message.SetActive(false);
         if (!transition && mode != "room3")
-            StartCoroutine(TeleportTo(500, 0, 0, "room3", true));
+            StartCoroutine(TeleportTo(500, 0, 0, "room3"));
     }
 
     public void TeleportRoom3_1()
     {
         if (!transition && mode != "room3_1")
-            StartCoroutine(TeleportTo(500, 250, 0, "room3_1", false));
+            StartCoroutine(TeleportTo(500, 250, 0, "room3_1"));
     }
 
     public void TeleportRoom3_2()
     {
         if (!transition && mode != "room3_2")
-            StartCoroutine(TeleportTo(500, 500, 0, "room3_2", false));
+            StartCoroutine(TeleportTo(500, 500, 0, "room3_2"));
     }
 
     public void TeleportRoom3_3()
     {
         if (!transition && mode != "room3_3")
-            StartCoroutine(TeleportTo(500, 750, 0, "room3_3", false));
+            StartCoroutine(TeleportTo(500, 750, 0, "room3_3"));
     }
 
     public void TeleportRoom4()
     {
+        message.SetActive(false);
         if (!transition && mode != "room4")
-            StartCoroutine(TeleportTo(750, 0, 0, "room4", true));
+            StartCoroutine(TeleportTo(750, 0, 0, "room4"));
     }
 
     public void TeleportRoom4_1()
     {
         if (!transition && mode != "room4_1")
-            StartCoroutine(TeleportTo(750, 250, 0, "room4_1", false));
+            StartCoroutine(TeleportTo(750, 250, 0, "room4_1"));
     }
 
-    IEnumerator TeleportTo(int x, int y, int z, string newMode, bool val)
+    IEnumerator TeleportTo(int x, int y, int z, string newMode)
     {
         transition = true;
         mode = newMode;
@@ -161,7 +150,6 @@ public class TransportScript : MonoBehaviour
         setPos(x, y, z);
         fadeScreen.FadeIn();
         transition = false;
-        //ActiveMenu(val);
     }
 
     void setPos(int x, int y, int z)
@@ -195,16 +183,16 @@ public class TransportScript : MonoBehaviour
         {
             ColorBlock cbPressed = button.colors;
             cbPressed.normalColor = pressedColor;
-            cbPressed.selectedColor = pressedColor;
+        cbPressed.selectedColor = pressedColor;
+        cbPressed.highlightedColor  = pressedColor;
             button.colors = cbPressed;
         }
         else
         {
             ColorBlock cbNotPressed = button.colors;
             cbNotPressed.normalColor = notPressedColor;
-            cbNotPressed.pressedColor = notPressedColor;
             cbNotPressed.selectedColor = notPressedColor;
-
+            cbNotPressed.highlightedColor = highlightedColor;
             button.colors = cbNotPressed;
         }
     }

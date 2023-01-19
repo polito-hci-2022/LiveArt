@@ -50,10 +50,8 @@ public class keyboardManagerScript : MonoBehaviour
 
         myRecognizer = new DictationRecognizer();
 
-        /* myRecognizer.DictationResult += (text, confidence) =>
-        {
-            Debug.LogFormat("Dictation result: {0}", text);
-        }; */
+        myRecognizer.AutoSilenceTimeoutSeconds = 5;
+        myRecognizer.InitialSilenceTimeoutSeconds = 5;
 
         myRecognizer.DictationError += (error, hresult) =>
         {
@@ -66,7 +64,6 @@ public class keyboardManagerScript : MonoBehaviour
             length = text.Length;
             pos = text.Length;
             setText();
-            //searchScript.Search();
         };
 
         myRecognizer.DictationComplete += (completionCause) =>

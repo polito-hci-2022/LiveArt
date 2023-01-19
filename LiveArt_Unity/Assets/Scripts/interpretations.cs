@@ -12,9 +12,12 @@ public class interpretations : MonoBehaviour
     public Button button2;
     public Button button3;
     public Color pressedColor;
+    public Color highlightedColor;
+
     public Color notPressedColor;
 
-    void Start(){
+    void Start()
+    {
         LoadInterpretationOne();
     }
 
@@ -27,11 +30,14 @@ public class interpretations : MonoBehaviour
 
         ColorBlock cbPressed = button1.colors;
         cbPressed.normalColor = pressedColor;
+        cbPressed.highlightedColor = pressedColor;
         cbPressed.selectedColor = pressedColor;
         button1.colors = cbPressed;
 
         ColorBlock cbNotPressed = button2.colors;
         cbNotPressed.normalColor = notPressedColor;
+        cbNotPressed.selectedColor = notPressedColor;
+        cbNotPressed.highlightedColor = highlightedColor;
         button2.colors = cbNotPressed;
         button3.colors = cbNotPressed;
     }
@@ -44,11 +50,14 @@ public class interpretations : MonoBehaviour
 
         ColorBlock cbPressed = button2.colors;
         cbPressed.normalColor = pressedColor;
+        cbPressed.highlightedColor = pressedColor;
         cbPressed.selectedColor = pressedColor;
         button2.colors = cbPressed;
 
         ColorBlock cbNotPressed = button2.colors;
         cbNotPressed.normalColor = notPressedColor;
+        cbNotPressed.selectedColor = notPressedColor;
+        cbNotPressed.highlightedColor = highlightedColor;
         button1.colors = cbNotPressed;
         button3.colors = cbNotPressed;
     }
@@ -61,11 +70,14 @@ public class interpretations : MonoBehaviour
 
         ColorBlock cbPressed = button3.colors;
         cbPressed.normalColor = pressedColor;
+        cbPressed.highlightedColor = pressedColor;
         cbPressed.selectedColor = pressedColor;
         button3.colors = cbPressed;
 
         ColorBlock cbNotPressed = button2.colors;
         cbNotPressed.normalColor = notPressedColor;
+        cbNotPressed.selectedColor = notPressedColor;
+        cbNotPressed.highlightedColor = highlightedColor;
         button2.colors = cbNotPressed;
         button1.colors = cbNotPressed;
     }

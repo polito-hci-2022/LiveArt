@@ -16,7 +16,7 @@ public class ModalitaMancini : MonoBehaviour
     public Button buttonOFF;
 
     public Color pressedColor;
-
+    public Color highlightedColor;
     public Color notPressedColor;
 
     public void Awake()
@@ -41,11 +41,14 @@ public class ModalitaMancini : MonoBehaviour
         ColorBlock cbPressed = buttonON.colors;
         cbPressed.normalColor = pressedColor;
         cbPressed.selectedColor = pressedColor;
+        cbPressed.highlightedColor  = pressedColor;
 
         buttonON.colors = cbPressed;
 
         ColorBlock cbNotPressed = buttonOFF.colors;
         cbNotPressed.normalColor = notPressedColor;
+        cbNotPressed.selectedColor = notPressedColor;
+        cbNotPressed.highlightedColor = highlightedColor;
         buttonOFF.colors = cbNotPressed;
 
         PlayerPrefs.Save();
@@ -60,11 +63,14 @@ public class ModalitaMancini : MonoBehaviour
         ColorBlock cbPressed = buttonOFF.colors;
         cbPressed.normalColor = pressedColor;
         cbPressed.selectedColor = pressedColor;
+        cbPressed.highlightedColor  = pressedColor;
 
         buttonOFF.colors = cbPressed;
 
         ColorBlock cbNotPressed = buttonON.colors;
         cbNotPressed.normalColor = notPressedColor;
+        cbNotPressed.selectedColor = notPressedColor;
+        cbNotPressed.highlightedColor = highlightedColor;
         buttonON.colors = cbNotPressed;
 
         PlayerPrefs.Save();

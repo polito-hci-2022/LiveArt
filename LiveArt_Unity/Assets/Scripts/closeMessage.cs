@@ -14,9 +14,4 @@ public class closeMessage : MonoBehaviour
             message.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

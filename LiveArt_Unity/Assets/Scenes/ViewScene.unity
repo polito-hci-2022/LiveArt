@@ -372,8 +372,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 18.66}
+  m_SizeDelta: {x: 0, y: 37.31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &33516906
 MonoBehaviour:
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.34901962}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.4627451}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -477,7 +477,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -649,7 +649,9 @@ MonoBehaviour:
   button3L: {fileID: 974475978}
   button4L: {fileID: 716793907}
   pressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+  highlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
   notPressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
+  message: {fileID: 1526275551}
 --- !u!1 &70469328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,7 +1003,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1070,6 +1072,142 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112294228}
+  m_CullTransparentMesh: 1
+--- !u!1 &113258580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 113258581}
+  - component: {fileID: 113258583}
+  - component: {fileID: 113258582}
+  m_Layer: 5
+  m_Name: IntText (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &113258581
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113258580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.81919765, y: 1, z: 1.2202554}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 194170206}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 1.5}
+  m_SizeDelta: {x: -20, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &113258582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113258580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Informations
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
+  m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 10
+  m_fontSizeBase: 10
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 10
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &113258583
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113258580}
   m_CullTransparentMesh: 1
 --- !u!1 &116827543
 GameObject:
@@ -1480,7 +1618,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1614,7 +1752,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1832,7 +1970,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139915759}
   m_LocalRotation: {x: -0, y: 0.00000005960463, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00000020236}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1.0864252}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1841,8 +1979,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 40}
+  m_AnchoredPosition: {x: 0.000015258789, y: -4.8999996}
+  m_SizeDelta: {x: 74.9053, y: 25.9161}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &139915761
 MonoBehaviour:
@@ -1864,17 +2002,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>Title</b>\r\nPost Mortem Portrait of Vincenzo Gioberti\r\n<b>\rAuthor</b>\r\nAntonio
-    Puccinelli (1822-1897)\r\n<b>Date</b>\r\n1861\r\n\r<b>Description\r</b>\nIn September
-    1859, Bettino Ricasoli, then Minister of the Interior of the provisional government
-    of Tuscany, announced a competition for the creation of works of art on the theme
-    of the Risorgimento.\r\nAmong those created is this painting by Antonio Puccinelli,
-    who at the time was a professor at the Academy of Fine Arts in Florence.\r\n\r\nThe
-    subject portrayed is Vincenzo Gioberti, an Italian chaplain and politician, who
-    became known for his proximity to the Risorgimento movements.\r\nInitially in
-    favor of a united Italy led by the church, later he will change his mind and
-    support the Savoyard cause, and also become President of the Council of Ministers
-    of the Kingdom of Sardinia."
+  m_text: "<b>Title:</b> Post Mortem Portrait of Vincenzo Gioberti\r\n<b>\rAuthor:</b>
+    Antonio Puccinelli (1822-1897)\r\n<b>Date:</b> 1861\r\n\r<b>Description\r</b>\nIn
+    September 1859, Bettino Ricasoli, then Minister of the Interior of the provisional
+    government of Tuscany, announced a competition for the creation of works of art
+    on the theme of the Risorgimento.\r\nThe subject portrayed is Vincenzo Gioberti,
+    an Italian chaplain and politician, who became known for his proximity to the
+    Risorgimento movements.\r\nInitially in favor of a united Italy led by the church,
+    later he will change his mind and support the Savoyard cause, and also become
+    President of the Council of Ministers of the Kingdom of Sardinia."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
   m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
@@ -1902,7 +2038,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 3.9
+  m_fontSize: 4.65
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1938,7 +2074,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 2, y: 2, z: 2, w: 2}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2190,7 +2326,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175509507}
   m_LocalRotation: {x: -0, y: 0.00000005960463, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0000045532}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1.0864251}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2199,8 +2335,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 40}
+  m_AnchoredPosition: {x: -0.0000076293945, y: -5.299999}
+  m_SizeDelta: {x: 79.3826, y: 26.7671}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &175509509
 MonoBehaviour:
@@ -2222,11 +2358,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>Title</b>\r\nPortrait of Vittorio Emanuele II\r\n\r<b>Author</b>\r\nRodolfo
-    Morgari ( 1827 - 1909 )\r\n\r<b>Date</b>\r\n1860 ca.\r\n<b>\rDescription</b>\r\n\rRodolfo
+  m_text: "<b>Title:</b> Portrait of Vittorio Emanuele II\r\n\r<b>Author:</b> Rodolfo
+    Morgari ( 1827 - 1909 )\r\n\r<b>Date:</b> 1860 ca.\r\n<b>\rDescription</b>\r\n\rRodolfo
     Morgari was a versatile painter, able to work in multiple styles and on multiple
     occasions he portrayed Vittorio Emanuele II. \r\nHe also took part in the First
-    War of Independence.\r\n\r\nHaving been noticed not only for his artistic talents
+    War of Independence.\r\nHaving been noticed not only for his artistic talents
     but also for his skills as a restorer, he was appointed as the painter and restorer
     of the Royal Palaces, both public and private."
   m_isRightToLeft: 0
@@ -2256,7 +2392,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5.05
+  m_fontSize: 5.45
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2292,7 +2428,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 2, y: 2, z: 2, w: 2}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2305,6 +2441,142 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175509507}
+  m_CullTransparentMesh: 1
+--- !u!1 &187448456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 187448457}
+  - component: {fileID: 187448459}
+  - component: {fileID: 187448458}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &187448457
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187448456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 421926954}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &187448458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187448456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Close
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
+  m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 30.3
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 10, y: 10, z: 10, w: 10}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &187448459
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187448456}
   m_CullTransparentMesh: 1
 --- !u!1 &188260026
 GameObject:
@@ -2609,6 +2881,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1961107550}
+  - {fileID: 113258581}
   m_Father: {fileID: 227612440}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2732,7 +3005,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3454,7 +3727,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3750,17 +4023,17 @@ PrefabInstance:
     - target: {fileID: 4104609786983593608, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.6862745
+      value: 0.9647059
       objectReference: {fileID: 0}
     - target: {fileID: 4104609786983593608, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.2509804
+      value: 0.50980395
       objectReference: {fileID: 0}
     - target: {fileID: 4104609786983593608, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.11764706
+      value: 0.23137255
       objectReference: {fileID: 0}
     - target: {fileID: 4104609786983593608, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -3862,17 +4135,17 @@ PrefabInstance:
     - target: {fileID: 4104609787105548419, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.6862745
+      value: 0.9647059
       objectReference: {fileID: 0}
     - target: {fileID: 4104609787105548419, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.2509804
+      value: 0.50980395
       objectReference: {fileID: 0}
     - target: {fileID: 4104609787105548419, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.11764706
+      value: 0.23137255
       objectReference: {fileID: 0}
     - target: {fileID: 4104609787105548419, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -3922,12 +4195,32 @@ PrefabInstance:
     - target: {fileID: 4104609787153040189, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_text
-      value: Sala dei codici
+      value: Hall of codes
       objectReference: {fileID: 0}
     - target: {fileID: 4104609787153040189, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_fontSize
-      value: 20.7
+      value: 22.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609787153040189, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609787153040189, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609787153040189, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609787153040189, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4104609787153040189, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -3994,12 +4287,32 @@ PrefabInstance:
     - target: {fileID: 4104609787395452921, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_text
-      value: Sala dell'epica del Risorgimento
+      value: Hall of the Risorgimento epic
       objectReference: {fileID: 0}
     - target: {fileID: 4104609787395452921, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_fontSize
-      value: 17.35
+      value: 15.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609787395452921, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609787395452921, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609787395452921, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609787395452921, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4104609787395452921, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -4046,12 +4359,32 @@ PrefabInstance:
     - target: {fileID: 4104609787714035904, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_text
-      value: Sala dei liberali moderati, sovrani e riforme
+      value: Hall of Moderate Liberals, Sovereigns and Reforms
       objectReference: {fileID: 0}
     - target: {fileID: 4104609787714035904, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_fontSize
-      value: 12.6
+      value: 11.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609787714035904, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609787714035904, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609787714035904, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609787714035904, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4104609787714035904, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -4249,17 +4582,17 @@ PrefabInstance:
     - target: {fileID: 4104609788341766563, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.6862745
+      value: 0.9647059
       objectReference: {fileID: 0}
     - target: {fileID: 4104609788341766563, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.2509804
+      value: 0.50980395
       objectReference: {fileID: 0}
     - target: {fileID: 4104609788341766563, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.11764706
+      value: 0.23137255
       objectReference: {fileID: 0}
     - target: {fileID: 4104609788341766563, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -4309,12 +4642,32 @@ PrefabInstance:
     - target: {fileID: 4104609788357443051, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_text
-      value: Sala delle borghesie
+      value: Hall of the bourgeoisie
       objectReference: {fileID: 0}
     - target: {fileID: 4104609788357443051, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_fontSize
-      value: 18.95
+      value: 17.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609788357443051, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609788357443051, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609788357443051, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104609788357443051, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4104609788357443051, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -4391,17 +4744,17 @@ PrefabInstance:
     - target: {fileID: 4104609788460986324, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.6862745
+      value: 0.9647059
       objectReference: {fileID: 0}
     - target: {fileID: 4104609788460986324, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.2509804
+      value: 0.50980395
       objectReference: {fileID: 0}
     - target: {fileID: 4104609788460986324, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.11764706
+      value: 0.23137255
       objectReference: {fileID: 0}
     - target: {fileID: 4104609788460986324, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -4472,12 +4825,32 @@ PrefabInstance:
     - target: {fileID: 4627840604296793745, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_text
-      value: Sala dell'epica del Risorgimento
+      value: Hall of the Risorgimento epic
       objectReference: {fileID: 0}
     - target: {fileID: 4627840604296793745, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_fontSize
-      value: 17.35
+      value: 15.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840604296793745, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840604296793745, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840604296793745, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840604296793745, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4627840604296793745, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -4544,12 +4917,32 @@ PrefabInstance:
     - target: {fileID: 4627840604555453013, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_text
-      value: Sala dei codici
+      value: Hall of codes
       objectReference: {fileID: 0}
     - target: {fileID: 4627840604555453013, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_fontSize
-      value: 22.7
+      value: 22.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840604555453013, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840604555453013, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840604555453013, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840604555453013, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4627840604555453013, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -4642,17 +5035,17 @@ PrefabInstance:
     - target: {fileID: 4627840604585720299, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.6862745
+      value: 0.9647059
       objectReference: {fileID: 0}
     - target: {fileID: 4627840604585720299, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.2509804
+      value: 0.50980395
       objectReference: {fileID: 0}
     - target: {fileID: 4627840604585720299, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.11764706
+      value: 0.23137255
       objectReference: {fileID: 0}
     - target: {fileID: 4627840604585720299, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -4712,17 +5105,17 @@ PrefabInstance:
     - target: {fileID: 4627840604725762016, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.6862745
+      value: 0.9647059
       objectReference: {fileID: 0}
     - target: {fileID: 4627840604725762016, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.2509804
+      value: 0.50980395
       objectReference: {fileID: 0}
     - target: {fileID: 4627840604725762016, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.11764706
+      value: 0.23137255
       objectReference: {fileID: 0}
     - target: {fileID: 4627840604725762016, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -4768,12 +5161,32 @@ PrefabInstance:
     - target: {fileID: 4627840605051421096, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_text
-      value: Sala dei liberali moderati, sovrani e riforme
+      value: Hall of Moderate Liberals, Sovereigns and Reforms
       objectReference: {fileID: 0}
     - target: {fileID: 4627840605051421096, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_fontSize
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840605051421096, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840605051421096, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840605051421096, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840605051421096, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4627840605051421096, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -4875,17 +5288,17 @@ PrefabInstance:
     - target: {fileID: 4627840605395848892, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.6862745
+      value: 0.9647059
       objectReference: {fileID: 0}
     - target: {fileID: 4627840605395848892, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.2509804
+      value: 0.50980395
       objectReference: {fileID: 0}
     - target: {fileID: 4627840605395848892, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.11764706
+      value: 0.23137255
       objectReference: {fileID: 0}
     - target: {fileID: 4627840605395848892, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -4956,12 +5369,32 @@ PrefabInstance:
     - target: {fileID: 4627840605497826435, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_text
-      value: Sala delle borghesie
+      value: Hall of the bourgeoisie
       objectReference: {fileID: 0}
     - target: {fileID: 4627840605497826435, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_fontSize
-      value: 22.7
+      value: 17.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840605497826435, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840605497826435, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840605497826435, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627840605497826435, guid: 7690e3bdd705a41e697489fa0a6d59a8,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4627840605497826435, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -5054,17 +5487,17 @@ PrefabInstance:
     - target: {fileID: 4627840605513492683, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.6862745
+      value: 0.9647059
       objectReference: {fileID: 0}
     - target: {fileID: 4627840605513492683, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.2509804
+      value: 0.50980395
       objectReference: {fileID: 0}
     - target: {fileID: 4627840605513492683, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.11764706
+      value: 0.23137255
       objectReference: {fileID: 0}
     - target: {fileID: 4627840605513492683, guid: 7690e3bdd705a41e697489fa0a6d59a8,
         type: 3}
@@ -5507,7 +5940,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6238,6 +6671,7 @@ MonoBehaviour:
   button2: {fileID: 1562789937}
   button3: {fileID: 2071263796}
   pressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+  highlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
   notPressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
 --- !u!1 &302206854
 GameObject:
@@ -6303,7 +6737,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6967,6 +7401,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 175509508}
+  - {fileID: 606420948}
   m_Father: {fileID: 1618990643}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7061,7 +7496,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 33.6}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &388871862
@@ -7084,11 +7519,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click the blue-lit button on the left controller to open or close the
-    menu
+  m_text: 'Move between rooms from the menu on your secondary hand
 
 
-    Move between rooms from the menu on your secondary hand'
+    Click the
+    red button on the left controller to open or close the menu.
+
+
+    To close this
+    panel navigate to a room, click on the close button or open the menu'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
   m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
@@ -7116,8 +7555,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7546,6 +7985,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412471889}
   m_CullTransparentMesh: 1
+--- !u!1 &421926953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 421926954}
+  - component: {fileID: 421926957}
+  - component: {fileID: 421926956}
+  - component: {fileID: 421926955}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &421926954
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421926953}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 187448457}
+  m_Father: {fileID: 1526275552}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -58.1}
+  m_SizeDelta: {x: 240, y: 60}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &421926955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421926953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
+    m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
+    m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 421926956}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1526275558}
+        m_TargetAssemblyTypeName: closeMessage2, Assembly-CSharp
+        m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &421926956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421926953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 820eeed750bf9c525b1c7fb7b6f422fe, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &421926957
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421926953}
+  m_CullTransparentMesh: 1
 --- !u!1 &436773316
 GameObject:
   m_ObjectHideFlags: 0
@@ -7732,7 +8305,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -7802,6 +8375,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 453611153}
   m_CullTransparentMesh: 1
+--- !u!1 &455520763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 455520764}
+  - component: {fileID: 455520766}
+  - component: {fileID: 455520765}
+  m_Layer: 5
+  m_Name: IntText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &455520764
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455520763}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1694877855}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 1.5}
+  m_SizeDelta: {x: -20, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &455520765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455520763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Informations
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
+  m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 10
+  m_fontSizeBase: 10
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 10
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &455520766
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455520763}
+  m_CullTransparentMesh: 1
 --- !u!1 &498683999
 GameObject:
   m_ObjectHideFlags: 0
@@ -7868,6 +8577,7 @@ MonoBehaviour:
   button2: {fileID: 1085945757}
   button3: {fileID: 1362389384}
   pressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+  highlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
   notPressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
 --- !u!1 &508295818
 GameObject:
@@ -8561,7 +9271,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522888792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0000000010432}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8570,8 +9280,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 34.431}
-  m_SizeDelta: {x: 156.211, y: 46.138}
+  m_AnchoredPosition: {x: 0, y: 33.227}
+  m_SizeDelta: {x: 156.211, y: 48.545}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &522888794
 MonoBehaviour:
@@ -8593,7 +9303,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ritratto di Vincenzo Gioberti\r"
+  m_text: 'Post Mortem Portrait of Vincenzo Gioberti
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
   m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
@@ -8621,7 +9333,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17.45
+  m_fontSize: 15.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8706,8 +9418,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 40}
+  m_AnchoredPosition: {x: 0, y: -4.3876}
+  m_SizeDelta: {x: 70, y: 22.4498}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &541398392
 MonoBehaviour:
@@ -8729,15 +9441,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\r<b>Title</b>\r\nPortrait of Carlo Alberto\r\n<b>Author</b>\r\nAngelo
-    Capisani ( 1808 - 1870 )\r\n<b>Date</b>\r\n1848\r\n<b>Description\r</b>\r\nNumerosi
-    sono i lavori di Capisani che lo vedono ritrarre Carlo Alberto.\r\nL'opera in
-    questione \xE8 datata al 1848, pochi mesi prima che Carlo Alberto abdicasse in
-    favore del figlio Vittorio Emanuele II.\r\n\r\nNonostante l'educazione liberale
-    e il non essere destinato al trono, in un primo periodo Carlo Alberto, successo
-    a Carlo Felice in quanto non aveva ered\xEC, avr\xE0 uno stile molto conservatore.\r\nNel
-    1949 abdicher\xE0, dopo una sconfitta contro l'impero austriaco, in favore del
-    figlio Vittorio Emanuele II."
+  m_text: "<b>Title: </b>Portrait of Carlo Alberto\r\n<b>Author</b> Angelo Capisani
+    ( 1808 - 1870 )\n\r<b>Date:</b> 1848\r\n<b>Description\r</b>\r\nThe work in question
+    is dated to 1848, a few months before Carlo Alberto abdicated in favor of his
+    son Vittorio Emanuele II.\r\nDespite the liberal education and not being destined
+    for the throne, in the first period Carlo Alberto, who succeeded Carlo Felice
+    as he had no heirs, will have a very conservative style.\r\nIn 1949 he will abdicate,
+    after a defeat against the Austrian Empire, in favor of his son Vittorio Emanuele
+    II."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
   m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
@@ -8765,7 +9476,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.4
+  m_fontSize: 4.95
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8801,7 +9512,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 2, y: 2, z: 2, w: 2}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9952,6 +10663,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601133989}
   m_CullTransparentMesh: 1
+--- !u!1 &606420947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 606420948}
+  - component: {fileID: 606420950}
+  - component: {fileID: 606420949}
+  m_Layer: 5
+  m_Name: IntText (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &606420948
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606420947}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9170108, y: 1, z: 1.0799286}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 371465446}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 1.5}
+  m_SizeDelta: {x: -20, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &606420949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606420947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Informations
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
+  m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 10
+  m_fontSizeBase: 10
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 10
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &606420950
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606420947}
+  m_CullTransparentMesh: 1
 --- !u!1 &609343013
 GameObject:
   m_ObjectHideFlags: 0
@@ -10113,7 +10960,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -10718,7 +11565,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -11044,6 +11891,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 541398391}
+  - {fileID: 1594334816}
   m_Father: {fileID: 1764404656}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11303,7 +12151,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -12163,8 +13011,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 43.258}
-  m_SizeDelta: {x: 235.11, y: 63.222}
+  m_AnchoredPosition: {x: 0, y: 40.054005}
+  m_SizeDelta: {x: 235.11, y: 69.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &843138478
 MonoBehaviour:
@@ -12186,7 +13034,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bettino Ricasoli Presenta il Plebiscito di Annessione della Toscana all'Italia
+  m_text: "Bettino Ricasoli Presents the Plebiscite of \r\nAnnexation of Tuscany
+    to Italy to Vittorio Emanuele II"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
   m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
@@ -12214,7 +13063,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15.95
+  m_fontSize: 13.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -13530,7 +14379,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -14249,7 +15098,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -14395,7 +15244,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -14663,7 +15512,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -15064,90 +15913,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006423228}
   m_CullTransparentMesh: 1
---- !u!1 &1014491680
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1014491683}
-  - component: {fileID: 1014491682}
-  - component: {fileID: 1014491681}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!81 &1014491681
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1014491680}
-  m_Enabled: 1
---- !u!20 &1014491682
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1014491680}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 40.2
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1014491683
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1014491680}
-  m_LocalRotation: {x: 0, y: 0.7045104, z: -0, w: -0.7096937}
-  m_LocalPosition: {x: 250, y: -21.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 270.42, z: 0}
 --- !u!1 &1036854033
 GameObject:
   m_ObjectHideFlags: 0
@@ -15313,7 +16078,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -15607,7 +16372,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -16056,7 +16821,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -16169,7 +16934,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -16292,6 +17057,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1171793704}
+  - {fileID: 1105953310}
   m_Father: {fileID: 1634142504}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16478,6 +17244,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1420759333}
+  - {fileID: 1381104076}
   m_Father: {fileID: 131307053}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16673,6 +17440,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104860552}
   m_CullTransparentMesh: 1
+--- !u!1 &1105953309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1105953310}
+  - component: {fileID: 1105953312}
+  - component: {fileID: 1105953311}
+  m_Layer: 5
+  m_Name: IntText (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1105953310
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105953309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9358447, y: 1, z: 1.0593942}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1086397905}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 1.5}
+  m_SizeDelta: {x: -20, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1105953311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105953309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Informations
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
+  m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 10
+  m_fontSizeBase: 10
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 10
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1105953312
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105953309}
+  m_CullTransparentMesh: 1
 --- !u!1 &1108053776
 GameObject:
   m_ObjectHideFlags: 0
@@ -16860,7 +17763,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -17014,7 +17917,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ritratto di Massimo D'Azeglio
+  m_text: "Portrait of \nMassimo d'Azeglio\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
   m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
@@ -17158,6 +18061,7 @@ MonoBehaviour:
   button2: {fileID: 1800062835}
   button3: {fileID: 453611155}
   pressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+  highlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
   notPressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
 --- !u!1 &1125723157
 GameObject:
@@ -17650,6 +18554,7 @@ MonoBehaviour:
   buttonON: {fileID: 1275756148}
   buttonOFF: {fileID: 1501209824}
   pressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+  highlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
   notPressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
 --- !u!114 &1170736939
 MonoBehaviour:
@@ -17741,6 +18646,7 @@ MonoBehaviour:
   buttonON: {fileID: 939397166}
   buttonOFF: {fileID: 1125723159}
   pressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+  highlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
   notPressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
 --- !u!1 &1171793703
 GameObject:
@@ -17777,8 +18683,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 40}
+  m_AnchoredPosition: {x: 0, y: -5.1293}
+  m_SizeDelta: {x: 70, y: 25.3501}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1171793705
 MonoBehaviour:
@@ -17800,14 +18706,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>Title</b>\r\nPortrait of Massimo d'Azeglio\r\n\r<b>Author</b>\r\nFrancesco
-    Gonin ( 1808 - 1889 )\r\n\r<b>Date</b>\r\n1860\r\n<b>Description</b>\r\nMassimo
+  m_text: "<b>Title: </b>Portrait of Massimo d'Azeglio\r\n\r<b>Author: </b>Francesco
+    Gonin ( 1808 - 1889 )\r\n\r<b>Date:</b> 1860\r\n<b>Description</b>\r\nMassimo
     d'Azeglio is known in history for both his artistic qualities as a painter and
     writer, as well as his political ones, first as a member of parliament and then
-    as a senator of the Kingdom of Sardinia. At the time of the painting, he held
-    the position of Governor of the Province of Milan.\r\n\r\nThe painting is by
-    Francesco Gonin, a painter known for his portraits of illustrious figures, including
-    King Vittorio Emanuele II and King Umberto I, but not only: in fact, the frescoes
+    as a senator of the Kingdom of Sardinia. \nAt the time of the painting, he held
+    the position of Governor of the Province of Milan.\r\nThe painting is by Francesco
+    Gonin, a painter known for his portraits of illustrious figures, including King
+    Vittorio Emanuele II and King Umberto I, but not only: in fact, the frescoes
     in the ballroom of the Royal Palace of Turin are also his work."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
@@ -17836,7 +18742,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.4
+  m_fontSize: 4.35
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -17872,7 +18778,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 2, y: 2, z: 2, w: 2}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -17952,6 +18858,7 @@ MonoBehaviour:
   button2: {fileID: 1708965782}
   button3: {fileID: 631904304}
   pressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+  highlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
   notPressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
 --- !u!1 &1199873339
 GameObject:
@@ -18017,7 +18924,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -18446,6 +19353,7 @@ MonoBehaviour:
   button2: {fileID: 1503027116}
   button3: {fileID: 1528204192}
   pressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+  highlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
   notPressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
 --- !u!1 &1233582677
 GameObject:
@@ -18860,6 +19768,7 @@ MonoBehaviour:
   button2: {fileID: 34637767}
   button3: {fileID: 670887092}
   pressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+  highlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
   notPressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
 --- !u!1 &1274349482
 GameObject:
@@ -18925,7 +19834,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -19483,7 +20392,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -20240,7 +21149,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -20396,7 +21305,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -20588,6 +21497,142 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378903595}
+  m_CullTransparentMesh: 1
+--- !u!1 &1381104075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1381104076}
+  - component: {fileID: 1381104078}
+  - component: {fileID: 1381104077}
+  m_Layer: 5
+  m_Name: IntText (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1381104076
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381104075}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1102194934}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 1.5}
+  m_SizeDelta: {x: -20, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1381104077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381104075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Informations
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
+  m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 10
+  m_fontSizeBase: 10
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 10
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1381104078
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381104075}
   m_CullTransparentMesh: 1
 --- !u!1 &1388996047
 GameObject:
@@ -21250,8 +22295,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 40}
+  m_AnchoredPosition: {x: 0, y: -4.6848}
+  m_SizeDelta: {x: 70, y: 21.261}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1420759334
 MonoBehaviour:
@@ -21273,20 +22318,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>Title\r</b>\nBettino Ricasoli Presenta il Plebiscito di Annessione
-    della Toscana all'Italia di Vittorio Emanuele II (Bettino Ricasoli Presents the
-    Plebiscite of Annexation of Tuscany to Italy to Vittorio Emanuele II)\r\n\r<b>Author</b>\r\nSilvio
-    Capisanti (1801-1852)\r\n\r<b>Date\r</b>\nXIX Century\r\n\r<b>Description</b>\r\n\r\nFollowing
-    the Armistice of Villafranca, which will bring an end to the Second War of Independence,
-    the provisional government of Tuscany called for a plebiscite to ratify its annexation
-    to the Kingdom of Sardinia.\r\n\r\nThe vast majority of Tuscans voted in favor
-    of annexation, with little surprise given that over the years the people had
-    repeatedly expressed support for the cause of the House of Savoy.\r\n\r\nIn the
-    painting we see depicted Bettino Ricasoli, at the time the Prime Minister of
-    the Grand Duchy of Tuscany, reporting the results of the plebiscite to Vittorio
-    Emanuele II. Following the great success and the personal recognition of his
-    merits, he was first appointed provisional governor of Tuscany and then Minister
-    of the Interior in what will be the Kingdom of Italy."
+  m_text: "<b>Title: </b>Bettino Ricasoli Presents the Plebiscite of Annexation of
+    Tuscany to Italy to Vittorio Emanuele II\n\r<b>Author:</b> Silvio Capisanti (1801-1852)\r\n\r<b>Date:
+    </b> XIX Century\r\n\r<b>Description</b>\r\nIn the painting we see depicted Bettino
+    Ricasoli, at the time the Prime Minister of the Grand Duchy of Tuscany, reporting
+    the results of the plebiscite to Vittorio Emanuele II. \nFollowing the great
+    success and the personal recognition of his merits, he was first appointed provisional
+    governor of Tuscany and then Minister of the Interior in what will be the Kingdom
+    of Italy."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
   m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
@@ -21314,7 +22353,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 3.5
+  m_fontSize: 4.85
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -21350,7 +22389,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 2, y: 2, z: 2, w: 2}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -21523,7 +22562,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -21789,7 +22828,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ritratto di Vittorio Emanuele II\r"
+  m_text: 'Portrait of Vittorio Emanuele II
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
   m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
@@ -21931,7 +22972,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -22342,7 +23383,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -23213,7 +24254,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -23442,7 +24483,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -23570,7 +24611,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ritratto di Carlo Alberto
+  m_text: "Portrait of \nCarlo Alberto\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
   m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
@@ -23809,7 +24850,7 @@ GameObject:
   - component: {fileID: 1526275556}
   - component: {fileID: 1526275555}
   - component: {fileID: 1526275554}
-  - component: {fileID: 1526275553}
+  - component: {fileID: 1526275558}
   m_Layer: 5
   m_Name: Message
   m_TagString: Untagged
@@ -23826,32 +24867,20 @@ RectTransform:
   m_GameObject: {fileID: 1526275551}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 11.59}
-  m_LocalScale: {x: 0.04, y: 0.04, z: 1}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 33516905}
   - {fileID: 388871861}
+  - {fileID: 421926954}
   m_Father: {fileID: 1636832560}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.2953, y: -0.1}
+  m_AnchoredPosition: {x: 0.2953, y: -0.9}
   m_SizeDelta: {x: 320, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1526275553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526275551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa895abeb3d4f96478abda594c10f638, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitTime: 7
 --- !u!114 &1526275554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23932,6 +24961,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1526275558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526275551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2dc634386753944986e82641cd08bcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1528204190
 GameObject:
   m_ObjectHideFlags: 0
@@ -23996,7 +25037,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -24124,7 +25165,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Battaglia di Goito
+  m_text: 'Battle of Goito
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
   m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
@@ -24266,7 +25309,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -24547,6 +25590,142 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579981563}
+  m_CullTransparentMesh: 1
+--- !u!1 &1594334815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1594334816}
+  - component: {fileID: 1594334818}
+  - component: {fileID: 1594334817}
+  m_Layer: 5
+  m_Name: IntText (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1594334816
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594334815}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9322333, y: 1, z: 1.0632076}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 723289597}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 1.5}
+  m_SizeDelta: {x: -20, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1594334817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594334815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Informations
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
+  m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 10
+  m_fontSizeBase: 10
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 10
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1594334818
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594334815}
   m_CullTransparentMesh: 1
 --- !u!1 &1603023698
 GameObject:
@@ -25888,6 +27067,7 @@ RectTransform:
   m_LocalScale: {x: 0.75276875, y: 0.92045, z: 0.92045}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 455520764}
   - {fileID: 1742740057}
   m_Father: {fileID: 436773317}
   m_RootOrder: 0
@@ -26012,7 +27192,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -26146,7 +27326,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -26533,12 +27713,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1694877855}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 40}
+  m_AnchoredPosition: {x: 0, y: -4.2334}
+  m_SizeDelta: {x: 70, y: 23.0663}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1742740058
 MonoBehaviour:
@@ -26560,13 +27740,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>Title</b>\r\nBattaglia di Goito (Battle of Goito)\r\n<b>\rAuthor</b>\r
-    \r\nFelice Cerruti Bauduc (1818-1896)\r\n<b>Date</b>\r \r\n1848\r\n<b>\rDescription</b>\nUpon
-    returning from the First Italian War of Independence, Cerruti decided to pursue
-    an artistic career where he would reenact scenes of battle.\r\n\r\nThe painting
-    depicts the attack by the Austrian army on the Piedmontese army stationed in
-    defense of the bridge over the Mincio, near Goito.\r\nThe battle ended in favor
-    of the Piedmontese army.\r\n"
+  m_text: "<b>Title</b>: Battle of Goito\n<b>Author</b> Felice Cerutti Bauduc (1818-1896)\n<b>Date</b>
+    1848\r \r\n<b>\rDescription</b>\nUpon returning from the First Italian War of
+    Independence, Cerruti decided to pursue an artistic career where he would reenact
+    scenes of battle.\r\nThe painting depicts the attack by the Austrian army on
+    the Piedmontese army stationed in defense of the bridge over the Mincio, near
+    Goito.\r\nThe battle ended in favor of the Piedmontese army.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
   m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
@@ -26594,7 +27773,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.85
+  m_fontSize: 5
   m_fontSizeBase: 4
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -26630,7 +27809,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 2, y: 2, z: 2, w: 2}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -27452,7 +28631,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -27725,7 +28904,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -27861,7 +29040,144 @@ MonoBehaviour:
   button2: {fileID: 112294230}
   button3: {fileID: 1440064955}
   pressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+  highlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
   notPressedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
+--- !u!1 &1823940179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1823940180}
+  - component: {fileID: 1823940182}
+  - component: {fileID: 1823940181}
+  m_Layer: 5
+  m_Name: IntText (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1823940180
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823940179}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.923286, y: 1, z: 1.0729059}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1869462157}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 1.5}
+  m_SizeDelta: {x: -20, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1823940181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823940179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Informations
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7ae879d442c8242c3a5fa57d0768f1f7, type: 2}
+  m_sharedMaterial: {fileID: -6270164373846709580, guid: 7ae879d442c8242c3a5fa57d0768f1f7,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 10
+  m_fontSizeBase: 10
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 10
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1823940182
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823940179}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1828601335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28383,6 +29699,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 139915760}
+  - {fileID: 1823940180}
   m_Father: {fileID: 407168660}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29902,7 +31219,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -30007,8 +31324,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 40}
+  m_AnchoredPosition: {x: 0, y: -4.9872}
+  m_SizeDelta: {x: 70, y: 20.0512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1961107551
 MonoBehaviour:
@@ -30030,12 +31347,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\r<b>Title\r</b>\n\rSommacampagna\r\n\r<b>Author\r</b>\nFelice Cerruti
-    Bauduc (1818-1896)\r\n\r<b>Date\r</b>\n1855\r\n\r<b>Description</b>\r\nThe work,
-    like others by Cerruti, is clearly a representation of the Piedmontese army during
+  m_text: "\r<b>Title:</b> Sommacampagna\r\n<b>Author:</b> Felice Cerruti Bauduc
+    (1818-1896)\r\n\r<b>Date: </b >1855\r\n\r<b>Description</b>\r\nThe work, like
+    others by Cerruti, is clearly a representation of the Piedmontese army during
     the First Italian War of Independence, intent on facing the Austrian troops led
-    by General Josef Radetzky.\r\n\r\nAlthough the place and historical period are
-    well known, the reported event remains a subject of debate.\r\nA commonly accepted
+    by General Josef Radetzky.\r\nAlthough the place and historical period are well
+    known, the reported event remains a subject of debate.\r\nA commonly accepted
     version, and the one reported where the painting is displayed, that is the Museum
     of the Risorgimento in Turin, would be that the painting represents the Battle
     of Pastrengo of April 1848, but many scholars think it could also be the Battle
@@ -30067,7 +31384,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.15
+  m_fontSize: 4.05
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -30103,7 +31420,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 2, y: 2, z: 2, w: 2}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -31146,7 +32463,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -31280,7 +32597,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -31414,7 +32731,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -32350,7 +33667,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_HighlightedColor: {r: 0.007843138, g: 0.5176471, b: 0.78039217, a: 1}
     m_PressedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
-    m_SelectedColor: {r: 0.11764706, g: 0.2509804, b: 0.6862745, a: 1}
+    m_SelectedColor: {r: 0.23137255, g: 0.50980395, b: 0.9647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
