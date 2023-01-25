@@ -1,0 +1,7 @@
+{"title":"Mona Lisa","author":"Da Vinci","description":"Considered an archetypal masterpiece of the Italian Renaissance, it has been described as the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world"}
+{"title":"Guernica","author":"Picasso","description":"Large 1937 oil painting by Spanish artist Pablo Picasso"}
+{"title":"The Kiss","author":"Klimt","description":"Oil-on-canvas painting with added gold leaf, silver and platinum by the Austrian Symbolist painter Gustav Klimt"}
+{"title":"Concetto spaziale, Attesa","author":"Lucio Fontana","description":"1960. Mixed technique on canvas"}
+{"title":"The Starry Night","author":"Vincent van Gogh","description":"It depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence"}
+{"title":"Girl with a Pearl Earring","author":"Johannes Vermeer","description":"The work has been in the collection of the Mauritshuis in The Hague since 1902 and has been the subject of various literary and cinematic treatments."}
+{"title":"The Two Fridas","author":"Frida Kahlo","description":"The painting is housed at the Museo de Arte Moderno in Mexico City."}

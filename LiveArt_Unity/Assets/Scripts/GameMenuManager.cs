@@ -7,7 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit.UI;
 public class GameMenuManager : MonoBehaviour
 {
     public GameObject gameMenuObject;
-
+    public GameObject messageObject;
     public InputActionProperty showButton;
 
     public TrackedDeviceGraphicRaycaster canvasInteraction1_1;
@@ -90,19 +90,18 @@ public class GameMenuManager : MonoBehaviour
         if (showButton.action.WasPressedThisFrame())
         {
             gameMenuObject.SetActive(!gameMenuObject.activeSelf);
-            
         }
-        if (gameMenuObject.activeSelf == true)
-            {
-                PlayerPrefs.SetInt("menuOpen", 1);
-                setCanvasEnable(false);
-            }
-            else if (gameMenuObject.activeSelf == false)
-            {
-                PlayerPrefs.SetInt("menuOpen", 0);
-                setCanvasEnable(true);
-            }
-            PlayerPrefs.Save();
+        if (gameMenuObject.activeSelf == true || messageObject.activeSelf == true)
+        {
+            PlayerPrefs.SetInt("menuOpen", 1);
+            setCanvasEnable(false);
+        }
+        else if (gameMenuObject.activeSelf == false && messageObject.activeSelf == false)
+        {
+            PlayerPrefs.SetInt("menuOpen", 0);
+            setCanvasEnable(true);
+        }
+        PlayerPrefs.Save();
     }
 
     public void CloseMenu()
@@ -118,9 +117,16 @@ public class GameMenuManager : MonoBehaviour
             el.enabled = val;
         }
         int mancini = PlayerPrefs.GetInt("Mancini");
-        if (mancini == 1)
-            rightMenu.SetActive(val);
-        else
-            leftMenu.SetActive(val);
+        if (val == true)
+        {
+            if (mancini == 1)
+                rightMenu.SetActive(true);
+            else
+                leftMenu.SetActive(true);
+        }
+        else{
+                rightMenu.SetActive(false);
+                leftMenu.SetActive(false);
+        }
     }
 }

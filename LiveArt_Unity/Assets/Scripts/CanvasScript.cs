@@ -42,7 +42,7 @@ public class CanvasScript : MonoBehaviour
             expanded.SetActive(true);
             titleText.text = "Title: " + PlayerPrefs.GetString("showTitle");
             authorText.text = "Author: " + PlayerPrefs.GetString("showAuthor");
-            descriptionText.text = "Description " + PlayerPrefs.GetString("showDescription");
+            descriptionText.text = PlayerPrefs.GetString("showDescription");
         }
         else
             expanded.SetActive(false);
