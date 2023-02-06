@@ -25,10 +25,7 @@ public class ConfirmationScript : MonoBehaviour
             authorString = authorString.Substring(0, 25) + ".";
         author.text = authorString;
 
-        string descriptionString = "Description: " + descriptionInput.text;
-        if (descriptionString.Length > 79)
-            descriptionString = descriptionString.Substring(0, 79) + ".";
-        description.text = descriptionString;
+        description.text = descriptionInput.text;
     }
 
     public void Reset()

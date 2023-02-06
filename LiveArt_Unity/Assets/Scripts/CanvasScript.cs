@@ -13,7 +13,10 @@ public class CanvasScript : MonoBehaviour
 
     public GameObject SuggestCanvas;
 
+    public GameObject KeyboardCanvas;
+
     public GameObject thankText;
+    public GameObject expanded;
 
     public InputField searchField;
 
@@ -23,7 +26,6 @@ public class CanvasScript : MonoBehaviour
 
     public InputField descriptionField;
 
-    public GameObject expanded;
 
     public Text titleText;
     public Text authorText;
@@ -32,6 +34,14 @@ public class CanvasScript : MonoBehaviour
     void Awake()
     {
         CloseExpanded();
+    }
+
+    void Start(){
+        MainCanvas.SetActive(true);
+        CreditsCanvas.SetActive(false);
+        SettingsCanvas.SetActive(false);
+        SuggestCanvas.SetActive(false);
+        KeyboardCanvas.SetActive(false);
     }
 
     void Update()
@@ -57,6 +67,7 @@ public class CanvasScript : MonoBehaviour
     public void openCredits()
     {
         MainCanvas.SetActive(false);
+        KeyboardCanvas.SetActive(false);
         CreditsCanvas.SetActive(true);
     }
 
@@ -69,6 +80,7 @@ public class CanvasScript : MonoBehaviour
     public void openSettings()
     {
         MainCanvas.SetActive(false);
+        KeyboardCanvas.SetActive(false);
         SettingsCanvas.SetActive(true);
     }
 
@@ -92,6 +104,7 @@ public class CanvasScript : MonoBehaviour
         descriptionField.text = "";
         SuggestCanvas.SetActive(false);
         thankText.SetActive(false);
+        KeyboardCanvas.SetActive(false);
         MainCanvas.SetActive(true);
     }
 }
